@@ -27,8 +27,15 @@ jobs:
         run: |
           bash ./scripts/report.sh
 
+      - name: "Show report"
+        run: |
+          echo "VPP API List"
+          echo "============"
+          echo
+          cat vppapi_list.txt
+
       - name: "Upload artifact"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: vppapi_list
           path: vppapi_list.txt
