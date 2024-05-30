@@ -26,4 +26,8 @@ python3 -c "import ply" >/dev/null 2>&1 && echo "Python3-ply module installed su
 echo "Using installed GoVPP CLI:"
 govpp --version
 
-govpp -D -L trace vppapi ls "${VPP_INPUT}" | tee vppapi_list.txt
+echo "Running 'vppapi ls'"
+govpp -D -L trace vppapi ls "${VPP_INPUT}" | tee vppapi.txt
+
+echo "Running 'vppapi lint'"
+govpp -D -L trace vppapi lint "${VPP_INPUT}" | tee vppapi_lint.txt

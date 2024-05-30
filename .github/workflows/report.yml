@@ -29,13 +29,16 @@ jobs:
 
       - name: "Show report"
         run: |
-          echo "VPP API List"
-          echo "============"
-          echo
-          cat vppapi_list.txt
+          echo ::group::VPP API
+          cat vppapi.txt
+          echo ::endgroup::
+          
+          echo ::group::VPP API Lint
+          cat vppapi_lint.txt
+          echo ::endgroup::
 
       - name: "Upload artifact"
         uses: actions/upload-artifact@v4
         with:
-          name: vppapi_list
-          path: vppapi_list.txt
+          name: vppapi_report
+          path: vppapi*.txt
