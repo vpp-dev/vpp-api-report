@@ -16,4 +16,4 @@ command -v govpp >/dev/null 2>&1 || {
 echo "Using installed GoVPP CLI:"
 govpp --version
 
-govpp vppapi ls "${VPP_INPUT}"
+govpp -D -L trace vppapi ls "${VPP_INPUT}"
