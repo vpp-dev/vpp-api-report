@@ -13,6 +13,16 @@ command -v govpp >/dev/null 2>&1 || {
   go install go.fd.io/govpp/cmd/govpp@latest
 }
 
+# Check if python3-ply is installed
+python3 -c "import ply" >/dev/null 2>&1 || {
+  echo "Python3-ply module is not installed. Preparing to install..";
+
+  sudo apt-get update && sudo apt-get install -y python3-ply
+}
+
+# Confirm python3-ply is installed
+python3 -c "import ply" >/dev/null 2>&1 && echo "Python3-ply module installed successfully!"
+
 echo "Using installed GoVPP CLI:"
 govpp --version
 
