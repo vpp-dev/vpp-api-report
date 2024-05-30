@@ -33,5 +33,5 @@ echo "Running 'vppapi lint'"
 govpp -D -L trace vppapi lint "${VPP_INPUT}" | tee vppapi_lint.txt
 
 echo "Running 'vppapi diff' against latest VPP release"
-LATEST_RELEASE_COMMIT=$(git ls-remote --refs --tags "${VPP_INPUT}" | grep -v rc | tail -n1 | cut -f 1 -d "   ")
+LATEST_RELEASE_COMMIT=$(git ls-remote --refs --tags "${VPP_INPUT}" | grep -v rc | tail -n1 | cut -f 1 -d "	")
 govpp vppapi diff "${VPP_INPUT}#ref=${LATEST_RELEASE_COMMIT}" --against "${VPP_INPUT}" | tee vppapi_diff.txt
