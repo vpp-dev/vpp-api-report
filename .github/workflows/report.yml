@@ -26,3 +26,9 @@ jobs:
       - name: "Run report"
         run: |
           bash ./scripts/report.sh
+
+      - name: "Upload artifact"
+        uses: actions/upload-artifact@v2
+        with:
+          name: vppapi_list
+          path: vppapi_list.txt
