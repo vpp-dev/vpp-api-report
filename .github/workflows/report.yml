@@ -1,6 +1,8 @@
 name: Report
 
 on:
+  push:
+    branches: ['*']
   # manual run
   workflow_dispatch:
   # scheduled run (daily at 2:15)
