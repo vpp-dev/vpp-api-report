@@ -22,10 +22,8 @@ python3 -c "import ply" >/dev/null 2>&1 || {
   echo "Python3-ply module is not installed. Preparing to install..";
 
   sudo apt-get update && sudo apt-get install -y python3-ply
+  echo "Python3-ply module installed successfully!"
 }
-
-# Confirm python3-ply is installed
-python3 -c "import ply" >/dev/null 2>&1 && echo "Python3-ply module installed successfully!"
 
 # Retrieve latest VPP release
 LATEST_RELEASE_GIT_REF=$(git ls-remote --refs --tags "${VPP_INPUT}" | grep -v rc | tail -n1)
