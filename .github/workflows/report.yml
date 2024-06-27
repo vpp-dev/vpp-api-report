@@ -32,19 +32,48 @@ jobs:
           echo "Showing report"
           
           echo ::group::VPP API
-          cat vppapi.txt
+          cat ./output/vppapi.txt
           echo ::endgroup::
           
           echo ::group::VPP API Lint
-          cat vppapi_lint.txt
+          cat ./output/vppapi_lint.txt
           echo ::endgroup::
           
           echo ::group::VPP API Diff
-          cat vppapi_diff.txt
+          cat ./output/vppapi_diff.txt
           echo ::endgroup::
 
       - name: "Upload artifact"
         uses: actions/upload-artifact@v4
         with:
           name: vppapi_report
-          path: vppapi*.txt
+          path: ./output/vppapi*.txt
+
+      - name: Check for Changes
+        if: ${{ github.ref == 'refs/heads/master' }}
+        id: check_changes
+        run: |
+          if [[ -n "$(git diff --exit-code REPORT.md)" ]]; then
+            echo "Changes detected."
+            echo "::set-output name=has_changes::true"
+            git diff REPORT.md
+          else
+            echo "No changes detected."
+            echo "::set-output name=has_changes::false"
+          fi
+
+      - name: Commit and Push Changes
+        if: ${{ steps.check_changes.outputs.has_changes == 'true' && github.ref == 'refs/heads/master' }}
+        run: |
+          # configure user
+          git config --global user.name "Ondrej Fabry"
+          git config --global user.email "ondrej@fabry.dev"
+          
+          # stage any file changes to be committed
+          git add REPORT.md
+          
+          # make commit with staged changes
+          git commit -m 'Update report'
+          
+          # push the commit back up to source GitHub repository
+          git push
