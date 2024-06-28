@@ -152,7 +152,7 @@
 
 ```
 Listing 1 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~81-g7f3c21763
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~82-g3e0600bb1
 ```
 
 </details>
