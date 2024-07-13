@@ -55,7 +55,7 @@
    47 | ioam_cache            | 1.0.0   | d0a0cf20 | plugins |       - |        2 |     - |    1 |          
    48 | ioam_export           | 1.0.0   | 26bebf64 | plugins |       1 |        2 |     - |    1 |          
    49 | ioam_vxlan_gpe        | 1.0.0   | b49eb0b9 | plugins |       1 |       12 |     - |    6 |          
-   50 | ip                    | 3.2.0   | bd2f873b | core    |       5 |       93 |    10 |   46 |          
+   50 | ip                    | 3.2.0   | 4645df38 | core    |       5 |       95 |    10 |   47 |          
    51 | ip6_nd                | 1.1.0   | 5f19a809 | core    |       2 |       17 |     2 |    8 |          
    52 | ip_neighbor           | 1.0.1   | 36db39bd | core    |       3 |       20 |     3 |    9 |          
    53 | ip_session_redirect   | 0.3.0   | f174f8ba | plugins |       3 |        6 |     - |    3 |          
@@ -151,8 +151,13 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 1 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~98-g63bdb3196
+Listing 5 differences:
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~107-g34fa0ce8f
+ ip
+ - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
+ - [FileContentsChanged] Number of Messages has increased from 93 to 95
+ - [MessageAdded] Message added: ip_table_add_del_v2
+ - [MessageAdded] Message added: ip_table_add_del_v2_reply
 ```
 
 </details>
@@ -171,99 +176,103 @@ Listing 1 differences:
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
    4 |                                  |                                   | message ikev2_sa_details has newer version available (ikev2_sa_v2_details) but is not marked as deprecated                                
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   5 |                                  | core/ipsec.api.json               | message ipsec_sad_entry_add has newer version available (ipsec_sad_entry_add_v2) but is not marked as deprecated                          
+   5 |                                  | core/ip.api.json                  | message ip_table_add_del has newer version available (ip_table_add_del_v2) but is not marked as deprecated                                
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-   6 |                                  |                                   | message ipsec_sad_entry_add_reply has newer version available (ipsec_sad_entry_add_v2_reply) but is not marked as deprecated              
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-   7 |                                  |                                   | message ipsec_sa_v3_dump has newer version available (ipsec_sa_v4_dump) but is not marked as deprecated                                   
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-   8 |                                  |                                   | message ipsec_sa_v4_dump has newer version available (ipsec_sa_v5_dump) but is not marked as deprecated                                   
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-   9 |                                  |                                   | message ipsec_sa_v3_details has newer version available (ipsec_sa_v4_details) but is not marked as deprecated                             
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  10 |                                  |                                   | message ipsec_sa_v4_details has newer version available (ipsec_sa_v5_details) but is not marked as deprecated                             
+   6 |                                  |                                   | message ip_table_add_del_reply has newer version available (ip_table_add_del_v2_reply) but is not marked as deprecated                    
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  11 |                                  | plugins/lb.api.json               | message lb_add_del_vip has newer version available (lb_add_del_vip_v2) but is not marked as deprecated                                    
+   7 |                                  | core/ipsec.api.json               | message ipsec_sad_entry_add has newer version available (ipsec_sad_entry_add_v2) but is not marked as deprecated                          
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  12 |                                  |                                   | message lb_add_del_vip_reply has newer version available (lb_add_del_vip_v2_reply) but is not marked as deprecated                        
+   8 |                                  |                                   | message ipsec_sad_entry_add_reply has newer version available (ipsec_sad_entry_add_v2_reply) but is not marked as deprecated              
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+   9 |                                  |                                   | message ipsec_sa_v3_dump has newer version available (ipsec_sa_v4_dump) but is not marked as deprecated                                   
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  10 |                                  |                                   | message ipsec_sa_v4_dump has newer version available (ipsec_sa_v5_dump) but is not marked as deprecated                                   
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  11 |                                  |                                   | message ipsec_sa_v3_details has newer version available (ipsec_sa_v4_details) but is not marked as deprecated                             
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  12 |                                  |                                   | message ipsec_sa_v4_details has newer version available (ipsec_sa_v5_details) but is not marked as deprecated                             
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  13 |                                  | plugins/lcp.api.json              | message lcp_itf_pair_get has newer version available (lcp_itf_pair_get_v2) but is not marked as deprecated                                
+  13 |                                  | plugins/lb.api.json               | message lb_add_del_vip has newer version available (lb_add_del_vip_v2) but is not marked as deprecated                                    
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  14 |                                  |                                   | message lcp_itf_pair_get_reply has newer version available (lcp_itf_pair_get_v2_reply) but is not marked as deprecated                    
+  14 |                                  |                                   | message lb_add_del_vip_reply has newer version available (lb_add_del_vip_v2_reply) but is not marked as deprecated                        
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  15 |                                  | plugins/pnat.api.json             | message pnat_binding_add has newer version available (pnat_binding_add_v2) but is not marked as deprecated                                
+  15 |                                  | plugins/lcp.api.json              | message lcp_itf_pair_get has newer version available (lcp_itf_pair_get_v2) but is not marked as deprecated                                
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  16 |                                  |                                   | message pnat_binding_add_reply has newer version available (pnat_binding_add_v2_reply) but is not marked as deprecated                    
+  16 |                                  |                                   | message lcp_itf_pair_get_reply has newer version available (lcp_itf_pair_get_v2_reply) but is not marked as deprecated                    
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  17 |                                  | core/policer.api.json             | message policer_bind has newer version available (policer_bind_v2) but is not marked as deprecated                                        
+  17 |                                  | plugins/pnat.api.json             | message pnat_binding_add has newer version available (pnat_binding_add_v2) but is not marked as deprecated                                
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  18 |                                  |                                   | message policer_bind_reply has newer version available (policer_bind_v2_reply) but is not marked as deprecated                            
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  19 |                                  |                                   | message policer_input has newer version available (policer_input_v2) but is not marked as deprecated                                      
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  20 |                                  |                                   | message policer_input_reply has newer version available (policer_input_v2_reply) but is not marked as deprecated                          
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  21 |                                  |                                   | message policer_output has newer version available (policer_output_v2) but is not marked as deprecated                                    
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  22 |                                  |                                   | message policer_output_reply has newer version available (policer_output_v2_reply) but is not marked as deprecated                        
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  23 |                                  |                                   | message policer_dump has newer version available (policer_dump_v2) but is not marked as deprecated                                        
+  18 |                                  |                                   | message pnat_binding_add_reply has newer version available (pnat_binding_add_v2_reply) but is not marked as deprecated                    
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  24 |                                  | plugins/rdma.api.json             | message rdma_create_v3_reply has newer version available (rdma_create_v4_reply) but is not marked as deprecated                           
+  19 |                                  | core/policer.api.json             | message policer_bind has newer version available (policer_bind_v2) but is not marked as deprecated                                        
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  20 |                                  |                                   | message policer_bind_reply has newer version available (policer_bind_v2_reply) but is not marked as deprecated                            
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  21 |                                  |                                   | message policer_input has newer version available (policer_input_v2) but is not marked as deprecated                                      
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  22 |                                  |                                   | message policer_input_reply has newer version available (policer_input_v2_reply) but is not marked as deprecated                          
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  23 |                                  |                                   | message policer_output has newer version available (policer_output_v2) but is not marked as deprecated                                    
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  24 |                                  |                                   | message policer_output_reply has newer version available (policer_output_v2_reply) but is not marked as deprecated                        
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  25 |                                  |                                   | message policer_dump has newer version available (policer_dump_v2) but is not marked as deprecated                                        
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  25 |                                  | core/sr.api.json                  | message sr_policies_details has newer version available (sr_policies_v2_details) but is not marked as deprecated                          
+  26 |                                  | plugins/rdma.api.json             | message rdma_create_v3_reply has newer version available (rdma_create_v4_reply) but is not marked as deprecated                           
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  26 |                                  | plugins/tracedump.api.json        | message trace_dump has newer version available (trace_v2_dump) but is not marked as deprecated                                            
-+----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  27 |                                  |                                   | message trace_details has newer version available (trace_v2_details) but is not marked as deprecated                                      
+  27 |                                  | core/sr.api.json                  | message sr_policies_details has newer version available (sr_policies_v2_details) but is not marked as deprecated                          
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  28 |                                  | plugins/urpf.api.json             | message urpf_update has newer version available (urpf_update_v2) but is not marked as deprecated                                          
+  28 |                                  | plugins/tracedump.api.json        | message trace_dump has newer version available (trace_v2_dump) but is not marked as deprecated                                            
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  29 |                                  |                                   | message urpf_update_reply has newer version available (urpf_update_v2_reply) but is not marked as deprecated                              
+  29 |                                  |                                   | message trace_details has newer version available (trace_v2_details) but is not marked as deprecated                                      
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  30 |                                  | core/vxlan_gpe.api.json           | message vxlan_gpe_add_del_tunnel has newer version available (vxlan_gpe_add_del_tunnel_v2) but is not marked as deprecated                
+  30 |                                  | plugins/urpf.api.json             | message urpf_update has newer version available (urpf_update_v2) but is not marked as deprecated                                          
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  31 |                                  |                                   | message vxlan_gpe_add_del_tunnel_reply has newer version available (vxlan_gpe_add_del_tunnel_v2_reply) but is not marked as deprecated    
+  31 |                                  |                                   | message urpf_update_reply has newer version available (urpf_update_v2_reply) but is not marked as deprecated                              
++----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+  32 |                                  | core/vxlan_gpe.api.json           | message vxlan_gpe_add_del_tunnel has newer version available (vxlan_gpe_add_del_tunnel_v2) but is not marked as deprecated                
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  32 |                                  |                                   | message vxlan_gpe_tunnel_dump has newer version available (vxlan_gpe_tunnel_v2_dump) but is not marked as deprecated                      
+  33 |                                  |                                   | message vxlan_gpe_add_del_tunnel_reply has newer version available (vxlan_gpe_add_del_tunnel_v2_reply) but is not marked as deprecated    
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  33 |                                  |                                   | message vxlan_gpe_tunnel_details has newer version available (vxlan_gpe_tunnel_v2_details) but is not marked as deprecated                
+  34 |                                  |                                   | message vxlan_gpe_tunnel_dump has newer version available (vxlan_gpe_tunnel_v2_dump) but is not marked as deprecated                      
++----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
+  35 |                                  |                                   | message vxlan_gpe_tunnel_details has newer version available (vxlan_gpe_tunnel_v2_details) but is not marked as deprecated                
 +----+----------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  34 | MESSAGE_SAME_STATUS              | core/bond.api.json                | message bond_create does not have consistent status (deprecated) with related message: bond_create_reply (n/a)                            
+  36 | MESSAGE_SAME_STATUS              | core/bond.api.json                | message bond_create does not have consistent status (deprecated) with related message: bond_create_reply (n/a)                            
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  35 |                                  |                                   | message bond_enslave does not have consistent status (deprecated) with related message: bond_enslave_reply (n/a)                          
+  37 |                                  |                                   | message bond_enslave does not have consistent status (deprecated) with related message: bond_enslave_reply (n/a)                          
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  36 |                                  |                                   | message sw_interface_bond_dump does not have consistent status (deprecated) with related message: sw_interface_bond_details (n/a)         
+  38 |                                  |                                   | message sw_interface_bond_dump does not have consistent status (deprecated) with related message: sw_interface_bond_details (n/a)         
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  37 |                                  |                                   | message sw_interface_slave_dump does not have consistent status (deprecated) with related message: sw_interface_slave_details (n/a)       
+  39 |                                  |                                   | message sw_interface_slave_dump does not have consistent status (deprecated) with related message: sw_interface_slave_details (n/a)       
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  38 |                                  | plugins/det44.api.json            | message det44_get_timeouts does not have consistent status (n/a) with related message: det44_get_timeouts_reply (in_progress)             
+  40 |                                  | plugins/det44.api.json            | message det44_get_timeouts does not have consistent status (n/a) with related message: det44_get_timeouts_reply (in_progress)             
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  39 |                                  | plugins/geneve.api.json           | message geneve_add_del_tunnel does not have consistent status (deprecated) with related message: geneve_add_del_tunnel_reply (n/a)        
+  41 |                                  | plugins/geneve.api.json           | message geneve_add_del_tunnel does not have consistent status (deprecated) with related message: geneve_add_del_tunnel_reply (n/a)        
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  40 |                                  | core/l2.api.json                  | message want_l2_macs_events does not have consistent status (deprecated) with related message: l2_macs_event (n/a)                        
+  42 |                                  | core/l2.api.json                  | message want_l2_macs_events does not have consistent status (deprecated) with related message: l2_macs_event (n/a)                        
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  41 |                                  | plugins/lcp.api.json              | message lcp_default_ns_get does not have consistent status (n/a) with related message: lcp_default_ns_get_reply (in_progress)             
+  43 |                                  | plugins/lcp.api.json              | message lcp_default_ns_get does not have consistent status (n/a) with related message: lcp_default_ns_get_reply (in_progress)             
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  42 |                                  |                                   | message lcp_itf_pair_get does not have consistent status (n/a) with related message: lcp_itf_pair_details (in_progress)                   
+  44 |                                  |                                   | message lcp_itf_pair_get does not have consistent status (n/a) with related message: lcp_itf_pair_details (in_progress)                   
 +----+                                  +                                   +------------------------------------------------------------------------------------------------------------------------------------------+
-  43 |                                  |                                   | message lcp_itf_pair_get_v2 does not have consistent status (n/a) with related message: lcp_itf_pair_details (in_progress)                
+  45 |                                  |                                   | message lcp_itf_pair_get_v2 does not have consistent status (n/a) with related message: lcp_itf_pair_details (in_progress)                
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  44 |                                  | plugins/lldp.api.json             | message lldp_dump does not have consistent status (n/a) with related message: lldp_details (in_progress)                                  
+  46 |                                  | plugins/lldp.api.json             | message lldp_dump does not have consistent status (n/a) with related message: lldp_details (in_progress)                                  
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  45 |                                  | plugins/map.api.json              | message map_domain_dump does not have consistent status (deprecated) with related message: map_domain_details (n/a)                       
+  47 |                                  | plugins/map.api.json              | message map_domain_dump does not have consistent status (deprecated) with related message: map_domain_details (n/a)                       
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  46 |                                  | plugins/rdma.api.json             | message rdma_create_v3 does not have consistent status (deprecated) with related message: rdma_create_v3_reply (n/a)                      
+  48 |                                  | plugins/rdma.api.json             | message rdma_create_v3 does not have consistent status (deprecated) with related message: rdma_create_v3_reply (n/a)                      
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  47 |                                  | core/session.api.json             | message app_namespace_add_del_v4 does not have consistent status (deprecated) with related message: app_namespace_add_del_v4_reply (n/a)  
+  49 |                                  | core/session.api.json             | message app_namespace_add_del_v4 does not have consistent status (deprecated) with related message: app_namespace_add_del_v4_reply (n/a)  
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  48 |                                  | core/sr.api.json                  | message sr_policies_dump does not have consistent status (deprecated) with related message: sr_policies_details (n/a)                     
+  50 |                                  | core/sr.api.json                  | message sr_policies_dump does not have consistent status (deprecated) with related message: sr_policies_details (n/a)                     
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  49 |                                  | plugins/vmxnet3.api.json          | message vmxnet3_dump does not have consistent status (deprecated) with related message: vmxnet3_details (n/a)                             
+  51 |                                  | plugins/vmxnet3.api.json          | message vmxnet3_dump does not have consistent status (deprecated) with related message: vmxnet3_details (n/a)                             
 +----+----------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  50 | UNUSED_MESSAGE                   | plugins/mactime.api.json          | message mactime_dump_reply is not used by services                                                                                        
+  52 | UNUSED_MESSAGE                   | plugins/mactime.api.json          | message mactime_dump_reply is not used by services                                                                                        
 +----+                                  +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-  51 |                                  | core/qos.api.json                 | message qos_mark_details_reply is not used by services                                                                                    
+  53 |                                  | core/qos.api.json                 | message qos_mark_details_reply is not used by services                                                                                    
 -----+----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
