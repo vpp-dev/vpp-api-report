@@ -156,8 +156,8 @@ Listing 5 differences:
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2
  - [MessageAdded] Message added: ip_table_add_del_v2_reply
+ - [MessageAdded] Message added: ip_table_add_del_v2
 ```
 
 </details>
