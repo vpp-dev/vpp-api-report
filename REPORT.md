@@ -152,12 +152,12 @@
 
 ```
 Listing 5 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~111-g2da273ace
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~112-g3a2cf84fa
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2
  - [MessageAdded] Message added: ip_table_add_del_v2_reply
+ - [MessageAdded] Message added: ip_table_add_del_v2
 ```
 
 </details>
