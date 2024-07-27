@@ -152,7 +152,7 @@
 
 ```
 Listing 5 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~142-g6a8f26c3a
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~144-gdd4356dc9
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
