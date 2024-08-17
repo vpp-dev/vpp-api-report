@@ -151,7 +151,7 @@
 
 ```
 Listing 7 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~167-gf02e74678
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~168-g5546755d1
  - [FilesCount] Total file count decreased from 137 to 136
  - [FileRemoved] File removed: builtinurl
  ip
