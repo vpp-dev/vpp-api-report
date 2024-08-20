@@ -151,14 +151,14 @@
 
 ```
 Listing 7 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~168-g5546755d1
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~169-g3601b322a
  - [FilesCount] Total file count decreased from 137 to 136
  - [FileRemoved] File removed: builtinurl
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2_reply
  - [MessageAdded] Message added: ip_table_add_del_v2
+ - [MessageAdded] Message added: ip_table_add_del_v2_reply
 ```
 
 </details>
