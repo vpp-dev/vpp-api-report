@@ -44,7 +44,7 @@
    36 | gre                   | 2.1.1   | 98b44dd1 | plugins |       3 |        4 |     2 |    2 |          
    37 | gso                   | 1.0.0   | 81a73026 | core    |       1 |        2 |     - |    1 |          
    38 | gtpu                  | 2.1.0   | dbbb4325 | plugins |       2 |       18 |     4 |    9 |          
-   39 | http_static           | 2.1.0   | d29e72e9 | plugins |       - |        2 |     - |    1 |          
+   39 | http_static           | 2.2.0   | 42dd9fb5 | plugins |       - |        4 |     - |    2 |          
    40 | idpf                  | 1.0.0   | 48384ea8 | plugins |       1 |        4 |     - |    2 |          
    41 | igmp                  | 1.0.0   | 95a4ff29 | plugins |       2 |       19 |     4 |    9 |          
    42 | ikev2                 | 1.0.1   | 388d5d85 | plugins |       3 |       56 |     - |   28 |          
@@ -150,10 +150,18 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 7 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~169-g3601b322a
+Listing 14 differences:
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~171-g1fb7ae344
  - [FilesCount] Total file count decreased from 137 to 136
  - [FileRemoved] File removed: builtinurl
+ http_static
+ - [FileVersion] File version changed from 2.1.0 to 2.2.0
+ - [FileCRC] File CRC changed from 0xd29e72e9 to 0x42dd9fb5
+ - [FileContentsChanged] Number of Messages has increased from 2 to 4
+ - [MsgOptionAdded] Message http_static_enable added option: deprecated
+ - [MsgOptionAdded] Message http_static_enable_reply added option: deprecated
+ - [MessageAdded] Message added: http_static_enable_v2_reply
+ - [MessageAdded] Message added: http_static_enable_v2
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
