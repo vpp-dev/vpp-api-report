@@ -151,7 +151,7 @@
 
 ```
 Listing 14 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~185-g399d44074
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~189-g69123a3f6
  - [FilesCount] Total file count decreased from 137 to 136
  - [FileRemoved] File removed: builtinurl
  http_static
@@ -165,8 +165,8 @@ Listing 14 differences:
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2
  - [MessageAdded] Message added: ip_table_add_del_v2_reply
+ - [MessageAdded] Message added: ip_table_add_del_v2
 ```
 
 </details>
