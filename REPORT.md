@@ -151,7 +151,7 @@
 
 ```
 Listing 14 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~206-g2f76b5728
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~207-g88c836c26
  - [FilesCount] Total file count decreased from 137 to 136
  - [FileRemoved] File removed: builtinurl
  http_static
