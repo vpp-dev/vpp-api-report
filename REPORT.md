@@ -108,7 +108,7 @@
   100 | qos                   | 1.1.1   | 7b7b5955 | core    |       2 |       19 |     6 |    9 |          
   101 | rd_cp                 | 1.0.1   | 871c3bee | core    |       1 |        2 |     - |    1 |          
   102 | rdma                  | 3.0.0   | 351383c2 | plugins |       1 |       10 |     3 |    5 |          
-  103 | session               | 4.0.0   | 37cc4b71 | core    |       2 |       26 |     2 |   13 |          
+  103 | session               | 4.0.1   | d5122da9 | core    |       2 |       32 |     4 |   16 |          
   104 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |          
   105 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |          
   106 | sr_mobile             | 0.1.0   | 2a93fd77 | plugins |       5 |        4 |     - |    2 |          
@@ -150,8 +150,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 14 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~210-g4779154a2
+Listing 27 differences:
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~212-gc4b5d1011
  - [FilesCount] Total file count decreased from 137 to 136
  - [FileRemoved] File removed: builtinurl
  http_static
@@ -167,6 +167,20 @@ Listing 14 differences:
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
  - [MessageAdded] Message added: ip_table_add_del_v2_reply
  - [MessageAdded] Message added: ip_table_add_del_v2
+ session
+ - [FileVersion] File version changed from 4.0.0 to 4.0.1
+ - [FileCRC] File CRC changed from 0x37cc4b71 to 0xd5122da9
+ - [FileContentsChanged] Number of Messages has increased from 26 to 32
+ - [FileContentsChanged] Number of Types has increased from 8 to 9
+ - [FileContentsChanged] Number of Enums has increased from 14 to 15
+ - [MsgOptionAdded] Message session_enable_disable added option: deprecated
+ - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
+ - [MessageAdded] Message added: session_sdl_add_del_reply
+ - [MessageAdded] Message added: session_enable_disable_v2
+ - [MessageAdded] Message added: session_sdl_dump
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_details
 ```
 
 </details>
