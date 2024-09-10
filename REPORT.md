@@ -151,7 +151,7 @@
 
 ```
 Listing 27 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~213-g9bb076235
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~217-g540842835
  - [FilesCount] Total file count decreased from 137 to 136
  - [FileRemoved] File removed: builtinurl
  http_static
@@ -165,8 +165,8 @@ Listing 27 differences:
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2
  - [MessageAdded] Message added: ip_table_add_del_v2_reply
+ - [MessageAdded] Message added: ip_table_add_del_v2
  session
  - [FileVersion] File version changed from 4.0.0 to 4.0.1
  - [FileCRC] File CRC changed from 0x37cc4b71 to 0xd5122da9
@@ -175,12 +175,12 @@ Listing 27 differences:
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
  - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
- - [MessageAdded] Message added: session_sdl_dump
  - [MessageAdded] Message added: session_sdl_add_del
- - [MessageAdded] Message added: session_sdl_add_del_reply
- - [MessageAdded] Message added: session_enable_disable_v2
  - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MessageAdded] Message added: session_enable_disable_v2
  - [MessageAdded] Message added: session_sdl_details
+ - [MessageAdded] Message added: session_sdl_dump
+ - [MessageAdded] Message added: session_sdl_add_del_reply
 ```
 
 </details>
