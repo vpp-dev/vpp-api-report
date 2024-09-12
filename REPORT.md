@@ -151,7 +151,7 @@
 
 ```
 Listing 27 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~219-g5b175eca2
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~221-g47968438d
  - [FilesCount] Total file count decreased from 137 to 136
  - [FileRemoved] File removed: builtinurl
  http_static
@@ -175,12 +175,12 @@ Listing 27 differences:
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
  - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
- - [MessageAdded] Message added: session_enable_disable_v2_reply
- - [MessageAdded] Message added: session_sdl_details
- - [MessageAdded] Message added: session_sdl_add_del_reply
- - [MessageAdded] Message added: session_sdl_add_del
- - [MessageAdded] Message added: session_sdl_dump
  - [MessageAdded] Message added: session_enable_disable_v2
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_add_del_reply
+ - [MessageAdded] Message added: session_sdl_details
+ - [MessageAdded] Message added: session_sdl_dump
 ```
 
 </details>
