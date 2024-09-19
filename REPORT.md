@@ -152,22 +152,22 @@
 
 ```
 Listing 27 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~229-g70d2a08e7
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~231-g3ecd6840a
  - [FileRemoved] File removed: builtinurl
  - [FileAdded] File added: pvti
  http_static
  - [FileVersion] File version changed from 2.1.0 to 2.2.0
  - [FileCRC] File CRC changed from 0xd29e72e9 to 0x42dd9fb5
  - [FileContentsChanged] Number of Messages has increased from 2 to 4
- - [MsgOptionAdded] Message http_static_enable_reply added option: deprecated
  - [MsgOptionAdded] Message http_static_enable added option: deprecated
+ - [MsgOptionAdded] Message http_static_enable_reply added option: deprecated
  - [MessageAdded] Message added: http_static_enable_v2
  - [MessageAdded] Message added: http_static_enable_v2_reply
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2
  - [MessageAdded] Message added: ip_table_add_del_v2_reply
+ - [MessageAdded] Message added: ip_table_add_del_v2
  session
  - [FileVersion] File version changed from 4.0.0 to 4.0.1
  - [FileCRC] File CRC changed from 0x37cc4b71 to 0xd5122da9
@@ -177,11 +177,11 @@ Listing 27 differences:
  - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
  - [MessageAdded] Message added: session_sdl_dump
- - [MessageAdded] Message added: session_sdl_add_del
- - [MessageAdded] Message added: session_sdl_details
- - [MessageAdded] Message added: session_enable_disable_v2_reply
  - [MessageAdded] Message added: session_enable_disable_v2
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MessageAdded] Message added: session_sdl_add_del
  - [MessageAdded] Message added: session_sdl_add_del_reply
+ - [MessageAdded] Message added: session_sdl_details
 ```
 
 </details>
