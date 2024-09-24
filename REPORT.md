@@ -152,7 +152,7 @@
 
 ```
 Listing 27 differences:
- - [Version] Schema version is different: 24.06-release vs 24.10-rc0~237-g0ef24297e
+ - [Version] Schema version is different: 24.06-release vs 24.10-rc0~238-gbf0a6f887
  - [FileRemoved] File removed: builtinurl
  - [FileAdded] File added: pvti
  http_static
@@ -174,13 +174,13 @@ Listing 27 differences:
  - [FileContentsChanged] Number of Messages has increased from 26 to 32
  - [FileContentsChanged] Number of Types has increased from 8 to 9
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
- - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
+ - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MessageAdded] Message added: session_enable_disable_v2
- - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
  - [MessageAdded] Message added: session_sdl_add_del_reply
  - [MessageAdded] Message added: session_sdl_dump
- - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MessageAdded] Message added: session_sdl_add_del
  - [MessageAdded] Message added: session_sdl_details
 ```
 
