@@ -109,40 +109,41 @@
   101 | qos                   | 1.1.1   | 7b7b5955 | core    |       2 |       19 |     6 |    9 |          
   102 | rd_cp                 | 1.0.1   | 871c3bee | core    |       1 |        2 |     - |    1 |          
   103 | rdma                  | 3.0.0   | 351383c2 | plugins |       1 |       10 |     3 |    5 |          
-  104 | session               | 4.0.1   | d5122da9 | core    |       2 |       32 |     4 |   16 |          
-  105 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |          
-  106 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |          
-  107 | sr_mobile             | 0.1.0   | 2a93fd77 | plugins |       5 |        4 |     - |    2 |          
-  108 | sr_mobile_types       | 0.1.0   | 7afa7d45 | plugins |       - |        - |     1 |    - |          
-  109 | sr_mpls               | 3.0.0   | 156edb17 | plugins |       3 |       10 |     - |    5 |          
-  110 | sr_pt                 | 1.0.0   | 1fddedad | core    |       1 |        6 |     - |    3 |          
-  111 | sr_types              | 1.0.0   | 7955bd50 | core    |       - |        - |     3 |    - |          
-  112 | stn                   | 2.0.0   | 9cfaef64 | plugins |       2 |        4 |     - |    2 |          
-  113 | svs                   | 1.0.0   | 816cf275 | plugins |       2 |       10 |     - |    5 |          
-  114 | syslog                | 1.0.0   | 5ad12a74 | core    |       1 |        8 |     1 |    4 |          
-  115 | tapv2                 | 4.0.0   | c2f80dc7 | core    |       3 |        8 |     1 |    4 |          
-  116 | tcp                   | 2.0.0   | 93d07485 | core    |       1 |        2 |     - |    1 |          
-  117 | teib                  | 1.0.0   | 14ded985 | core    |       2 |        4 |     1 |    2 |          
-  118 | tls_openssl           | 2.0.0   | 7386fbcd | plugins |       - |        2 |     - |    1 |          
-  119 | trace                 | 1.0.0   | 397cbf90 | plugins |       - |        6 |     - |    3 |          
-  120 | tracedump             | 0.2.0   | 56abf80a | plugins |       - |       17 |     1 |    8 |          
-  121 | tracenode             | 0.1.0   | dbc1eb27 | plugins |       1 |        2 |     - |    1 |          
-  122 | tunnel_types          | 1.0.1   | 882f6758 | core    |       2 |        - |     4 |    - |          
-  123 | udp                   | 1.1.0   | 6804c5af | core    |       1 |        8 |     3 |    4 |          
-  124 | udp_ping              | 3.0.0   | 16d961db | plugins |       1 |        4 |     - |    2 |          
-  125 | urpf                  | 1.0.0   | 88759016 | plugins |       3 |        6 |     1 |    3 |          
-  126 | vhost_user            | 4.1.1   | d49ae8cd | plugins |       3 |       12 |     - |    6 |          
-  127 | virtio                | 3.0.0   | a507d784 | core    |       3 |        8 |     1 |    4 |          
-  128 | virtio_types          | 1.0.0   | 7a70a44e | core    |       - |        - |     2 |    - |          
-  129 | vlib                  | 1.0.0   | 9a9e84e4 | core    |       - |       18 |     1 |    9 |          
-  130 | vmxnet3               | 1.2.0   | 609454ea | plugins |       2 |        8 |     2 |    4 |          
-  131 | vpe                   | 1.7.0   | bbfa7484 | core    |       1 |        6 |     - |    3 |          
-  132 | vpe_types             | 1.0.0   | 5f754a1c | core    |       - |        - |     4 |    - |          
-  133 | vrrp                  | 1.1.1   | 674aea12 | plugins |       3 |       21 |     7 |   10 |          
-  134 | vxlan                 | 2.1.0   | 95381587 | plugins |       2 |       14 |     - |    7 |          
-  135 | vxlan_gpe             | 2.1.0   | 3bc06278 | core    |       2 |       10 |     - |    5 |          
-  136 | vxlan_gpe_ioam_export | 1.0.0   | 26bebf64 | plugins |       1 |        2 |     - |    1 |          
-  137 | wireguard             | 1.3.0   | 5d8f9252 | plugins |       2 |       17 |     3 |    8 |          
+  104 | session               | 4.0.2   | 387cf3cc | core    |       2 |       36 |     5 |   18 |          
+  105 | snort                 | 1.0.0   | 8209b13d | plugins |       2 |       25 |     - |   11 |          
+  106 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |          
+  107 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |          
+  108 | sr_mobile             | 0.1.0   | 2a93fd77 | plugins |       5 |        4 |     - |    2 |          
+  109 | sr_mobile_types       | 0.1.0   | 7afa7d45 | plugins |       - |        - |     1 |    - |          
+  110 | sr_mpls               | 3.0.0   | 156edb17 | plugins |       3 |       10 |     - |    5 |          
+  111 | sr_pt                 | 1.0.0   | 1fddedad | core    |       1 |        6 |     - |    3 |          
+  112 | sr_types              | 1.0.0   | 7955bd50 | core    |       - |        - |     3 |    - |          
+  113 | stn                   | 2.0.0   | 9cfaef64 | plugins |       2 |        4 |     - |    2 |          
+  114 | svs                   | 1.0.0   | 816cf275 | plugins |       2 |       10 |     - |    5 |          
+  115 | syslog                | 1.0.0   | 5ad12a74 | core    |       1 |        8 |     1 |    4 |          
+  116 | tapv2                 | 4.0.0   | c2f80dc7 | core    |       3 |        8 |     1 |    4 |          
+  117 | tcp                   | 2.0.0   | 93d07485 | core    |       1 |        2 |     - |    1 |          
+  118 | teib                  | 1.0.0   | 14ded985 | core    |       2 |        4 |     1 |    2 |          
+  119 | tls_openssl           | 2.0.0   | 7386fbcd | plugins |       - |        2 |     - |    1 |          
+  120 | trace                 | 1.0.0   | 397cbf90 | plugins |       - |        6 |     - |    3 |          
+  121 | tracedump             | 0.2.0   | 56abf80a | plugins |       - |       17 |     1 |    8 |          
+  122 | tracenode             | 0.1.0   | dbc1eb27 | plugins |       1 |        2 |     - |    1 |          
+  123 | tunnel_types          | 1.0.1   | 882f6758 | core    |       2 |        - |     4 |    - |          
+  124 | udp                   | 1.1.0   | 6804c5af | core    |       1 |        8 |     3 |    4 |          
+  125 | udp_ping              | 3.0.0   | 16d961db | plugins |       1 |        4 |     - |    2 |          
+  126 | urpf                  | 1.0.0   | 88759016 | plugins |       3 |        6 |     1 |    3 |          
+  127 | vhost_user            | 4.1.1   | d49ae8cd | plugins |       3 |       12 |     - |    6 |          
+  128 | virtio                | 3.0.0   | a507d784 | core    |       3 |        8 |     1 |    4 |          
+  129 | virtio_types          | 1.0.0   | 7a70a44e | core    |       - |        - |     2 |    - |          
+  130 | vlib                  | 1.0.0   | 9a9e84e4 | core    |       - |       18 |     1 |    9 |          
+  131 | vmxnet3               | 1.2.0   | 609454ea | plugins |       2 |        8 |     2 |    4 |          
+  132 | vpe                   | 1.7.0   | bbfa7484 | core    |       1 |        6 |     - |    3 |          
+  133 | vpe_types             | 1.0.0   | 5f754a1c | core    |       - |        - |     4 |    - |          
+  134 | vrrp                  | 1.1.1   | 674aea12 | plugins |       3 |       21 |     7 |   10 |          
+  135 | vxlan                 | 2.1.0   | 95381587 | plugins |       2 |       14 |     - |    7 |          
+  136 | vxlan_gpe             | 2.1.0   | 3bc06278 | core    |       2 |       10 |     - |    5 |          
+  137 | vxlan_gpe_ioam_export | 1.0.0   | 26bebf64 | plugins |       1 |        2 |     - |    1 |          
+  138 | wireguard             | 1.3.0   | 5d8f9252 | plugins |       2 |       17 |     3 |    8 |          
 ```
 
 </details>
@@ -151,10 +152,12 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 27 differences:
- - [Version] Schema version is different: 24.06-release vs 25.02-rc0~11-gd0e8bd75f
+Listing 33 differences:
+ - [Version] Schema version is different: 24.06-release vs 25.02-rc0~15-g5a4c7a9ce
+ - [FilesCount] Total file count increased from 137 to 138
  - [FileRemoved] File removed: builtinurl
  - [FileAdded] File added: pvti
+ - [FileAdded] File added: snort
  http_static
  - [FileVersion] File version changed from 2.1.0 to 2.2.0
  - [FileCRC] File CRC changed from 0xd29e72e9 to 0x42dd9fb5
@@ -169,19 +172,23 @@ Listing 27 differences:
  - [MessageAdded] Message added: ip_table_add_del_v2_reply
  - [MessageAdded] Message added: ip_table_add_del_v2
  session
- - [FileVersion] File version changed from 4.0.0 to 4.0.1
- - [FileCRC] File CRC changed from 0x37cc4b71 to 0xd5122da9
- - [FileContentsChanged] Number of Messages has increased from 26 to 32
- - [FileContentsChanged] Number of Types has increased from 8 to 9
+ - [FileVersion] File version changed from 4.0.0 to 4.0.2
+ - [FileCRC] File CRC changed from 0x37cc4b71 to 0x387cf3cc
+ - [FileContentsChanged] Number of Messages has increased from 26 to 36
+ - [FileContentsChanged] Number of Types has increased from 8 to 10
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable added option: deprecated
+ - [MessageAdded] Message added: session_sdl_v2_details
  - [MessageAdded] Message added: session_sdl_dump
- - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_add_del_v2
  - [MessageAdded] Message added: session_sdl_details
- - [MessageAdded] Message added: session_enable_disable_v2
- - [MessageAdded] Message added: session_enable_disable_v2_reply
  - [MessageAdded] Message added: session_sdl_add_del_reply
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MessageAdded] Message added: session_enable_disable_v2
+ - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
 ```
 
 </details>
