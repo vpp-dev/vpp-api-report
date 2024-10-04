@@ -153,7 +153,7 @@
 
 ```
 Listing 33 differences:
- - [Version] Schema version is different: 24.06-release vs 25.02-rc0~19-g2c52f5e88
+ - [Version] Schema version is different: 24.06-release vs 25.02-rc0~24-g08894464d
  - [FilesCount] Total file count increased from 137 to 138
  - [FileRemoved] File removed: builtinurl
  - [FileAdded] File added: pvti
@@ -162,8 +162,8 @@ Listing 33 differences:
  - [FileVersion] File version changed from 2.1.0 to 2.2.0
  - [FileCRC] File CRC changed from 0xd29e72e9 to 0x42dd9fb5
  - [FileContentsChanged] Number of Messages has increased from 2 to 4
- - [MsgOptionAdded] Message http_static_enable_reply added option: deprecated
  - [MsgOptionAdded] Message http_static_enable added option: deprecated
+ - [MsgOptionAdded] Message http_static_enable_reply added option: deprecated
  - [MessageAdded] Message added: http_static_enable_v2
  - [MessageAdded] Message added: http_static_enable_v2_reply
  ip
@@ -179,16 +179,16 @@ Listing 33 differences:
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
  - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
- - [MessageAdded] Message added: session_sdl_add_del
- - [MessageAdded] Message added: session_sdl_details
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_sdl_dump
- - [MessageAdded] Message added: session_enable_disable_v2
- - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_sdl_v2_details
  - [MessageAdded] Message added: session_sdl_add_del_reply
  - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_enable_disable_v2
+ - [MessageAdded] Message added: session_sdl_details
  - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_dump
+ - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
 ```
 
 </details>
