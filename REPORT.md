@@ -169,8 +169,8 @@ Listing 38 differences:
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2
  - [MessageAdded] Message added: ip_table_add_del_v2_reply
+ - [MessageAdded] Message added: ip_table_add_del_v2
  pg
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
@@ -185,16 +185,16 @@ Listing 38 differences:
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
  - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_sdl_details
- - [MessageAdded] Message added: session_sdl_add_del
  - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_enable_disable_v2_reply
- - [MessageAdded] Message added: session_sdl_add_del_reply
- - [MessageAdded] Message added: session_sdl_v2_details
- - [MessageAdded] Message added: session_sdl_v2_dump
  - [MessageAdded] Message added: session_sdl_dump
+ - [MessageAdded] Message added: session_sdl_details
+ - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_add_del_reply
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
  - [MessageAdded] Message added: session_enable_disable_v2
+ - [MessageAdded] Message added: session_sdl_v2_details
 ```
 
 </details>
