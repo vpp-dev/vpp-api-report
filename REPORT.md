@@ -15,7 +15,7 @@
     7 | arp                   | 1.0.0   | b57796ae | core    |       3 |        8 |     1 |    4 |          
     8 | arping                | 1.0.0   | 8b2c8f39 | plugins |       3 |        4 |     - |    2 |          
     9 | avf                   | 1.0.0   | 9f5a6a20 | plugins |       1 |        4 |     - |    2 |          
-   10 | bfd                   | 2.0.0   | e65443a6 | core    |       2 |       31 |     1 |   15 |          
+   10 | bfd                   | 2.0.0   | 9764c249 | core    |       2 |       33 |     1 |   16 |          
    11 | bier                  | 1.2.1   | 8d1cd497 | core    |       2 |       22 |     2 |   11 |          
    12 | bond                  | 2.1.0   | a03f5330 | core    |       2 |       24 |     2 |   12 |          
    13 | bpf_trace_filter      | 0.1.0   | b682a79a | plugins |       - |        4 |     - |    2 |          
@@ -152,12 +152,17 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 38 differences:
- - [Version] Schema version is different: 24.06-release vs 25.02-rc0~51-g514098ee8
+Listing 42 differences:
+ - [Version] Schema version is different: 24.06-release vs 25.02-rc0~52-g17a918133
  - [FilesCount] Total file count increased from 137 to 138
  - [FileRemoved] File removed: builtinurl
  - [FileAdded] File added: pvti
  - [FileAdded] File added: snort
+ bfd
+ - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
+ - [FileContentsChanged] Number of Messages has increased from 31 to 33
+ - [MessageAdded] Message added: bfd_udp_enable_multihop
+ - [MessageAdded] Message added: bfd_udp_enable_multihop_reply
  http_static
  - [FileVersion] File version changed from 2.1.0 to 2.2.0
  - [FileCRC] File CRC changed from 0xd29e72e9 to 0x42dd9fb5
@@ -183,18 +188,18 @@ Listing 38 differences:
  - [FileContentsChanged] Number of Messages has increased from 26 to 36
  - [FileContentsChanged] Number of Types has increased from 8 to 10
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
- - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
- - [MessageAdded] Message added: session_enable_disable_v2
- - [MessageAdded] Message added: session_enable_disable_v2_reply
- - [MessageAdded] Message added: session_sdl_add_del
+ - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_sdl_details
- - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_enable_disable_v2
  - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_sdl_dump
  - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
  - [MessageAdded] Message added: session_sdl_add_del_reply
+ - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_dump
+ - [MessageAdded] Message added: session_sdl_details
 ```
 
 </details>
