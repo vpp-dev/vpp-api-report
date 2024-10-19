@@ -188,18 +188,18 @@ Listing 42 differences:
  - [FileContentsChanged] Number of Messages has increased from 26 to 36
  - [FileContentsChanged] Number of Types has increased from 8 to 10
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
- - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_sdl_v2_dump
- - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MessageAdded] Message added: session_sdl_add_del_reply
- - [MessageAdded] Message added: session_sdl_dump
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
  - [MessageAdded] Message added: session_sdl_details
+ - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_sdl_v2_dump
  - [MessageAdded] Message added: session_sdl_v2_details
- - [MessageAdded] Message added: session_enable_disable_v2
  - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_dump
+ - [MessageAdded] Message added: session_enable_disable_v2
 ```
 
 </details>
