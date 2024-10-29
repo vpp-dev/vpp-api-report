@@ -11,7 +11,7 @@
     3 | acl_types             | 1.0.0   | 878da4fa | plugins |       2 |        - |     3 |    - |          
     4 | adl                   | 1.0.1   | b752b7a2 | plugins |       1 |        4 |     - |    2 |          
     5 | af_packet             | 2.0.0   | 5b12de21 | plugins |       2 |       12 |     2 |    6 |          
-    6 | af_xdp                | 1.0.0   | d2949266 | plugins |       1 |        8 |     2 |    4 |          
+    6 | af_xdp                | 1.0.0   | 2d18a436 | plugins |       1 |        4 |     2 |    2 |          
     7 | arp                   | 1.0.0   | b57796ae | core    |       3 |        8 |     1 |    4 |          
     8 | arping                | 1.0.0   | 8b2c8f39 | plugins |       3 |        4 |     - |    2 |          
     9 | avf                   | 1.0.0   | 9f5a6a20 | plugins |       1 |        4 |     - |    2 |          
@@ -152,17 +152,24 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 42 differences:
- - [Version] Schema version is different: 24.06-release vs 25.02-rc0~82-g8987d3a4c
+Listing 48 differences:
+ - [Version] Schema version is different: 24.06-release vs 25.02-rc0~85-gdcc6cd433
  - [FilesCount] Total file count increased from 137 to 138
  - [FileRemoved] File removed: builtinurl
  - [FileAdded] File added: pvti
  - [FileAdded] File added: snort
+ af_xdp
+ - [FileCRC] File CRC changed from 0xd2949266 to 0x2d18a436
+ - [FileContentsChanged] Number of Messages has decreased from 8 to 4
+ - [MessageRemoved] Message removed: af_xdp_create_v2
+ - [MessageRemoved] Message removed: af_xdp_create_reply
+ - [MessageRemoved] Message removed: af_xdp_create_v2_reply
+ - [MessageRemoved] Message removed: af_xdp_create
  bfd
  - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
- - [MessageAdded] Message added: bfd_udp_enable_multihop
  - [MessageAdded] Message added: bfd_udp_enable_multihop_reply
+ - [MessageAdded] Message added: bfd_udp_enable_multihop
  http_static
  - [FileVersion] File version changed from 2.1.0 to 2.2.0
  - [FileCRC] File CRC changed from 0xd29e72e9 to 0x42dd9fb5
@@ -174,14 +181,14 @@ Listing 42 differences:
  ip
  - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
  - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2_reply
  - [MessageAdded] Message added: ip_table_add_del_v2
+ - [MessageAdded] Message added: ip_table_add_del_v2_reply
  pg
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
  - [FileContentsChanged] Number of Messages has increased from 10 to 12
- - [MessageAdded] Message added: pg_delete_interface_reply
  - [MessageAdded] Message added: pg_delete_interface
+ - [MessageAdded] Message added: pg_delete_interface_reply
  session
  - [FileVersion] File version changed from 4.0.0 to 4.0.2
  - [FileCRC] File CRC changed from 0x37cc4b71 to 0x387cf3cc
@@ -190,16 +197,16 @@ Listing 42 differences:
  - [FileContentsChanged] Number of Enums has increased from 14 to 15
  - [MsgOptionAdded] Message session_enable_disable added option: deprecated
  - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
- - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_enable_disable_v2
+ - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_add_del_reply
+ - [MessageAdded] Message added: session_sdl_add_del_v2
  - [MessageAdded] Message added: session_sdl_add_del_v2_reply
  - [MessageAdded] Message added: session_sdl_details
- - [MessageAdded] Message added: session_enable_disable_v2
- - [MessageAdded] Message added: session_enable_disable_v2_reply
- - [MessageAdded] Message added: session_sdl_add_del_reply
- - [MessageAdded] Message added: session_sdl_v2_details
- - [MessageAdded] Message added: session_sdl_add_del_v2
  - [MessageAdded] Message added: session_sdl_dump
- - [MessageAdded] Message added: session_sdl_add_del
+ - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_enable_disable_v2_reply
+ - [MessageAdded] Message added: session_sdl_v2_details
 ```
 
 </details>
