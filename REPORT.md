@@ -152,11 +152,9 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 48 differences:
- - [Version] Schema version is different: 24.06-release vs 25.02-rc0~89-g3b290df57
+Listing 30 differences:
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~92-gbfad6b7a8
  - [FilesCount] Total file count increased from 137 to 138
- - [FileRemoved] File removed: builtinurl
- - [FileAdded] File added: pvti
  - [FileAdded] File added: snort
  af_xdp
  - [FileCRC] File CRC changed from 0xd2949266 to 0x2d18a436
@@ -170,19 +168,6 @@ Listing 48 differences:
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
  - [MessageAdded] Message added: bfd_udp_enable_multihop_reply
  - [MessageAdded] Message added: bfd_udp_enable_multihop
- http_static
- - [FileVersion] File version changed from 2.1.0 to 2.2.0
- - [FileCRC] File CRC changed from 0xd29e72e9 to 0x42dd9fb5
- - [FileContentsChanged] Number of Messages has increased from 2 to 4
- - [MsgOptionAdded] Message http_static_enable added option: deprecated
- - [MsgOptionAdded] Message http_static_enable_reply added option: deprecated
- - [MessageAdded] Message added: http_static_enable_v2
- - [MessageAdded] Message added: http_static_enable_v2_reply
- ip
- - [FileCRC] File CRC changed from 0xbd2f873b to 0x4645df38
- - [FileContentsChanged] Number of Messages has increased from 93 to 95
- - [MessageAdded] Message added: ip_table_add_del_v2_reply
- - [MessageAdded] Message added: ip_table_add_del_v2
  pg
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
@@ -190,22 +175,17 @@ Listing 48 differences:
  - [MessageAdded] Message added: pg_delete_interface
  - [MessageAdded] Message added: pg_delete_interface_reply
  session
- - [FileVersion] File version changed from 4.0.0 to 4.0.2
- - [FileCRC] File CRC changed from 0x37cc4b71 to 0x387cf3cc
- - [FileContentsChanged] Number of Messages has increased from 26 to 36
- - [FileContentsChanged] Number of Types has increased from 8 to 10
- - [FileContentsChanged] Number of Enums has increased from 14 to 15
- - [MsgOptionAdded] Message session_enable_disable added option: deprecated
- - [MsgOptionAdded] Message session_enable_disable_reply added option: deprecated
- - [MessageAdded] Message added: session_sdl_dump
- - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [FileVersion] File version changed from 4.0.1 to 4.0.2
+ - [FileCRC] File CRC changed from 0xd5122da9 to 0x387cf3cc
+ - [FileContentsChanged] Number of Messages has increased from 32 to 36
+ - [FileContentsChanged] Number of Types has increased from 9 to 10
+ - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_details added option: deprecated
  - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_enable_disable_v2_reply
- - [MessageAdded] Message added: session_sdl_details
- - [MessageAdded] Message added: session_sdl_add_del_reply
+ - [MessageAdded] Message added: session_sdl_add_del_v2
  - [MessageAdded] Message added: session_sdl_v2_dump
- - [MessageAdded] Message added: session_enable_disable_v2
- - [MessageAdded] Message added: session_sdl_add_del
  - [MessageAdded] Message added: session_sdl_v2_details
 ```
 
