@@ -153,7 +153,7 @@
 
 ```
 Listing 30 differences:
- - [Version] Schema version is different: 24.10-release vs 25.02-rc0~92-gbfad6b7a8
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~93-gbd32d6234
  - [FilesCount] Total file count increased from 137 to 138
  - [FileAdded] File added: snort
  af_xdp
@@ -179,12 +179,12 @@ Listing 30 differences:
  - [FileCRC] File CRC changed from 0xd5122da9 to 0x387cf3cc
  - [FileContentsChanged] Number of Messages has increased from 32 to 36
  - [FileContentsChanged] Number of Types has increased from 9 to 10
- - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
- - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
  - [MsgOptionAdded] Message session_sdl_details added option: deprecated
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
  - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
  - [MessageAdded] Message added: session_sdl_v2_dump
  - [MessageAdded] Message added: session_sdl_v2_details
 ```
