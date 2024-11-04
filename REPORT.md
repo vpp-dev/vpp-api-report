@@ -159,10 +159,10 @@ Listing 30 differences:
  af_xdp
  - [FileCRC] File CRC changed from 0xd2949266 to 0x2d18a436
  - [FileContentsChanged] Number of Messages has decreased from 8 to 4
- - [MessageRemoved] Message removed: af_xdp_create
- - [MessageRemoved] Message removed: af_xdp_create_v2
  - [MessageRemoved] Message removed: af_xdp_create_reply
  - [MessageRemoved] Message removed: af_xdp_create_v2_reply
+ - [MessageRemoved] Message removed: af_xdp_create
+ - [MessageRemoved] Message removed: af_xdp_create_v2
  bfd
  - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
@@ -172,20 +172,20 @@ Listing 30 differences:
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
  - [FileContentsChanged] Number of Messages has increased from 10 to 12
- - [MessageAdded] Message added: pg_delete_interface
  - [MessageAdded] Message added: pg_delete_interface_reply
+ - [MessageAdded] Message added: pg_delete_interface
  session
  - [FileVersion] File version changed from 4.0.1 to 4.0.2
  - [FileCRC] File CRC changed from 0xd5122da9 to 0x387cf3cc
  - [FileContentsChanged] Number of Messages has increased from 32 to 36
  - [FileContentsChanged] Number of Types has increased from 9 to 10
+ - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
  - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
  - [MsgOptionAdded] Message session_sdl_details added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
  - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
- - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
  - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MessageAdded] Message added: session_sdl_add_del_v2
  - [MessageAdded] Message added: session_sdl_v2_details
 ```
 
