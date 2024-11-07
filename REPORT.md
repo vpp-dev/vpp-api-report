@@ -109,7 +109,7 @@
   101 | qos                   | 1.1.1   | 7b7b5955 | core    |       2 |       19 |     6 |    9 |          
   102 | rd_cp                 | 1.0.1   | 871c3bee | core    |       1 |        2 |     - |    1 |          
   103 | rdma                  | 3.0.0   | 351383c2 | plugins |       1 |       10 |     3 |    5 |          
-  104 | session               | 4.0.2   | 387cf3cc | core    |       2 |       36 |     5 |   18 |          
+  104 | session               | 4.0.3   | 85f82b54 | core    |       2 |       40 |     5 |   20 |          
   105 | snort                 | 1.0.0   | 8209b13d | plugins |       2 |       25 |     - |   11 |          
   106 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |          
   107 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |          
@@ -152,8 +152,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 30 differences:
- - [Version] Schema version is different: 24.10-release vs 25.02-rc0~97-g5a612a469
+Listing 36 differences:
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~99-ge0c4e6e32
  - [FilesCount] Total file count increased from 137 to 138
  - [FileAdded] File added: snort
  af_xdp
@@ -166,8 +166,8 @@ Listing 30 differences:
  bfd
  - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
- - [MessageAdded] Message added: bfd_udp_enable_multihop_reply
  - [MessageAdded] Message added: bfd_udp_enable_multihop
+ - [MessageAdded] Message added: bfd_udp_enable_multihop_reply
  pg
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
@@ -175,18 +175,24 @@ Listing 30 differences:
  - [MessageAdded] Message added: pg_delete_interface
  - [MessageAdded] Message added: pg_delete_interface_reply
  session
- - [FileVersion] File version changed from 4.0.1 to 4.0.2
- - [FileCRC] File CRC changed from 0xd5122da9 to 0x387cf3cc
- - [FileContentsChanged] Number of Messages has increased from 32 to 36
+ - [FileVersion] File version changed from 4.0.1 to 4.0.3
+ - [FileCRC] File CRC changed from 0xd5122da9 to 0x85f82b54
+ - [FileContentsChanged] Number of Messages has increased from 32 to 40
  - [FileContentsChanged] Number of Types has increased from 9 to 10
- - [MsgOptionAdded] Message session_sdl_details added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
  - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
- - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MsgOptionAdded] Message session_rules_dump added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_details added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
+ - [MsgOptionAdded] Message session_rules_details added option: deprecated
  - [MessageAdded] Message added: session_sdl_v2_dump
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
  - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MessageAdded] Message added: session_sdl_v3_details
+ - [MessageAdded] Message added: session_rules_v2_dump
+ - [MessageAdded] Message added: session_rules_v2_details
+ - [MessageAdded] Message added: session_sdl_v3_dump
 ```
 
 </details>
