@@ -26,7 +26,7 @@
    18 | crypto_sw_scheduler   | 1.1.0   | f4b02951 | plugins |       - |        2 |     - |    1 |          
    19 | ct6                   | 1.0.0   | 5c824a95 | plugins |       1 |        2 |     - |    1 |          
    20 | det44                 | 1.0.0   | 6d6e88dd | plugins |       3 |       38 |     - |   19 |          
-   21 | dev                   | 0.0.1   | 36dfff5d | core    |       - |        8 |     2 |    4 |          
+   21 | dev                   | 0.0.1   | 86eacf88 | core    |       - |        8 |     2 |    4 |          
    22 | dhcp                  | 3.0.1   | c519013a | plugins |       3 |       31 |     9 |   14 |          
    23 | dhcp6_ia_na_client_cp | 1.0.1   | 6e8abdfb | plugins |       1 |        2 |     - |    1 |          
    24 | dhcp6_pd_client_cp    | 2.0.0   | d4418668 | plugins |       2 |        4 |     - |    2 |          
@@ -152,8 +152,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 36 differences:
- - [Version] Schema version is different: 24.10-release vs 25.02-rc0~99-ge0c4e6e32
+Listing 38 differences:
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~103-g99eed5ec6
  - [FilesCount] Total file count increased from 137 to 138
  - [FileAdded] File added: snort
  af_xdp
@@ -168,6 +168,9 @@ Listing 36 differences:
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
  - [MessageAdded] Message added: bfd_udp_enable_multihop
  - [MessageAdded] Message added: bfd_udp_enable_multihop_reply
+ dev
+ - [FileCRC] File CRC changed from 0x36dfff5d to 0x86eacf88
+ - [MessageCRC] Message dev_create_port_if changed CRC from 0x1eb00d01 to 0xdbdf06f3
  pg
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
@@ -179,20 +182,20 @@ Listing 36 differences:
  - [FileCRC] File CRC changed from 0xd5122da9 to 0x85f82b54
  - [FileContentsChanged] Number of Messages has increased from 32 to 40
  - [FileContentsChanged] Number of Types has increased from 9 to 10
+ - [MsgOptionAdded] Message session_sdl_details added option: deprecated
+ - [MsgOptionAdded] Message session_rules_details added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
  - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
  - [MsgOptionAdded] Message session_rules_dump added option: deprecated
- - [MsgOptionAdded] Message session_sdl_details added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
  - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
- - [MsgOptionAdded] Message session_rules_details added option: deprecated
- - [MessageAdded] Message added: session_sdl_v2_dump
- - [MessageAdded] Message added: session_sdl_v2_details
- - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_sdl_v3_details
+ - [MessageAdded] Message added: session_sdl_v3_dump
  - [MessageAdded] Message added: session_rules_v2_dump
  - [MessageAdded] Message added: session_rules_v2_details
- - [MessageAdded] Message added: session_sdl_v3_dump
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MessageAdded] Message added: session_sdl_v3_details
+ - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_v2_details
 ```
 
 </details>
