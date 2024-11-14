@@ -44,7 +44,7 @@
    36 | gre                   | 2.1.1   | 98b44dd1 | plugins |       3 |        4 |     2 |    2 |          
    37 | gso                   | 1.0.0   | 81a73026 | core    |       1 |        2 |     - |    1 |          
    38 | gtpu                  | 2.1.0   | dbbb4325 | plugins |       2 |       18 |     4 |    9 |          
-   39 | http_static           | 2.2.0   | 42dd9fb5 | plugins |       - |        4 |     - |    2 |          
+   39 | http_static           | 2.3.0   | 38453dc8 | plugins |       - |        4 |     - |    2 |          
    40 | idpf                  | 1.0.0   | 48384ea8 | plugins |       1 |        4 |     - |    2 |          
    41 | igmp                  | 1.0.0   | 95a4ff29 | plugins |       2 |       19 |     4 |    9 |          
    42 | ikev2                 | 1.0.1   | 388d5d85 | plugins |       3 |       56 |     - |   28 |          
@@ -152,17 +152,17 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 38 differences:
- - [Version] Schema version is different: 24.10-release vs 25.02-rc0~109-gc68c97083
+Listing 46 differences:
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~114-ga4597a74a
  - [FilesCount] Total file count increased from 137 to 138
  - [FileAdded] File added: snort
  af_xdp
  - [FileCRC] File CRC changed from 0xd2949266 to 0x2d18a436
  - [FileContentsChanged] Number of Messages has decreased from 8 to 4
- - [MessageRemoved] Message removed: af_xdp_create
- - [MessageRemoved] Message removed: af_xdp_create_v2
  - [MessageRemoved] Message removed: af_xdp_create_reply
  - [MessageRemoved] Message removed: af_xdp_create_v2_reply
+ - [MessageRemoved] Message removed: af_xdp_create
+ - [MessageRemoved] Message removed: af_xdp_create_v2
  bfd
  - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
@@ -171,31 +171,40 @@ Listing 38 differences:
  dev
  - [FileCRC] File CRC changed from 0x36dfff5d to 0x86eacf88
  - [MessageCRC] Message dev_create_port_if changed CRC from 0x1eb00d01 to 0xdbdf06f3
+ http_static
+ - [FileVersion] File version changed from 2.2.0 to 2.3.0
+ - [FileCRC] File CRC changed from 0x42dd9fb5 to 0x38453dc8
+ - [MessageRemoved] Message removed: http_static_enable
+ - [MessageRemoved] Message removed: http_static_enable_reply
+ - [MsgOptionAdded] Message http_static_enable_v2 added option: deprecated
+ - [MsgOptionAdded] Message http_static_enable_v2_reply added option: deprecated
+ - [MessageAdded] Message added: http_static_enable_v3
+ - [MessageAdded] Message added: http_static_enable_v3_reply
  pg
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
  - [FileContentsChanged] Number of Messages has increased from 10 to 12
- - [MessageAdded] Message added: pg_delete_interface
  - [MessageAdded] Message added: pg_delete_interface_reply
+ - [MessageAdded] Message added: pg_delete_interface
  session
  - [FileVersion] File version changed from 4.0.1 to 4.0.3
  - [FileCRC] File CRC changed from 0xd5122da9 to 0x85f82b54
  - [FileContentsChanged] Number of Messages has increased from 32 to 40
  - [FileContentsChanged] Number of Types has increased from 9 to 10
- - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
  - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
- - [MsgOptionAdded] Message session_rules_details added option: deprecated
  - [MsgOptionAdded] Message session_rules_dump added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
  - [MsgOptionAdded] Message session_sdl_details added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
+ - [MsgOptionAdded] Message session_rules_details added option: deprecated
+ - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_sdl_v2_details
  - [MessageAdded] Message added: session_sdl_v3_dump
  - [MessageAdded] Message added: session_rules_v2_dump
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_sdl_v2_details
- - [MessageAdded] Message added: session_rules_v2_details
- - [MessageAdded] Message added: session_sdl_v3_details
- - [MessageAdded] Message added: session_sdl_add_del_v2
  - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_rules_v2_details
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MessageAdded] Message added: session_sdl_v3_details
 ```
 
 </details>
