@@ -153,7 +153,7 @@
 
 ```
 Listing 46 differences:
- - [Version] Schema version is different: 24.10-release vs 25.02-rc0~126-g258b82975
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~128-g9cab992ff
  - [FilesCount] Total file count increased from 137 to 138
  - [FileAdded] File added: snort
  af_xdp
@@ -174,10 +174,10 @@ Listing 46 differences:
  http_static
  - [FileVersion] File version changed from 2.2.0 to 2.3.0
  - [FileCRC] File CRC changed from 0x42dd9fb5 to 0x38453dc8
- - [MsgOptionAdded] Message http_static_enable_v2 added option: deprecated
- - [MsgOptionAdded] Message http_static_enable_v2_reply added option: deprecated
  - [MessageRemoved] Message removed: http_static_enable
  - [MessageRemoved] Message removed: http_static_enable_reply
+ - [MsgOptionAdded] Message http_static_enable_v2 added option: deprecated
+ - [MsgOptionAdded] Message http_static_enable_v2_reply added option: deprecated
  - [MessageAdded] Message added: http_static_enable_v3
  - [MessageAdded] Message added: http_static_enable_v3_reply
  pg
@@ -191,20 +191,20 @@ Listing 46 differences:
  - [FileCRC] File CRC changed from 0xd5122da9 to 0x85f82b54
  - [FileContentsChanged] Number of Messages has increased from 32 to 40
  - [FileContentsChanged] Number of Types has increased from 9 to 10
- - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
  - [MsgOptionAdded] Message session_rules_details added option: deprecated
- - [MsgOptionAdded] Message session_sdl_details added option: deprecated
  - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
- - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
  - [MsgOptionAdded] Message session_rules_dump added option: deprecated
- - [MessageAdded] Message added: session_sdl_v2_dump
- - [MessageAdded] Message added: session_sdl_v3_details
- - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_sdl_v3_dump
+ - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_details added option: deprecated
  - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_rules_v2_dump
- - [MessageAdded] Message added: session_rules_v2_details
  - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_v3_dump
+ - [MessageAdded] Message added: session_rules_v2_dump
+ - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_sdl_v3_details
+ - [MessageAdded] Message added: session_rules_v2_details
 ```
 
 </details>
