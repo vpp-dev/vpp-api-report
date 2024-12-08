@@ -153,16 +153,16 @@
 
 ```
 Listing 46 differences:
- - [Version] Schema version is different: 24.10-release vs 25.02-rc0~161-g72bd2e585
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~163-gb8af24b26
  - [FilesCount] Total file count increased from 137 to 138
  - [FileAdded] File added: snort
  af_xdp
  - [FileCRC] File CRC changed from 0xd2949266 to 0x2d18a436
  - [FileContentsChanged] Number of Messages has decreased from 8 to 4
+ - [MessageRemoved] Message removed: af_xdp_create_v2
  - [MessageRemoved] Message removed: af_xdp_create_reply
  - [MessageRemoved] Message removed: af_xdp_create_v2_reply
  - [MessageRemoved] Message removed: af_xdp_create
- - [MessageRemoved] Message removed: af_xdp_create_v2
  bfd
  - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
@@ -193,17 +193,17 @@ Listing 46 differences:
  - [FileContentsChanged] Number of Types has increased from 9 to 10
  - [MsgOptionAdded] Message session_rules_dump added option: deprecated
  - [MsgOptionAdded] Message session_rules_details added option: deprecated
- - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
  - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
  - [MsgOptionAdded] Message session_sdl_details added option: deprecated
- - [MessageAdded] Message added: session_sdl_v2_details
- - [MessageAdded] Message added: session_rules_v2_dump
- - [MessageAdded] Message added: session_sdl_v3_details
  - [MessageAdded] Message added: session_sdl_v3_dump
+ - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_v3_details
+ - [MessageAdded] Message added: session_rules_v2_dump
  - [MessageAdded] Message added: session_sdl_add_del_v2
  - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_sdl_v2_dump
  - [MessageAdded] Message added: session_rules_v2_details
 ```
 
