@@ -54,7 +54,7 @@
    46 | ioam_cache            | 1.0.0   | d0a0cf20 | plugins |       - |        2 |     - |    1 |          
    47 | ioam_export           | 1.0.0   | 26bebf64 | plugins |       1 |        2 |     - |    1 |          
    48 | ioam_vxlan_gpe        | 1.0.0   | b49eb0b9 | plugins |       1 |       12 |     - |    6 |          
-   49 | ip                    | 3.2.0   | 4645df38 | core    |       5 |       95 |    10 |   47 |          
+   49 | ip                    | 3.2.0   | c2b1c41  | core    |       5 |       97 |    10 |   48 |          
    50 | ip6_nd                | 1.1.0   | 5f19a809 | core    |       2 |       17 |     2 |    8 |          
    51 | ip_neighbor           | 1.0.1   | 36db39bd | core    |       3 |       20 |     3 |    9 |          
    52 | ip_session_redirect   | 0.3.0   | f174f8ba | plugins |       3 |        6 |     - |    3 |          
@@ -152,8 +152,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 46 differences:
- - [Version] Schema version is different: 24.10-release vs 25.02-rc0~169-gf0a126a1e
+Listing 50 differences:
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~177-gdd02eb893
  - [FilesCount] Total file count increased from 137 to 138
  - [FileAdded] File added: snort
  af_xdp
@@ -166,20 +166,25 @@ Listing 46 differences:
  bfd
  - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
- - [MessageAdded] Message added: bfd_udp_enable_multihop
  - [MessageAdded] Message added: bfd_udp_enable_multihop_reply
+ - [MessageAdded] Message added: bfd_udp_enable_multihop
  dev
  - [FileCRC] File CRC changed from 0x36dfff5d to 0x86eacf88
  - [MessageCRC] Message dev_create_port_if changed CRC from 0x1eb00d01 to 0xdbdf06f3
  http_static
  - [FileVersion] File version changed from 2.2.0 to 2.3.0
  - [FileCRC] File CRC changed from 0x42dd9fb5 to 0x38453dc8
+ - [MessageRemoved] Message removed: http_static_enable
  - [MessageRemoved] Message removed: http_static_enable_reply
  - [MsgOptionAdded] Message http_static_enable_v2 added option: deprecated
  - [MsgOptionAdded] Message http_static_enable_v2_reply added option: deprecated
- - [MessageRemoved] Message removed: http_static_enable
- - [MessageAdded] Message added: http_static_enable_v3
  - [MessageAdded] Message added: http_static_enable_v3_reply
+ - [MessageAdded] Message added: http_static_enable_v3
+ ip
+ - [FileCRC] File CRC changed from 0x4645df38 to 0xc2b1c41
+ - [FileContentsChanged] Number of Messages has increased from 95 to 97
+ - [MessageAdded] Message added: sw_interface_ip4_enable_disable
+ - [MessageAdded] Message added: sw_interface_ip4_enable_disable_reply
  pg
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
@@ -191,20 +196,20 @@ Listing 46 differences:
  - [FileCRC] File CRC changed from 0xd5122da9 to 0x85f82b54
  - [FileContentsChanged] Number of Messages has increased from 32 to 40
  - [FileContentsChanged] Number of Types has increased from 9 to 10
- - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
  - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
- - [MsgOptionAdded] Message session_rules_dump added option: deprecated
- - [MsgOptionAdded] Message session_sdl_details added option: deprecated
  - [MsgOptionAdded] Message session_rules_details added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
  - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MsgOptionAdded] Message session_sdl_details added option: deprecated
+ - [MsgOptionAdded] Message session_rules_dump added option: deprecated
  - [MessageAdded] Message added: session_rules_v2_dump
- - [MessageAdded] Message added: session_rules_v2_details
  - [MessageAdded] Message added: session_sdl_v2_dump
- - [MessageAdded] Message added: session_sdl_v2_details
  - [MessageAdded] Message added: session_sdl_v3_dump
  - [MessageAdded] Message added: session_sdl_v3_details
+ - [MessageAdded] Message added: session_rules_v2_details
+ - [MessageAdded] Message added: session_sdl_v2_details
  - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
 ```
 
 </details>
