@@ -166,8 +166,8 @@ Listing 50 differences:
  bfd
  - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
- - [MessageAdded] Message added: bfd_udp_enable_multihop
  - [MessageAdded] Message added: bfd_udp_enable_multihop_reply
+ - [MessageAdded] Message added: bfd_udp_enable_multihop
  dev
  - [FileCRC] File CRC changed from 0x36dfff5d to 0x86eacf88
  - [MessageCRC] Message dev_create_port_if changed CRC from 0x1eb00d01 to 0xdbdf06f3
@@ -196,19 +196,19 @@ Listing 50 differences:
  - [FileCRC] File CRC changed from 0xd5122da9 to 0x85f82b54
  - [FileContentsChanged] Number of Messages has increased from 32 to 40
  - [FileContentsChanged] Number of Types has increased from 9 to 10
- - [MsgOptionAdded] Message session_sdl_details added option: deprecated
- - [MsgOptionAdded] Message session_rules_dump added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
- - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
  - [MsgOptionAdded] Message session_rules_details added option: deprecated
+ - [MsgOptionAdded] Message session_rules_dump added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_details added option: deprecated
  - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
  - [MessageAdded] Message added: session_rules_v2_dump
+ - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_sdl_v2_dump
  - [MessageAdded] Message added: session_rules_v2_details
  - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_sdl_v2_dump
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
  - [MessageAdded] Message added: session_sdl_v3_details
- - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
  - [MessageAdded] Message added: session_sdl_v3_dump
 ```
 
