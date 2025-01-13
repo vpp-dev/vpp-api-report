@@ -154,17 +154,17 @@
 
 ```
 Listing 57 differences:
- - [Version] Schema version is different: 24.10-release vs 25.02-rc0~230-g6676d9516
+ - [Version] Schema version is different: 24.10-release vs 25.02-rc0~231-gb647193cd
  - [FilesCount] Total file count increased from 137 to 139
  - [FileAdded] File added: auto_sdl
  - [FileAdded] File added: snort
  af_xdp
  - [FileCRC] File CRC changed from 0xd2949266 to 0x2d18a436
  - [FileContentsChanged] Number of Messages has decreased from 8 to 4
+ - [MessageRemoved] Message removed: af_xdp_create_v2_reply
  - [MessageRemoved] Message removed: af_xdp_create
  - [MessageRemoved] Message removed: af_xdp_create_v2
  - [MessageRemoved] Message removed: af_xdp_create_reply
- - [MessageRemoved] Message removed: af_xdp_create_v2_reply
  bfd
  - [FileCRC] File CRC changed from 0xe65443a6 to 0x9764c249
  - [FileContentsChanged] Number of Messages has increased from 31 to 33
@@ -185,10 +185,10 @@ Listing 57 differences:
  ikev2
  - [FileCRC] File CRC changed from 0x388d5d85 to 0xfdeb2617
  - [FileContentsChanged] Number of Messages has increased from 56 to 60
- - [MessageAdded] Message added: ikev2_plugin_set_sleep_interval
  - [MessageAdded] Message added: ikev2_get_sleep_interval
- - [MessageAdded] Message added: ikev2_plugin_set_sleep_interval_reply
  - [MessageAdded] Message added: ikev2_get_sleep_interval_reply
+ - [MessageAdded] Message added: ikev2_plugin_set_sleep_interval_reply
+ - [MessageAdded] Message added: ikev2_plugin_set_sleep_interval
  ip
  - [FileCRC] File CRC changed from 0x4645df38 to 0xc2b1c41
  - [FileContentsChanged] Number of Messages has increased from 95 to 97
@@ -206,19 +206,19 @@ Listing 57 differences:
  - [FileContentsChanged] Number of Messages has increased from 32 to 40
  - [FileContentsChanged] Number of Types has increased from 9 to 10
  - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
- - [MsgOptionAdded] Message session_sdl_details added option: deprecated
- - [MsgOptionAdded] Message session_rules_details added option: deprecated
- - [MsgOptionAdded] Message session_rules_dump added option: deprecated
- - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
  - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
- - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_sdl_v3_dump
+ - [MsgOptionAdded] Message session_sdl_details added option: deprecated
+ - [MsgOptionAdded] Message session_rules_dump added option: deprecated
+ - [MsgOptionAdded] Message session_rules_details added option: deprecated
+ - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
+ - [MessageAdded] Message added: session_rules_v2_details
+ - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MessageAdded] Message added: session_sdl_v2_dump
  - [MessageAdded] Message added: session_sdl_v3_details
  - [MessageAdded] Message added: session_rules_v2_dump
  - [MessageAdded] Message added: session_sdl_v2_details
- - [MessageAdded] Message added: session_sdl_add_del_v2_reply
- - [MessageAdded] Message added: session_rules_v2_details
- - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_sdl_v3_dump
 ```
 
 </details>
