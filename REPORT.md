@@ -45,7 +45,7 @@
    37 | gre                   | 2.1.1   | 98b44dd1 | plugins |       3 |        4 |     2 |    2 |          
    38 | gso                   | 1.0.0   | 81a73026 | core    |       1 |        2 |     - |    1 |          
    39 | gtpu                  | 2.1.0   | dbbb4325 | plugins |       2 |       18 |     4 |    9 |          
-   40 | http_static           | 2.3.0   | 38453dc8 | plugins |       - |        4 |     - |    2 |          
+   40 | http_static           | 2.4.0   | ce4add2d | plugins |       - |        6 |     - |    3 |          
    41 | idpf                  | 1.0.0   | 48384ea8 | plugins |       1 |        4 |     - |    2 |          
    42 | igmp                  | 1.0.0   | 95a4ff29 | plugins |       2 |       19 |     4 |    9 |          
    43 | ikev2                 | 1.0.1   | fdeb2617 | plugins |       3 |       60 |     - |   30 |          
@@ -154,8 +154,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 58 differences:
- - [Version] Schema version is different: 24.10-release vs 25.06-rc0~6-g9d17b551a
+Listing 61 differences:
+ - [Version] Schema version is different: 24.10-release vs 25.06-rc0~13-g5e94895df
  - [FilesCount] Total file count increased from 137 to 140
  - [FileAdded] File added: auto_sdl
  - [FileAdded] File added: sflow
@@ -176,26 +176,29 @@ Listing 58 differences:
  - [FileCRC] File CRC changed from 0x36dfff5d to 0x86eacf88
  - [MessageCRC] Message dev_create_port_if changed CRC from 0x1eb00d01 to 0xdbdf06f3
  http_static
- - [FileVersion] File version changed from 2.2.0 to 2.3.0
- - [FileCRC] File CRC changed from 0x42dd9fb5 to 0x38453dc8
+ - [FileVersion] File version changed from 2.2.0 to 2.4.0
+ - [FileCRC] File CRC changed from 0x42dd9fb5 to 0xce4add2d
+ - [FileContentsChanged] Number of Messages has increased from 4 to 6
+ - [MessageRemoved] Message removed: http_static_enable
  - [MessageRemoved] Message removed: http_static_enable_reply
  - [MsgOptionAdded] Message http_static_enable_v2 added option: deprecated
  - [MsgOptionAdded] Message http_static_enable_v2_reply added option: deprecated
- - [MessageRemoved] Message removed: http_static_enable
  - [MessageAdded] Message added: http_static_enable_v3
  - [MessageAdded] Message added: http_static_enable_v3_reply
+ - [MessageAdded] Message added: http_static_enable_v4
+ - [MessageAdded] Message added: http_static_enable_v4_reply
  ikev2
  - [FileCRC] File CRC changed from 0x388d5d85 to 0xfdeb2617
  - [FileContentsChanged] Number of Messages has increased from 56 to 60
- - [MessageAdded] Message added: ikev2_plugin_set_sleep_interval_reply
  - [MessageAdded] Message added: ikev2_get_sleep_interval
- - [MessageAdded] Message added: ikev2_get_sleep_interval_reply
+ - [MessageAdded] Message added: ikev2_plugin_set_sleep_interval_reply
  - [MessageAdded] Message added: ikev2_plugin_set_sleep_interval
+ - [MessageAdded] Message added: ikev2_get_sleep_interval_reply
  ip
  - [FileCRC] File CRC changed from 0x4645df38 to 0xc2b1c41
  - [FileContentsChanged] Number of Messages has increased from 95 to 97
- - [MessageAdded] Message added: sw_interface_ip4_enable_disable_reply
  - [MessageAdded] Message added: sw_interface_ip4_enable_disable
+ - [MessageAdded] Message added: sw_interface_ip4_enable_disable_reply
  pg
  - [FileVersion] File version changed from 2.0.0 to 2.1.0
  - [FileCRC] File CRC changed from 0x32a1ad3b to 0xa7b4d4c2
@@ -207,20 +210,20 @@ Listing 58 differences:
  - [FileCRC] File CRC changed from 0xd5122da9 to 0x85f82b54
  - [FileContentsChanged] Number of Messages has increased from 32 to 40
  - [FileContentsChanged] Number of Types has increased from 9 to 10
- - [MsgOptionAdded] Message session_rules_dump added option: deprecated
- - [MsgOptionAdded] Message session_sdl_details added option: deprecated
  - [MsgOptionAdded] Message session_sdl_add_del added option: deprecated
- - [MsgOptionAdded] Message session_rules_details added option: deprecated
  - [MsgOptionAdded] Message session_sdl_dump added option: deprecated
  - [MsgOptionAdded] Message session_sdl_add_del_reply added option: deprecated
- - [MessageAdded] Message added: session_rules_v2_details
- - [MessageAdded] Message added: session_sdl_v2_details
- - [MessageAdded] Message added: session_sdl_v3_dump
- - [MessageAdded] Message added: session_sdl_v3_details
- - [MessageAdded] Message added: session_rules_v2_dump
- - [MessageAdded] Message added: session_sdl_add_del_v2
- - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MsgOptionAdded] Message session_sdl_details added option: deprecated
+ - [MsgOptionAdded] Message session_rules_dump added option: deprecated
+ - [MsgOptionAdded] Message session_rules_details added option: deprecated
  - [MessageAdded] Message added: session_sdl_add_del_v2_reply
+ - [MessageAdded] Message added: session_sdl_v2_details
+ - [MessageAdded] Message added: session_sdl_v2_dump
+ - [MessageAdded] Message added: session_rules_v2_details
+ - [MessageAdded] Message added: session_sdl_v3_dump
+ - [MessageAdded] Message added: session_sdl_add_del_v2
+ - [MessageAdded] Message added: session_rules_v2_dump
+ - [MessageAdded] Message added: session_sdl_v3_details
 ```
 
 </details>
