@@ -165,10 +165,10 @@ Listing 13 differences:
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
- - [MessageAdded] Message added: lcp_ethertype_enable_reply
  - [MessageAdded] Message added: lcp_ethertype_enable
- - [MessageAdded] Message added: lcp_ethertype_get
  - [MessageAdded] Message added: lcp_ethertype_get_reply
+ - [MessageAdded] Message added: lcp_ethertype_enable_reply
+ - [MessageAdded] Message added: lcp_ethertype_get
  vxlan_gpe
  - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
 ```
