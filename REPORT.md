@@ -155,7 +155,7 @@
 
 ```
 Listing 13 differences:
- - [Version] Schema version is different: 25.02-release vs 25.06-rc0~88-g86abfc3e0
+ - [Version] Schema version is different: 25.02-release vs 25.06-rc0~90-gbf0146b21
  http_static
  - [FileVersion] File version changed from 2.3.0 to 2.4.0
  - [FileCRC] File CRC changed from 0x38453dc8 to 0xce4add2d
@@ -167,8 +167,8 @@ Listing 13 differences:
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
  - [MessageAdded] Message added: lcp_ethertype_enable
  - [MessageAdded] Message added: lcp_ethertype_get
- - [MessageAdded] Message added: lcp_ethertype_get_reply
  - [MessageAdded] Message added: lcp_ethertype_enable_reply
+ - [MessageAdded] Message added: lcp_ethertype_get_reply
  vxlan_gpe
  - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
 ```
