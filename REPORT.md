@@ -155,20 +155,20 @@
 
 ```
 Listing 13 differences:
- - [Version] Schema version is different: 25.02-release vs 25.06-rc0~123-g83219f96c
+ - [Version] Schema version is different: 25.02-release vs 25.06-rc0~125-g11621ca68
  http_static
  - [FileVersion] File version changed from 2.3.0 to 2.4.0
  - [FileCRC] File CRC changed from 0x38453dc8 to 0xce4add2d
  - [FileContentsChanged] Number of Messages has increased from 4 to 6
- - [MessageAdded] Message added: http_static_enable_v4
  - [MessageAdded] Message added: http_static_enable_v4_reply
+ - [MessageAdded] Message added: http_static_enable_v4
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
+ - [MessageAdded] Message added: lcp_ethertype_get
+ - [MessageAdded] Message added: lcp_ethertype_enable
  - [MessageAdded] Message added: lcp_ethertype_get_reply
  - [MessageAdded] Message added: lcp_ethertype_enable_reply
- - [MessageAdded] Message added: lcp_ethertype_enable
- - [MessageAdded] Message added: lcp_ethertype_get
  vxlan_gpe
  - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
 ```
