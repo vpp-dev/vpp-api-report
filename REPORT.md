@@ -45,7 +45,7 @@
    37 | gre                   | 2.1.1   | 98b44dd1 | plugins |       3 |        4 |     2 |    2 |          
    38 | gso                   | 1.0.0   | 81a73026 | core    |       1 |        2 |     - |    1 |          
    39 | gtpu                  | 2.1.0   | dbbb4325 | plugins |       2 |       18 |     4 |    9 |          
-   40 | http_static           | 2.4.0   | ce4add2d | plugins |       - |        6 |     - |    3 |          
+   40 | http_static           | 2.5.0   | a4be530f | plugins |       - |        4 |     - |    2 |          
    41 | idpf                  | 1.0.0   | 48384ea8 | plugins |       1 |        4 |     - |    2 |          
    42 | igmp                  | 1.0.0   | 95a4ff29 | plugins |       2 |       19 |     4 |    9 |          
    43 | ikev2                 | 1.0.1   | fdeb2617 | plugins |       3 |       60 |     - |   30 |          
@@ -154,21 +154,26 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 13 differences:
- - [Version] Schema version is different: 25.02-release vs 25.06-rc0~186-ge22e6cbbb
+Listing 18 differences:
+ - [Version] Schema version is different: 25.02-release vs 25.06-rc0~190-gd64efd6de
  http_static
- - [FileVersion] File version changed from 2.3.0 to 2.4.0
- - [FileCRC] File CRC changed from 0x38453dc8 to 0xce4add2d
- - [FileContentsChanged] Number of Messages has increased from 4 to 6
+ - [FileVersion] File version changed from 2.3.0 to 2.5.0
+ - [FileCRC] File CRC changed from 0x38453dc8 to 0xa4be530f
+ - [MessageRemoved] Message removed: http_static_enable_v2
+ - [MessageRemoved] Message removed: http_static_enable_v2_reply
+ - [MessageRemoved] Message removed: http_static_enable_v3
+ - [MessageRemoved] Message removed: http_static_enable_v3_reply
  - [MessageAdded] Message added: http_static_enable_v4
  - [MessageAdded] Message added: http_static_enable_v4_reply
+ - [MessageAdded] Message added: http_static_enable_v5
+ - [MessageAdded] Message added: http_static_enable_v5_reply
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
- - [MessageAdded] Message added: lcp_ethertype_get_reply
- - [MessageAdded] Message added: lcp_ethertype_get
  - [MessageAdded] Message added: lcp_ethertype_enable_reply
+ - [MessageAdded] Message added: lcp_ethertype_get
  - [MessageAdded] Message added: lcp_ethertype_enable
+ - [MessageAdded] Message added: lcp_ethertype_get_reply
  vxlan_gpe
  - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
 ```
