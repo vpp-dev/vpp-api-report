@@ -34,7 +34,7 @@
    26 | dns                   | 1.0.0   | 269575cd | plugins |       - |        8 |     - |    4 |          
    27 | dslite                | 1.0.0   | 1afa049b | plugins |       2 |       12 |     - |    6 |          
    28 | ethernet_types        | 1.0.0   | f24103d6 | core    |       - |        - |     1 |    - |          
-   29 | feature               | 1.0.2   | 8a6e6da1 | core    |       1 |        2 |     - |    1 |          
+   29 | feature               | 1.0.2   | 30d6f180 | core    |       1 |        4 |     - |    2 |          
    30 | fib                   | 1.0.0   | 4ef4abc1 | core    |       2 |        4 |     1 |    2 |          
    31 | fib_types             | 2.0.1   | 21fd785b | core    |       1 |        - |     6 |    - |          
    32 | flow                  | 1.0.3   | e17512   | core    |       4 |       10 |     - |    5 |          
@@ -154,15 +154,20 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 22 differences:
- - [Version] Schema version is different: 25.02-release vs 25.06-rc0~214-gf20e84d52
+Listing 26 differences:
+ - [Version] Schema version is different: 25.02-release vs 25.06-rc0~218-g0352899c0
+ feature
+ - [FileCRC] File CRC changed from 0x8a6e6da1 to 0x30d6f180
+ - [FileContentsChanged] Number of Messages has increased from 2 to 4
+ - [MessageAdded] Message added: feature_is_enabled
+ - [MessageAdded] Message added: feature_is_enabled_reply
  http_static
  - [FileVersion] File version changed from 2.3.0 to 2.5.0
  - [FileCRC] File CRC changed from 0x38453dc8 to 0xa4be530f
- - [MessageRemoved] Message removed: http_static_enable_v3
- - [MessageRemoved] Message removed: http_static_enable_v3_reply
  - [MessageRemoved] Message removed: http_static_enable_v2
  - [MessageRemoved] Message removed: http_static_enable_v2_reply
+ - [MessageRemoved] Message removed: http_static_enable_v3
+ - [MessageRemoved] Message removed: http_static_enable_v3_reply
  - [MessageAdded] Message added: http_static_enable_v4
  - [MessageAdded] Message added: http_static_enable_v4_reply
  - [MessageAdded] Message added: http_static_enable_v5
