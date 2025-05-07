@@ -58,7 +58,7 @@
    50 | ip                    | 3.2.0   | c2b1c41  | core    |       5 |       97 |    10 |   48 |          
    51 | ip6_nd                | 1.1.0   | 5f19a809 | core    |       2 |       17 |     2 |    8 |          
    52 | ip_neighbor           | 1.0.1   | 36db39bd | core    |       3 |       20 |     3 |    9 |          
-   53 | ip_session_redirect   | 0.3.0   | f174f8ba | plugins |       3 |        6 |     - |    3 |          
+   53 | ip_session_redirect   | 0.3.0   | 54be863a | plugins |       3 |        8 |     - |    4 |          
    54 | ip_types              | 3.0.0   | fee023ed | core    |       - |        - |    19 |    - |          
    55 | ipfix_export          | 2.0.3   | 63e0810a | core    |       1 |       19 |     - |    9 |          
    56 | ipip                  | 2.0.2   | 4609caba | core    |       3 |       10 |     1 |    5 |          
@@ -154,13 +154,13 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 26 differences:
- - [Version] Schema version is different: 25.02-release vs 25.06-rc0~223-g9ed4013fd
+Listing 30 differences:
+ - [Version] Schema version is different: 25.02-release vs 25.06-rc0~228-geca860c85
  feature
  - [FileCRC] File CRC changed from 0x8a6e6da1 to 0x30d6f180
  - [FileContentsChanged] Number of Messages has increased from 2 to 4
- - [MessageAdded] Message added: feature_is_enabled_reply
  - [MessageAdded] Message added: feature_is_enabled
+ - [MessageAdded] Message added: feature_is_enabled_reply
  http_static
  - [FileVersion] File version changed from 2.3.0 to 2.5.0
  - [FileCRC] File CRC changed from 0x38453dc8 to 0xa4be530f
@@ -168,17 +168,22 @@ Listing 26 differences:
  - [MessageRemoved] Message removed: http_static_enable_v2_reply
  - [MessageRemoved] Message removed: http_static_enable_v3
  - [MessageRemoved] Message removed: http_static_enable_v3_reply
- - [MessageAdded] Message added: http_static_enable_v5
- - [MessageAdded] Message added: http_static_enable_v5_reply
  - [MessageAdded] Message added: http_static_enable_v4
  - [MessageAdded] Message added: http_static_enable_v4_reply
+ - [MessageAdded] Message added: http_static_enable_v5
+ - [MessageAdded] Message added: http_static_enable_v5_reply
+ ip_session_redirect
+ - [FileCRC] File CRC changed from 0xf174f8ba to 0x54be863a
+ - [FileContentsChanged] Number of Messages has increased from 6 to 8
+ - [MessageAdded] Message added: ip_session_redirect_dump
+ - [MessageAdded] Message added: ip_session_redirect_details
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
+ - [MessageAdded] Message added: lcp_ethertype_enable_reply
+ - [MessageAdded] Message added: lcp_ethertype_enable
  - [MessageAdded] Message added: lcp_ethertype_get_reply
  - [MessageAdded] Message added: lcp_ethertype_get
- - [MessageAdded] Message added: lcp_ethertype_enable
- - [MessageAdded] Message added: lcp_ethertype_enable_reply
  pnat
  - [FileCRC] File CRC changed from 0x7296c7ab to 0x54bc8e17
  - [FileContentsChanged] Number of Messages has increased from 16 to 18
