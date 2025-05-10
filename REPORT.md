@@ -155,19 +155,19 @@
 
 ```
 Listing 30 differences:
- - [Version] Schema version is different: 25.02-release vs 25.06-rc0~235-ge516773d7
+ - [Version] Schema version is different: 25.02-release vs 25.06-rc0~240-g5a1d84451
  feature
  - [FileCRC] File CRC changed from 0x8a6e6da1 to 0x30d6f180
  - [FileContentsChanged] Number of Messages has increased from 2 to 4
- - [MessageAdded] Message added: feature_is_enabled_reply
  - [MessageAdded] Message added: feature_is_enabled
+ - [MessageAdded] Message added: feature_is_enabled_reply
  http_static
  - [FileVersion] File version changed from 2.3.0 to 2.5.0
  - [FileCRC] File CRC changed from 0x38453dc8 to 0xa4be530f
- - [MessageRemoved] Message removed: http_static_enable_v2_reply
  - [MessageRemoved] Message removed: http_static_enable_v3
  - [MessageRemoved] Message removed: http_static_enable_v3_reply
  - [MessageRemoved] Message removed: http_static_enable_v2
+ - [MessageRemoved] Message removed: http_static_enable_v2_reply
  - [MessageAdded] Message added: http_static_enable_v5_reply
  - [MessageAdded] Message added: http_static_enable_v4
  - [MessageAdded] Message added: http_static_enable_v4_reply
@@ -180,8 +180,8 @@ Listing 30 differences:
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
- - [MessageAdded] Message added: lcp_ethertype_get
  - [MessageAdded] Message added: lcp_ethertype_enable_reply
+ - [MessageAdded] Message added: lcp_ethertype_get
  - [MessageAdded] Message added: lcp_ethertype_enable
  - [MessageAdded] Message added: lcp_ethertype_get_reply
  pnat
