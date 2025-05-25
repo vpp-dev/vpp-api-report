@@ -159,8 +159,8 @@ Listing 30 differences:
  feature
  - [FileCRC] File CRC changed from 0x8a6e6da1 to 0x30d6f180
  - [FileContentsChanged] Number of Messages has increased from 2 to 4
- - [MessageAdded] Message added: feature_is_enabled
  - [MessageAdded] Message added: feature_is_enabled_reply
+ - [MessageAdded] Message added: feature_is_enabled
  http_static
  - [FileVersion] File version changed from 2.3.0 to 2.5.0
  - [FileCRC] File CRC changed from 0x38453dc8 to 0xa4be530f
@@ -180,15 +180,15 @@ Listing 30 differences:
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
- - [MessageAdded] Message added: lcp_ethertype_enable
- - [MessageAdded] Message added: lcp_ethertype_get_reply
- - [MessageAdded] Message added: lcp_ethertype_enable_reply
  - [MessageAdded] Message added: lcp_ethertype_get
+ - [MessageAdded] Message added: lcp_ethertype_enable
+ - [MessageAdded] Message added: lcp_ethertype_enable_reply
+ - [MessageAdded] Message added: lcp_ethertype_get_reply
  pnat
  - [FileCRC] File CRC changed from 0x7296c7ab to 0x54bc8e17
  - [FileContentsChanged] Number of Messages has increased from 16 to 18
- - [MessageAdded] Message added: pnat_flow_lookup_reply
  - [MessageAdded] Message added: pnat_flow_lookup
+ - [MessageAdded] Message added: pnat_flow_lookup_reply
  vxlan_gpe
  - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
 ```
