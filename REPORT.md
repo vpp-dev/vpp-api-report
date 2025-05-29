@@ -155,7 +155,7 @@
 
 ```
 Listing 30 differences:
- - [Version] Schema version is different: 25.02-release vs 25.10-rc0~19-g1456745fc
+ - [Version] Schema version is different: 25.02-release vs 25.10-rc0~23-gcf53eb7c0
  feature
  - [FileCRC] File CRC changed from 0x8a6e6da1 to 0x30d6f180
  - [FileContentsChanged] Number of Messages has increased from 2 to 4
@@ -175,20 +175,20 @@ Listing 30 differences:
  ip_session_redirect
  - [FileCRC] File CRC changed from 0xf174f8ba to 0x54be863a
  - [FileContentsChanged] Number of Messages has increased from 6 to 8
- - [MessageAdded] Message added: ip_session_redirect_dump
  - [MessageAdded] Message added: ip_session_redirect_details
+ - [MessageAdded] Message added: ip_session_redirect_dump
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
+ - [MessageAdded] Message added: lcp_ethertype_enable_reply
  - [MessageAdded] Message added: lcp_ethertype_get
  - [MessageAdded] Message added: lcp_ethertype_enable
  - [MessageAdded] Message added: lcp_ethertype_get_reply
- - [MessageAdded] Message added: lcp_ethertype_enable_reply
  pnat
  - [FileCRC] File CRC changed from 0x7296c7ab to 0x54bc8e17
  - [FileContentsChanged] Number of Messages has increased from 16 to 18
- - [MessageAdded] Message added: pnat_flow_lookup_reply
  - [MessageAdded] Message added: pnat_flow_lookup
+ - [MessageAdded] Message added: pnat_flow_lookup_reply
  vxlan_gpe
  - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
 ```
