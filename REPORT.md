@@ -168,10 +168,10 @@ Listing 30 differences:
  - [MessageRemoved] Message removed: http_static_enable_v2_reply
  - [MessageRemoved] Message removed: http_static_enable_v3
  - [MessageRemoved] Message removed: http_static_enable_v3_reply
+ - [MessageAdded] Message added: http_static_enable_v4
  - [MessageAdded] Message added: http_static_enable_v4_reply
  - [MessageAdded] Message added: http_static_enable_v5
  - [MessageAdded] Message added: http_static_enable_v5_reply
- - [MessageAdded] Message added: http_static_enable_v4
  ip_session_redirect
  - [FileCRC] File CRC changed from 0xf174f8ba to 0x54be863a
  - [FileContentsChanged] Number of Messages has increased from 6 to 8
@@ -180,10 +180,10 @@ Listing 30 differences:
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
- - [MessageAdded] Message added: lcp_ethertype_enable
- - [MessageAdded] Message added: lcp_ethertype_enable_reply
  - [MessageAdded] Message added: lcp_ethertype_get
  - [MessageAdded] Message added: lcp_ethertype_get_reply
+ - [MessageAdded] Message added: lcp_ethertype_enable
+ - [MessageAdded] Message added: lcp_ethertype_enable_reply
  pnat
  - [FileCRC] File CRC changed from 0x7296c7ab to 0x54bc8e17
  - [FileContentsChanged] Number of Messages has increased from 16 to 18
