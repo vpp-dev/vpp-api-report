@@ -155,7 +155,7 @@
 
 ```
 Listing 30 differences:
- - [Version] Schema version is different: 25.02-release vs 25.10-rc0~28-ge82ba2f5e
+ - [Version] Schema version is different: 25.02-release vs 25.10-rc0~32-g2685c09e5
  feature
  - [FileCRC] File CRC changed from 0x8a6e6da1 to 0x30d6f180
  - [FileContentsChanged] Number of Messages has increased from 2 to 4
@@ -164,10 +164,10 @@ Listing 30 differences:
  http_static
  - [FileVersion] File version changed from 2.3.0 to 2.5.0
  - [FileCRC] File CRC changed from 0x38453dc8 to 0xa4be530f
- - [MessageRemoved] Message removed: http_static_enable_v3_reply
- - [MessageRemoved] Message removed: http_static_enable_v2
  - [MessageRemoved] Message removed: http_static_enable_v2_reply
  - [MessageRemoved] Message removed: http_static_enable_v3
+ - [MessageRemoved] Message removed: http_static_enable_v3_reply
+ - [MessageRemoved] Message removed: http_static_enable_v2
  - [MessageAdded] Message added: http_static_enable_v4
  - [MessageAdded] Message added: http_static_enable_v4_reply
  - [MessageAdded] Message added: http_static_enable_v5
