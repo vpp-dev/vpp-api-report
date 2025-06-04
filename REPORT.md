@@ -111,7 +111,7 @@
   103 | rd_cp                 | 1.0.1   | 871c3bee | core    |       1 |        2 |     - |    1 |          
   104 | rdma                  | 3.0.0   | 351383c2 | plugins |       1 |       10 |     3 |    5 |          
   105 | session               | 4.0.3   | 85f82b54 | core    |       2 |       40 |     5 |   20 |          
-  106 | sflow                 | 0.1.0   | 1dbda905 | plugins |       1 |       16 |     - |    8 |          
+  106 | sflow                 | 0.1.0   | 273ad146 | plugins |       1 |       24 |     - |   12 |          
   107 | snort                 | 1.0.0   | 8209b13d | plugins |       2 |       25 |     - |   11 |          
   108 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |          
   109 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |          
@@ -154,20 +154,20 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 30 differences:
- - [Version] Schema version is different: 25.02-release vs 25.10-rc0~32-g2685c09e5
+Listing 40 differences:
+ - [Version] Schema version is different: 25.02-release vs 25.10-rc0~35-g8d6879403
  feature
  - [FileCRC] File CRC changed from 0x8a6e6da1 to 0x30d6f180
  - [FileContentsChanged] Number of Messages has increased from 2 to 4
- - [MessageAdded] Message added: feature_is_enabled
  - [MessageAdded] Message added: feature_is_enabled_reply
+ - [MessageAdded] Message added: feature_is_enabled
  http_static
  - [FileVersion] File version changed from 2.3.0 to 2.5.0
  - [FileCRC] File CRC changed from 0x38453dc8 to 0xa4be530f
- - [MessageRemoved] Message removed: http_static_enable_v2_reply
  - [MessageRemoved] Message removed: http_static_enable_v3
  - [MessageRemoved] Message removed: http_static_enable_v3_reply
  - [MessageRemoved] Message removed: http_static_enable_v2
+ - [MessageRemoved] Message removed: http_static_enable_v2_reply
  - [MessageAdded] Message added: http_static_enable_v4
  - [MessageAdded] Message added: http_static_enable_v4_reply
  - [MessageAdded] Message added: http_static_enable_v5
@@ -187,8 +187,19 @@ Listing 30 differences:
  pnat
  - [FileCRC] File CRC changed from 0x7296c7ab to 0x54bc8e17
  - [FileContentsChanged] Number of Messages has increased from 16 to 18
- - [MessageAdded] Message added: pnat_flow_lookup
  - [MessageAdded] Message added: pnat_flow_lookup_reply
+ - [MessageAdded] Message added: pnat_flow_lookup
+ sflow
+ - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
+ - [FileContentsChanged] Number of Messages has increased from 16 to 24
+ - [MessageAdded] Message added: sflow_drop_monitoring_get
+ - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
+ - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
+ - [MessageAdded] Message added: sflow_direction_set
+ - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_get
+ - [MessageAdded] Message added: sflow_direction_get_reply
+ - [MessageAdded] Message added: sflow_drop_monitoring_set
  vxlan_gpe
  - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
 ```
@@ -304,14 +315,18 @@ Listing 30 differences:
   51 |                                  |                                   | message sflow_polling_interval_get does not have consistent status (n/a) with related message: sflow_polling_interval_get_reply (in_progress)  
 +----+                                  +                                   +-----------------------------------------------------------------------------------------------------------------------------------------------+
   52 |                                  |                                   | message sflow_header_bytes_get does not have consistent status (n/a) with related message: sflow_header_bytes_get_reply (in_progress)          
++----+                                  +                                   +-----------------------------------------------------------------------------------------------------------------------------------------------+
+  53 |                                  |                                   | message sflow_direction_get does not have consistent status (n/a) with related message: sflow_direction_get_reply (in_progress)                
++----+                                  +                                   +-----------------------------------------------------------------------------------------------------------------------------------------------+
+  54 |                                  |                                   | message sflow_drop_monitoring_get does not have consistent status (n/a) with related message: sflow_drop_monitoring_get_reply (in_progress)    
 +----+                                  +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-  53 |                                  | core/sr.api.json                  | message sr_policies_dump does not have consistent status (deprecated) with related message: sr_policies_details (n/a)                          
+  55 |                                  | core/sr.api.json                  | message sr_policies_dump does not have consistent status (deprecated) with related message: sr_policies_details (n/a)                          
 +----+                                  +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-  54 |                                  | plugins/vmxnet3.api.json          | message vmxnet3_dump does not have consistent status (deprecated) with related message: vmxnet3_details (n/a)                                  
+  56 |                                  | plugins/vmxnet3.api.json          | message vmxnet3_dump does not have consistent status (deprecated) with related message: vmxnet3_details (n/a)                                  
 +----+----------------------------------+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-  55 | UNUSED_MESSAGE                   | plugins/mactime.api.json          | message mactime_dump_reply is not used by services                                                                                             
+  57 | UNUSED_MESSAGE                   | plugins/mactime.api.json          | message mactime_dump_reply is not used by services                                                                                             
 +----+                                  +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-  56 |                                  | core/qos.api.json                 | message qos_mark_details_reply is not used by services                                                                                         
+  58 |                                  | core/qos.api.json                 | message qos_mark_details_reply is not used by services                                                                                         
 -----+----------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
