@@ -180,26 +180,26 @@ Listing 40 differences:
  lcp
  - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
  - [FileContentsChanged] Number of Messages has increased from 19 to 23
- - [MessageAdded] Message added: lcp_ethertype_enable_reply
  - [MessageAdded] Message added: lcp_ethertype_get
- - [MessageAdded] Message added: lcp_ethertype_get_reply
  - [MessageAdded] Message added: lcp_ethertype_enable
+ - [MessageAdded] Message added: lcp_ethertype_enable_reply
+ - [MessageAdded] Message added: lcp_ethertype_get_reply
  pnat
  - [FileCRC] File CRC changed from 0x7296c7ab to 0x54bc8e17
  - [FileContentsChanged] Number of Messages has increased from 16 to 18
- - [MessageAdded] Message added: pnat_flow_lookup
  - [MessageAdded] Message added: pnat_flow_lookup_reply
+ - [MessageAdded] Message added: pnat_flow_lookup
  sflow
  - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
  - [FileContentsChanged] Number of Messages has increased from 16 to 24
  - [MessageAdded] Message added: sflow_direction_get_reply
- - [MessageAdded] Message added: sflow_drop_monitoring_set
- - [MessageAdded] Message added: sflow_direction_set
+ - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
+ - [MessageAdded] Message added: sflow_direction_set_reply
  - [MessageAdded] Message added: sflow_direction_get
  - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
- - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
+ - [MessageAdded] Message added: sflow_drop_monitoring_set
+ - [MessageAdded] Message added: sflow_direction_set
  - [MessageAdded] Message added: sflow_drop_monitoring_get
- - [MessageAdded] Message added: sflow_direction_set_reply
  vxlan_gpe
  - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
 ```
