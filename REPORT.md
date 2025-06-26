@@ -154,64 +154,29 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 49 differences:
- - [Version] Schema version is different: 25.02-release vs 25.10-rc0~106-g74cf96576
- feature
- - [FileCRC] File CRC changed from 0x8a6e6da1 to 0x30d6f180
- - [FileContentsChanged] Number of Messages has increased from 2 to 4
- - [MessageAdded] Message added: feature_is_enabled
- - [MessageAdded] Message added: feature_is_enabled_reply
+Listing 20 differences:
+ - [Version] Schema version is different: 25.06-release vs 25.10-rc0~113-g784410190
  gre
  - [FileCRC] File CRC changed from 0x98b44dd1 to 0x3a070f21
  - [FileContentsChanged] Number of Messages has increased from 4 to 10
  - [FileContentsChanged] Number of Types has increased from 10 to 11
- - [MessageAdded] Message added: gre_tunnel_dump_reply
- - [MessageAdded] Message added: gre_tunnel_details_v2
- - [MessageAdded] Message added: gre_tunnel_add_del_v2
- - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
  - [MessageAdded] Message added: gre_tunnel_dump_v2
  - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
- http_static
- - [FileVersion] File version changed from 2.3.0 to 2.5.0
- - [FileCRC] File CRC changed from 0x38453dc8 to 0xa4be530f
- - [MessageRemoved] Message removed: http_static_enable_v2_reply
- - [MessageRemoved] Message removed: http_static_enable_v3
- - [MessageRemoved] Message removed: http_static_enable_v3_reply
- - [MessageRemoved] Message removed: http_static_enable_v2
- - [MessageAdded] Message added: http_static_enable_v4
- - [MessageAdded] Message added: http_static_enable_v4_reply
- - [MessageAdded] Message added: http_static_enable_v5
- - [MessageAdded] Message added: http_static_enable_v5_reply
- ip_session_redirect
- - [FileCRC] File CRC changed from 0xf174f8ba to 0x54be863a
- - [FileContentsChanged] Number of Messages has increased from 6 to 8
- - [MessageAdded] Message added: ip_session_redirect_dump
- - [MessageAdded] Message added: ip_session_redirect_details
- lcp
- - [FileCRC] File CRC changed from 0x9ae8ba3b to 0x2ff03def
- - [FileContentsChanged] Number of Messages has increased from 19 to 23
- - [MessageAdded] Message added: lcp_ethertype_enable
- - [MessageAdded] Message added: lcp_ethertype_get_reply
- - [MessageAdded] Message added: lcp_ethertype_enable_reply
- - [MessageAdded] Message added: lcp_ethertype_get
- pnat
- - [FileCRC] File CRC changed from 0x7296c7ab to 0x54bc8e17
- - [FileContentsChanged] Number of Messages has increased from 16 to 18
- - [MessageAdded] Message added: pnat_flow_lookup_reply
- - [MessageAdded] Message added: pnat_flow_lookup
+ - [MessageAdded] Message added: gre_tunnel_add_del_v2
+ - [MessageAdded] Message added: gre_tunnel_dump_reply
+ - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
+ - [MessageAdded] Message added: gre_tunnel_details_v2
  sflow
  - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
  - [FileContentsChanged] Number of Messages has increased from 16 to 24
- - [MessageAdded] Message added: sflow_direction_set
- - [MessageAdded] Message added: sflow_direction_set_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
- - [MessageAdded] Message added: sflow_direction_get
- - [MessageAdded] Message added: sflow_direction_get_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_get
  - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
+ - [MessageAdded] Message added: sflow_direction_get
  - [MessageAdded] Message added: sflow_drop_monitoring_set
- vxlan_gpe
- - [FileMoved] File moved from core/vxlan_gpe.api.json to plugins/vxlan_gpe.api.json
+ - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_set
+ - [MessageAdded] Message added: sflow_direction_get_reply
 ```
 
 </details>
