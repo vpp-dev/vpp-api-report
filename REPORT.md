@@ -155,28 +155,28 @@
 
 ```
 Listing 20 differences:
- - [Version] Schema version is different: 25.06-release vs 25.10-rc0~177-g3421e9060
+ - [Version] Schema version is different: 25.06-release vs 25.10-rc0~186-g9f9cdde53
  gre
  - [FileCRC] File CRC changed from 0x98b44dd1 to 0x3a070f21
  - [FileContentsChanged] Number of Messages has increased from 4 to 10
  - [FileContentsChanged] Number of Types has increased from 10 to 11
+ - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
+ - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
  - [MessageAdded] Message added: gre_tunnel_dump_reply
  - [MessageAdded] Message added: gre_tunnel_dump_v2
- - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
  - [MessageAdded] Message added: gre_tunnel_details_v2
  - [MessageAdded] Message added: gre_tunnel_add_del_v2
- - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
  sflow
  - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
  - [FileContentsChanged] Number of Messages has increased from 16 to 24
- - [MessageAdded] Message added: sflow_drop_monitoring_set
- - [MessageAdded] Message added: sflow_drop_monitoring_get
  - [MessageAdded] Message added: sflow_direction_set
- - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
- - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
- - [MessageAdded] Message added: sflow_direction_get
- - [MessageAdded] Message added: sflow_direction_get_reply
  - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_get
+ - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
+ - [MessageAdded] Message added: sflow_direction_get_reply
+ - [MessageAdded] Message added: sflow_drop_monitoring_set
+ - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
+ - [MessageAdded] Message added: sflow_drop_monitoring_get
 ```
 
 </details>
