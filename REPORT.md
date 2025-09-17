@@ -155,7 +155,7 @@
 
 ```
 Listing 27 differences:
- - [Version] Schema version is different: 25.06-release vs 25.10-rc0~301-gd08f1524e
+ - [Version] Schema version is different: 25.06-release vs 25.10-rc0~303-g7b260d9c4
  gre
  - [FileCRC] File CRC changed from 0x98b44dd1 to 0x3a070f21
  - [FileContentsChanged] Number of Messages has increased from 4 to 10
@@ -177,14 +177,14 @@ Listing 27 differences:
  sflow
  - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
  - [FileContentsChanged] Number of Messages has increased from 16 to 24
+ - [MessageAdded] Message added: sflow_direction_set
+ - [MessageAdded] Message added: sflow_drop_monitoring_get
+ - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
  - [MessageAdded] Message added: sflow_direction_set_reply
  - [MessageAdded] Message added: sflow_direction_get
- - [MessageAdded] Message added: sflow_direction_get_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
- - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
- - [MessageAdded] Message added: sflow_direction_set
+ - [MessageAdded] Message added: sflow_direction_get_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_set
- - [MessageAdded] Message added: sflow_drop_monitoring_get
 ```
 
 </details>
