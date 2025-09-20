@@ -16,7 +16,7 @@
     8 | arping                | 1.0.0   | 8b2c8f39 | plugins |       3 |        4 |     - |    2 |                     
     9 | auto_sdl              | 1.0.0   | 434063e5 | plugins |       - |        2 |     - |    1 |                     
    10 | avf                   | 1.0.0   | 9f5a6a20 | plugins |       1 |        4 |     - |    2 |                     
-   11 | bfd                   | 2.0.0   | 9764c249 | core    |       2 |       33 |     1 |   16 |                     
+   11 | bfd                   | 2.0.0   | 23f9c6f3 | core    |       2 |       37 |     1 |   18 |                     
    12 | bier                  | 1.2.1   | 8d1cd497 | core    |       2 |       22 |     2 |   11 |                     
    13 | bond                  | 2.1.0   | a03f5330 | core    |       2 |       24 |     2 |   12 |                     
    14 | bpf_trace_filter      | 0.1.0   | b682a79a | plugins |       - |        4 |     - |    2 |                     
@@ -154,37 +154,44 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 27 differences:
- - [Version] Schema version is different: 25.06-release vs 25.10-rc0~311-g8e88bf52a
+Listing 33 differences:
+ - [Version] Schema version is different: 25.06-release vs 25.10-rc0~313-gc98ec5a0f
+ bfd
+ - [FileCRC] File CRC changed from 0x9764c249 to 0x23f9c6f3
+ - [FileContentsChanged] Number of Messages has increased from 33 to 37
+ - [MessageAdded] Message added: bfd_udp_set_tos
+ - [MessageAdded] Message added: bfd_udp_set_tos_reply
+ - [MessageAdded] Message added: bfd_udp_get_tos
+ - [MessageAdded] Message added: bfd_udp_get_tos_reply
  gre
  - [FileCRC] File CRC changed from 0x98b44dd1 to 0x3a070f21
  - [FileContentsChanged] Number of Messages has increased from 4 to 10
  - [FileContentsChanged] Number of Types has increased from 10 to 11
+ - [MessageAdded] Message added: gre_tunnel_details_v2
  - [MessageAdded] Message added: gre_tunnel_add_del_v2
+ - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
  - [MessageAdded] Message added: gre_tunnel_dump_reply
  - [MessageAdded] Message added: gre_tunnel_dump_v2
  - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
- - [MessageAdded] Message added: gre_tunnel_details_v2
- - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
  pg
  - [FileCRC] File CRC changed from 0xa7b4d4c2 to 0xeae14b90
  - [FileContentsChanged] Number of Messages has increased from 12 to 14
  - [FileContentsChanged] Number of Enums has increased from 8 to 9
- - [MsgOptionAdded] Message pg_create_interface_v2 added option: deprecated
  - [MsgOptionAdded] Message pg_create_interface_v2_reply added option: deprecated
- - [MessageAdded] Message added: pg_create_interface_v3
+ - [MsgOptionAdded] Message pg_create_interface_v2 added option: deprecated
  - [MessageAdded] Message added: pg_create_interface_v3_reply
+ - [MessageAdded] Message added: pg_create_interface_v3
  sflow
  - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
  - [FileContentsChanged] Number of Messages has increased from 16 to 24
- - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
- - [MessageAdded] Message added: sflow_direction_set
- - [MessageAdded] Message added: sflow_direction_set_reply
- - [MessageAdded] Message added: sflow_direction_get
  - [MessageAdded] Message added: sflow_direction_get_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_set
+ - [MessageAdded] Message added: sflow_direction_set
  - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_get
+ - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
+ - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_get
 ```
 
 </details>
