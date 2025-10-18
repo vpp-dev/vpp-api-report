@@ -156,25 +156,25 @@
 
 ```
 Listing 35 differences:
- - [Version] Schema version is different: 25.06-release vs 26.02-rc0~84-g212b20e45
+ - [Version] Schema version is different: 25.06-release vs 26.02-rc0~88-g098f4f845
  - [FilesCount] Total file count increased from 140 to 141
  - [FileAdded] File added: selog
  bfd
  - [FileCRC] File CRC changed from 0x9764c249 to 0x23f9c6f3
  - [FileContentsChanged] Number of Messages has increased from 33 to 37
+ - [MessageAdded] Message added: bfd_udp_set_tos
  - [MessageAdded] Message added: bfd_udp_get_tos_reply
  - [MessageAdded] Message added: bfd_udp_set_tos_reply
- - [MessageAdded] Message added: bfd_udp_set_tos
  - [MessageAdded] Message added: bfd_udp_get_tos
  gre
  - [FileCRC] File CRC changed from 0x98b44dd1 to 0x3a070f21
  - [FileContentsChanged] Number of Messages has increased from 4 to 10
  - [FileContentsChanged] Number of Types has increased from 10 to 11
  - [MessageAdded] Message added: gre_tunnel_add_del_v2
+ - [MessageAdded] Message added: gre_tunnel_dump_reply
+ - [MessageAdded] Message added: gre_tunnel_details_v2
  - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
  - [MessageAdded] Message added: gre_tunnel_dump_v2
- - [MessageAdded] Message added: gre_tunnel_details_v2
- - [MessageAdded] Message added: gre_tunnel_dump_reply
  - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
  pg
  - [FileCRC] File CRC changed from 0xa7b4d4c2 to 0xeae14b90
@@ -182,18 +182,18 @@ Listing 35 differences:
  - [FileContentsChanged] Number of Enums has increased from 8 to 9
  - [MsgOptionAdded] Message pg_create_interface_v2 added option: deprecated
  - [MsgOptionAdded] Message pg_create_interface_v2_reply added option: deprecated
- - [MessageAdded] Message added: pg_create_interface_v3_reply
  - [MessageAdded] Message added: pg_create_interface_v3
+ - [MessageAdded] Message added: pg_create_interface_v3_reply
  sflow
  - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
  - [FileContentsChanged] Number of Messages has increased from 16 to 24
- - [MessageAdded] Message added: sflow_direction_set
  - [MessageAdded] Message added: sflow_drop_monitoring_get
- - [MessageAdded] Message added: sflow_direction_get_reply
- - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_set
  - [MessageAdded] Message added: sflow_direction_get
  - [MessageAdded] Message added: sflow_drop_monitoring_set
  - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
+ - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_get_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
 ```
 
