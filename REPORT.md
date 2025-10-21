@@ -89,64 +89,65 @@
    81 | nat66                 | 1.0.0   | a6343f71 | plugins |       3 |       10 |     - |    5 |                     
    82 | nat_types             | 0.0.1   | 2ca9110f | plugins |       - |        - |     3 |    - |                     
    83 | netmap                | 1.0.0   | 40e7a84f | plugins |       - |        4 |     - |    2 |                     
-   84 | npt66                 | 0.0.1   | 4e353b99 | plugins |       2 |        2 |     - |    1 |                     
-   85 | nsh                   | 1.0.0   | c2f3127d | plugins |       1 |        8 |     - |    4 |                     
-   86 | nsim                  | 2.2.1   | 3b179b8f | plugins |       1 |        8 |     - |    4 |                     
-   87 | oddbuf                | 0.1.0   | 3a1a2c50 | plugins |       1 |        2 |     - |    1 |                     
-   88 | one                   | 2.0.0   | 9f64600e | plugins |       4 |      108 |     5 |   54 |                     
-   89 | p2p_ethernet          | 1.0.0   | 3cfe55da | core    |       2 |        4 |     - |    2 |                     
-   90 | pci_types             | 1.0.0   | 5d418665 | core    |       - |        - |     1 |    - |                     
-   91 | pg                    | 2.1.0   | eae14b90 | core    |       1 |       14 |     2 |    7 |                     
-   92 | ping                  | 0.1.0   | 5b568e46 | plugins |       2 |        3 |     - |    1 |                     
-   93 | pipe                  | 1.0.1   | c159134a | core    |       1 |        6 |     - |    3 |                     
-   94 | pnat                  | 0.1.1   | 54bc8e17 | plugins |       2 |       18 |     4 |    8 |                     
-   95 | policer               | 3.0.0   | 341163a6 | core    |       2 |       25 |     - |   13 |                     
-   96 | policer_types         | 1.0.0   | 5838c08b | core    |       - |        - |     6 |    - |                     
-   97 | pot                   | 1.0.0   | a9d8e55c | plugins |       - |        8 |     - |    4 |                     
-   98 | pp2                   | 1.0.0   | d7ab5bd7 | plugins |       1 |        4 |     - |    2 |                     
-   99 | pppoe                 | 2.0.0   | ec9e86bf | plugins |       3 |        6 |     - |    3 |                     
-  100 | punt                  | 2.2.1   | 24d11934 | core    |       1 |       10 |     7 |    5 |                     
-  101 | pvti                  | 0.0.1   | b319860  | plugins |       2 |        6 |     1 |    3 |                     
-  102 | qos                   | 1.1.1   | 7b7b5955 | core    |       2 |       19 |     6 |    9 |                     
-  103 | rd_cp                 | 1.0.1   | 871c3bee | core    |       1 |        2 |     - |    1 |                     
-  104 | rdma                  | 3.0.0   | 351383c2 | plugins |       1 |       10 |     3 |    5 |                     
-  105 | selog                 | 0.0.0   | 58ce3561 | plugins |       - |       10 |     - |    5 |                     
-  106 | session               | 4.0.3   | 85f82b54 | core    |       2 |       40 |     5 |   20 |                     
-  107 | sflow                 | 0.1.0   | 273ad146 | plugins |       1 |       24 |     - |   12 |                     
-  108 | snort                 | 1.0.0   | 8209b13d | plugins |       2 |       25 |     - |   11 |                     
-  109 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |                     
-  110 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |                     
-  111 | sr_mobile             | 0.1.0   | 2a93fd77 | plugins |       5 |        4 |     - |    2 |                     
-  112 | sr_mobile_types       | 0.1.0   | 7afa7d45 | plugins |       - |        - |     1 |    - |                     
-  113 | sr_mpls               | 3.0.0   | 156edb17 | plugins |       3 |       10 |     - |    5 |                     
-  114 | sr_pt                 | 1.0.0   | 1fddedad | core    |       1 |        6 |     - |    3 |                     
-  115 | sr_types              | 1.0.0   | 7955bd50 | core    |       - |        - |     3 |    - |                     
-  116 | stn                   | 2.0.0   | 9cfaef64 | plugins |       2 |        4 |     - |    2 |                     
-  117 | svs                   | 1.0.0   | 816cf275 | plugins |       2 |       10 |     - |    5 |                     
-  118 | syslog                | 1.0.0   | 5ad12a74 | core    |       1 |        8 |     1 |    4 |                     
-  119 | tapv2                 | 4.0.0   | c2f80dc7 | core    |       3 |        8 |     1 |    4 |                     
-  120 | tcp                   | 2.0.0   | 93d07485 | core    |       1 |        2 |     - |    1 |                     
-  121 | teib                  | 1.0.0   | 14ded985 | core    |       2 |        4 |     1 |    2 |                     
-  122 | tls_openssl           | 2.0.0   | 7386fbcd | plugins |       - |        2 |     - |    1 |                     
-  123 | trace                 | 1.0.0   | 397cbf90 | plugins |       - |        6 |     - |    3 |                     
-  124 | tracedump             | 0.2.0   | 56abf80a | plugins |       - |       17 |     1 |    8 |                     
-  125 | tracenode             | 0.1.0   | dbc1eb27 | plugins |       1 |        2 |     - |    1 |                     
-  126 | tunnel_types          | 1.0.1   | 882f6758 | core    |       2 |        - |     4 |    - |                     
-  127 | udp                   | 1.1.0   | 6804c5af | core    |       1 |        8 |     3 |    4 |                     
-  128 | udp_ping              | 3.0.0   | 16d961db | plugins |       1 |        4 |     - |    2 |                     
-  129 | urpf                  | 1.0.0   | 88759016 | plugins |       3 |        6 |     1 |    3 |                     
-  130 | vhost_user            | 4.1.1   | d49ae8cd | plugins |       3 |       12 |     - |    6 |                     
-  131 | virtio                | 3.0.0   | a507d784 | core    |       3 |        8 |     1 |    4 |                     
-  132 | virtio_types          | 1.0.0   | 7a70a44e | core    |       - |        - |     2 |    - |                     
-  133 | vlib                  | 1.0.0   | 9a9e84e4 | core    |       - |       18 |     1 |    9 |                     
-  134 | vmxnet3               | 1.2.0   | 609454ea | plugins |       2 |        8 |     2 |    4 |                     
-  135 | vpe                   | 1.7.0   | bbfa7484 | core    |       1 |        6 |     - |    3 |                     
-  136 | vpe_types             | 1.0.0   | 5f754a1c | core    |       - |        - |     4 |    - |                     
-  137 | vrrp                  | 1.1.1   | 674aea12 | plugins |       3 |       21 |     7 |   10 |                     
-  138 | vxlan                 | 2.1.0   | 95381587 | plugins |       2 |       14 |     - |    7 |                     
-  139 | vxlan_gpe             | 2.1.0   | 3bc06278 | plugins |       2 |       10 |     - |    5 |                     
-  140 | vxlan_gpe_ioam_export | 1.0.0   | 26bebf64 | plugins |       1 |        2 |     - |    1 |                     
-  141 | wireguard             | 1.3.0   | 5d8f9252 | plugins |       2 |       17 |     3 |    8 |                     
+   84 | npol                  | 0.1.0   | 79451d1  | plugins |       2 |       22 |    15 |   11 |                     
+   85 | npt66                 | 0.0.1   | 4e353b99 | plugins |       2 |        2 |     - |    1 |                     
+   86 | nsh                   | 1.0.0   | c2f3127d | plugins |       1 |        8 |     - |    4 |                     
+   87 | nsim                  | 2.2.1   | 3b179b8f | plugins |       1 |        8 |     - |    4 |                     
+   88 | oddbuf                | 0.1.0   | 3a1a2c50 | plugins |       1 |        2 |     - |    1 |                     
+   89 | one                   | 2.0.0   | 9f64600e | plugins |       4 |      108 |     5 |   54 |                     
+   90 | p2p_ethernet          | 1.0.0   | 3cfe55da | core    |       2 |        4 |     - |    2 |                     
+   91 | pci_types             | 1.0.0   | 5d418665 | core    |       - |        - |     1 |    - |                     
+   92 | pg                    | 2.1.0   | eae14b90 | core    |       1 |       14 |     2 |    7 |                     
+   93 | ping                  | 0.1.0   | 5b568e46 | plugins |       2 |        3 |     - |    1 |                     
+   94 | pipe                  | 1.0.1   | c159134a | core    |       1 |        6 |     - |    3 |                     
+   95 | pnat                  | 0.1.1   | 54bc8e17 | plugins |       2 |       18 |     4 |    8 |                     
+   96 | policer               | 3.0.0   | 341163a6 | core    |       2 |       25 |     - |   13 |                     
+   97 | policer_types         | 1.0.0   | 5838c08b | core    |       - |        - |     6 |    - |                     
+   98 | pot                   | 1.0.0   | a9d8e55c | plugins |       - |        8 |     - |    4 |                     
+   99 | pp2                   | 1.0.0   | d7ab5bd7 | plugins |       1 |        4 |     - |    2 |                     
+  100 | pppoe                 | 2.0.0   | ec9e86bf | plugins |       3 |        6 |     - |    3 |                     
+  101 | punt                  | 2.2.1   | 24d11934 | core    |       1 |       10 |     7 |    5 |                     
+  102 | pvti                  | 0.0.1   | b319860  | plugins |       2 |        6 |     1 |    3 |                     
+  103 | qos                   | 1.1.1   | 7b7b5955 | core    |       2 |       19 |     6 |    9 |                     
+  104 | rd_cp                 | 1.0.1   | 871c3bee | core    |       1 |        2 |     - |    1 |                     
+  105 | rdma                  | 3.0.0   | 351383c2 | plugins |       1 |       10 |     3 |    5 |                     
+  106 | selog                 | 0.0.0   | 58ce3561 | plugins |       - |       10 |     - |    5 |                     
+  107 | session               | 4.0.3   | 85f82b54 | core    |       2 |       40 |     5 |   20 |                     
+  108 | sflow                 | 0.1.0   | 273ad146 | plugins |       1 |       24 |     - |   12 |                     
+  109 | snort                 | 1.0.0   | 8209b13d | plugins |       2 |       25 |     - |   11 |                     
+  110 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |                     
+  111 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |                     
+  112 | sr_mobile             | 0.1.0   | 2a93fd77 | plugins |       5 |        4 |     - |    2 |                     
+  113 | sr_mobile_types       | 0.1.0   | 7afa7d45 | plugins |       - |        - |     1 |    - |                     
+  114 | sr_mpls               | 3.0.0   | 156edb17 | plugins |       3 |       10 |     - |    5 |                     
+  115 | sr_pt                 | 1.0.0   | 1fddedad | core    |       1 |        6 |     - |    3 |                     
+  116 | sr_types              | 1.0.0   | 7955bd50 | core    |       - |        - |     3 |    - |                     
+  117 | stn                   | 2.0.0   | 9cfaef64 | plugins |       2 |        4 |     - |    2 |                     
+  118 | svs                   | 1.0.0   | 816cf275 | plugins |       2 |       10 |     - |    5 |                     
+  119 | syslog                | 1.0.0   | 5ad12a74 | core    |       1 |        8 |     1 |    4 |                     
+  120 | tapv2                 | 4.0.0   | c2f80dc7 | core    |       3 |        8 |     1 |    4 |                     
+  121 | tcp                   | 2.0.0   | 93d07485 | core    |       1 |        2 |     - |    1 |                     
+  122 | teib                  | 1.0.0   | 14ded985 | core    |       2 |        4 |     1 |    2 |                     
+  123 | tls_openssl           | 2.0.0   | 7386fbcd | plugins |       - |        2 |     - |    1 |                     
+  124 | trace                 | 1.0.0   | 397cbf90 | plugins |       - |        6 |     - |    3 |                     
+  125 | tracedump             | 0.2.0   | 56abf80a | plugins |       - |       17 |     1 |    8 |                     
+  126 | tracenode             | 0.1.0   | dbc1eb27 | plugins |       1 |        2 |     - |    1 |                     
+  127 | tunnel_types          | 1.0.1   | 882f6758 | core    |       2 |        - |     4 |    - |                     
+  128 | udp                   | 1.1.0   | 6804c5af | core    |       1 |        8 |     3 |    4 |                     
+  129 | udp_ping              | 3.0.0   | 16d961db | plugins |       1 |        4 |     - |    2 |                     
+  130 | urpf                  | 1.0.0   | 88759016 | plugins |       3 |        6 |     1 |    3 |                     
+  131 | vhost_user            | 4.1.1   | d49ae8cd | plugins |       3 |       12 |     - |    6 |                     
+  132 | virtio                | 3.0.0   | a507d784 | core    |       3 |        8 |     1 |    4 |                     
+  133 | virtio_types          | 1.0.0   | 7a70a44e | core    |       - |        - |     2 |    - |                     
+  134 | vlib                  | 1.0.0   | 9a9e84e4 | core    |       - |       18 |     1 |    9 |                     
+  135 | vmxnet3               | 1.2.0   | 609454ea | plugins |       2 |        8 |     2 |    4 |                     
+  136 | vpe                   | 1.7.0   | bbfa7484 | core    |       1 |        6 |     - |    3 |                     
+  137 | vpe_types             | 1.0.0   | 5f754a1c | core    |       - |        - |     4 |    - |                     
+  138 | vrrp                  | 1.1.1   | 674aea12 | plugins |       3 |       21 |     7 |   10 |                     
+  139 | vxlan                 | 2.1.0   | 95381587 | plugins |       2 |       14 |     - |    7 |                     
+  140 | vxlan_gpe             | 2.1.0   | 3bc06278 | plugins |       2 |       10 |     - |    5 |                     
+  141 | vxlan_gpe_ioam_export | 1.0.0   | 26bebf64 | plugins |       1 |        2 |     - |    1 |                     
+  142 | wireguard             | 1.3.0   | 5d8f9252 | plugins |       2 |       17 |     3 |    8 |                     
 ```
 
 </details>
@@ -155,27 +156,28 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 35 differences:
- - [Version] Schema version is different: 25.06-release vs 26.02-rc0~90-gd51f67e41
- - [FilesCount] Total file count increased from 140 to 141
+Listing 36 differences:
+ - [Version] Schema version is different: 25.06-release vs 26.02-rc0~91-gf40fcee5b
+ - [FilesCount] Total file count increased from 140 to 142
+ - [FileAdded] File added: npol
  - [FileAdded] File added: selog
  bfd
  - [FileCRC] File CRC changed from 0x9764c249 to 0x23f9c6f3
  - [FileContentsChanged] Number of Messages has increased from 33 to 37
- - [MessageAdded] Message added: bfd_udp_get_tos_reply
  - [MessageAdded] Message added: bfd_udp_get_tos
  - [MessageAdded] Message added: bfd_udp_set_tos
  - [MessageAdded] Message added: bfd_udp_set_tos_reply
+ - [MessageAdded] Message added: bfd_udp_get_tos_reply
  gre
  - [FileCRC] File CRC changed from 0x98b44dd1 to 0x3a070f21
  - [FileContentsChanged] Number of Messages has increased from 4 to 10
  - [FileContentsChanged] Number of Types has increased from 10 to 11
- - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
- - [MessageAdded] Message added: gre_tunnel_details_v2
- - [MessageAdded] Message added: gre_tunnel_add_del_v2
  - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
  - [MessageAdded] Message added: gre_tunnel_dump_reply
  - [MessageAdded] Message added: gre_tunnel_dump_v2
+ - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
+ - [MessageAdded] Message added: gre_tunnel_add_del_v2
+ - [MessageAdded] Message added: gre_tunnel_details_v2
  pg
  - [FileCRC] File CRC changed from 0xa7b4d4c2 to 0xeae14b90
  - [FileContentsChanged] Number of Messages has increased from 12 to 14
@@ -187,14 +189,14 @@ Listing 35 differences:
  sflow
  - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
  - [FileContentsChanged] Number of Messages has increased from 16 to 24
- - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_get
  - [MessageAdded] Message added: sflow_drop_monitoring_set
+ - [MessageAdded] Message added: sflow_drop_monitoring_get
+ - [MessageAdded] Message added: sflow_direction_set
+ - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_get_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
- - [MessageAdded] Message added: sflow_direction_set
- - [MessageAdded] Message added: sflow_direction_get
- - [MessageAdded] Message added: sflow_direction_get_reply
- - [MessageAdded] Message added: sflow_drop_monitoring_get
 ```
 
 </details>
