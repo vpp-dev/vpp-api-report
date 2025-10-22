@@ -113,41 +113,43 @@
   105 | rdma                  | 3.0.0   | 351383c2 | plugins |       1 |       10 |     3 |    5 |                     
   106 | selog                 | 0.0.0   | 58ce3561 | plugins |       - |       10 |     - |    5 |                     
   107 | session               | 4.0.3   | 85f82b54 | core    |       2 |       40 |     5 |   20 |                     
-  108 | sflow                 | 0.1.0   | 273ad146 | plugins |       1 |       24 |     - |   12 |                     
-  109 | snort                 | 1.0.0   | 8209b13d | plugins |       2 |       25 |     - |   11 |                     
-  110 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |                     
-  111 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |                     
-  112 | sr_mobile             | 0.1.0   | 2a93fd77 | plugins |       5 |        4 |     - |    2 |                     
-  113 | sr_mobile_types       | 0.1.0   | 7afa7d45 | plugins |       - |        - |     1 |    - |                     
-  114 | sr_mpls               | 3.0.0   | 156edb17 | plugins |       3 |       10 |     - |    5 |                     
-  115 | sr_pt                 | 1.0.0   | 1fddedad | core    |       1 |        6 |     - |    3 |                     
-  116 | sr_types              | 1.0.0   | 7955bd50 | core    |       - |        - |     3 |    - |                     
-  117 | stn                   | 2.0.0   | 9cfaef64 | plugins |       2 |        4 |     - |    2 |                     
-  118 | svs                   | 1.0.0   | 816cf275 | plugins |       2 |       10 |     - |    5 |                     
-  119 | syslog                | 1.0.0   | 5ad12a74 | core    |       1 |        8 |     1 |    4 |                     
-  120 | tapv2                 | 4.0.0   | c2f80dc7 | core    |       3 |        8 |     1 |    4 |                     
-  121 | tcp                   | 2.0.0   | 93d07485 | core    |       1 |        2 |     - |    1 |                     
-  122 | teib                  | 1.0.0   | 14ded985 | core    |       2 |        4 |     1 |    2 |                     
-  123 | tls_openssl           | 2.0.0   | 7386fbcd | plugins |       - |        2 |     - |    1 |                     
-  124 | trace                 | 1.0.0   | 397cbf90 | plugins |       - |        6 |     - |    3 |                     
-  125 | tracedump             | 0.2.0   | 56abf80a | plugins |       - |       17 |     1 |    8 |                     
-  126 | tracenode             | 0.1.0   | dbc1eb27 | plugins |       1 |        2 |     - |    1 |                     
-  127 | tunnel_types          | 1.0.1   | 882f6758 | core    |       2 |        - |     4 |    - |                     
-  128 | udp                   | 1.1.0   | 6804c5af | core    |       1 |        8 |     3 |    4 |                     
-  129 | udp_ping              | 3.0.0   | 16d961db | plugins |       1 |        4 |     - |    2 |                     
-  130 | urpf                  | 1.0.0   | 88759016 | plugins |       3 |        6 |     1 |    3 |                     
-  131 | vhost_user            | 4.1.1   | d49ae8cd | plugins |       3 |       12 |     - |    6 |                     
-  132 | virtio                | 3.0.0   | a507d784 | core    |       3 |        8 |     1 |    4 |                     
-  133 | virtio_types          | 1.0.0   | 7a70a44e | core    |       - |        - |     2 |    - |                     
-  134 | vlib                  | 1.0.0   | 9a9e84e4 | core    |       - |       18 |     1 |    9 |                     
-  135 | vmxnet3               | 1.2.0   | 609454ea | plugins |       2 |        8 |     2 |    4 |                     
-  136 | vpe                   | 1.7.0   | bbfa7484 | core    |       1 |        6 |     - |    3 |                     
-  137 | vpe_types             | 1.0.0   | 5f754a1c | core    |       - |        - |     4 |    - |                     
-  138 | vrrp                  | 1.1.1   | 674aea12 | plugins |       3 |       21 |     7 |   10 |                     
-  139 | vxlan                 | 2.1.0   | 95381587 | plugins |       2 |       14 |     - |    7 |                     
-  140 | vxlan_gpe             | 2.1.0   | 3bc06278 | plugins |       2 |       10 |     - |    5 |                     
-  141 | vxlan_gpe_ioam_export | 1.0.0   | 26bebf64 | plugins |       1 |        2 |     - |    1 |                     
-  142 | wireguard             | 1.3.0   | 5d8f9252 | plugins |       2 |       17 |     3 |    8 |                     
+  108 | sfdp                  | 0.0.1   | 2e91bf43 | core    |       2 |       14 |     - |    7 |                     
+  109 | sfdp_types            | 0.0.1   | a64b3a78 | core    |       1 |        - |     6 |    - |                     
+  110 | sflow                 | 0.1.0   | 273ad146 | plugins |       1 |       24 |     - |   12 |                     
+  111 | snort                 | 1.0.0   | 8209b13d | plugins |       2 |       25 |     - |   11 |                     
+  112 | span                  | 2.0.0   | 34ee02b  | core    |       1 |        4 |     1 |    2 |                     
+  113 | sr                    | 2.1.0   | 1fa846d0 | core    |       3 |       30 |     3 |   15 |                     
+  114 | sr_mobile             | 0.1.0   | 2a93fd77 | plugins |       5 |        4 |     - |    2 |                     
+  115 | sr_mobile_types       | 0.1.0   | 7afa7d45 | plugins |       - |        - |     1 |    - |                     
+  116 | sr_mpls               | 3.0.0   | 156edb17 | plugins |       3 |       10 |     - |    5 |                     
+  117 | sr_pt                 | 1.0.0   | 1fddedad | core    |       1 |        6 |     - |    3 |                     
+  118 | sr_types              | 1.0.0   | 7955bd50 | core    |       - |        - |     3 |    - |                     
+  119 | stn                   | 2.0.0   | 9cfaef64 | plugins |       2 |        4 |     - |    2 |                     
+  120 | svs                   | 1.0.0   | 816cf275 | plugins |       2 |       10 |     - |    5 |                     
+  121 | syslog                | 1.0.0   | 5ad12a74 | core    |       1 |        8 |     1 |    4 |                     
+  122 | tapv2                 | 4.0.0   | c2f80dc7 | core    |       3 |        8 |     1 |    4 |                     
+  123 | tcp                   | 2.0.0   | 93d07485 | core    |       1 |        2 |     - |    1 |                     
+  124 | teib                  | 1.0.0   | 14ded985 | core    |       2 |        4 |     1 |    2 |                     
+  125 | tls_openssl           | 2.0.0   | 7386fbcd | plugins |       - |        2 |     - |    1 |                     
+  126 | trace                 | 1.0.0   | 397cbf90 | plugins |       - |        6 |     - |    3 |                     
+  127 | tracedump             | 0.2.0   | 56abf80a | plugins |       - |       17 |     1 |    8 |                     
+  128 | tracenode             | 0.1.0   | dbc1eb27 | plugins |       1 |        2 |     - |    1 |                     
+  129 | tunnel_types          | 1.0.1   | 882f6758 | core    |       2 |        - |     4 |    - |                     
+  130 | udp                   | 1.1.0   | 6804c5af | core    |       1 |        8 |     3 |    4 |                     
+  131 | udp_ping              | 3.0.0   | 16d961db | plugins |       1 |        4 |     - |    2 |                     
+  132 | urpf                  | 1.0.0   | 88759016 | plugins |       3 |        6 |     1 |    3 |                     
+  133 | vhost_user            | 4.1.1   | d49ae8cd | plugins |       3 |       12 |     - |    6 |                     
+  134 | virtio                | 3.0.0   | a507d784 | core    |       3 |        8 |     1 |    4 |                     
+  135 | virtio_types          | 1.0.0   | 7a70a44e | core    |       - |        - |     2 |    - |                     
+  136 | vlib                  | 1.0.0   | 9a9e84e4 | core    |       - |       18 |     1 |    9 |                     
+  137 | vmxnet3               | 1.2.0   | 609454ea | plugins |       2 |        8 |     2 |    4 |                     
+  138 | vpe                   | 1.7.0   | bbfa7484 | core    |       1 |        6 |     - |    3 |                     
+  139 | vpe_types             | 1.0.0   | 5f754a1c | core    |       - |        - |     4 |    - |                     
+  140 | vrrp                  | 1.1.1   | 674aea12 | plugins |       3 |       21 |     7 |   10 |                     
+  141 | vxlan                 | 2.1.0   | 95381587 | plugins |       2 |       14 |     - |    7 |                     
+  142 | vxlan_gpe             | 2.1.0   | 3bc06278 | plugins |       2 |       10 |     - |    5 |                     
+  143 | vxlan_gpe_ioam_export | 1.0.0   | 26bebf64 | plugins |       1 |        2 |     - |    1 |                     
+  144 | wireguard             | 1.3.0   | 5d8f9252 | plugins |       2 |       17 |     3 |    8 |                     
 ```
 
 </details>
@@ -156,11 +158,13 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 36 differences:
- - [Version] Schema version is different: 25.06-release vs 26.02-rc0~91-gf40fcee5b
- - [FilesCount] Total file count increased from 140 to 142
+Listing 38 differences:
+ - [Version] Schema version is different: 25.06-release vs 26.02-rc0~92-ga74f0ef0a
+ - [FilesCount] Total file count increased from 140 to 144
  - [FileAdded] File added: npol
  - [FileAdded] File added: selog
+ - [FileAdded] File added: sfdp
+ - [FileAdded] File added: sfdp_types
  bfd
  - [FileCRC] File CRC changed from 0x9764c249 to 0x23f9c6f3
  - [FileContentsChanged] Number of Messages has increased from 33 to 37
@@ -173,29 +177,29 @@ Listing 36 differences:
  - [FileContentsChanged] Number of Messages has increased from 4 to 10
  - [FileContentsChanged] Number of Types has increased from 10 to 11
  - [MessageAdded] Message added: gre_tunnel_add_del_v2_reply
- - [MessageAdded] Message added: gre_tunnel_dump_reply
  - [MessageAdded] Message added: gre_tunnel_dump_v2
- - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
  - [MessageAdded] Message added: gre_tunnel_add_del_v2
+ - [MessageAdded] Message added: gre_tunnel_dump_reply
+ - [MessageAdded] Message added: gre_tunnel_dump_v2_reply
  - [MessageAdded] Message added: gre_tunnel_details_v2
  pg
  - [FileCRC] File CRC changed from 0xa7b4d4c2 to 0xeae14b90
  - [FileContentsChanged] Number of Messages has increased from 12 to 14
  - [FileContentsChanged] Number of Enums has increased from 8 to 9
- - [MsgOptionAdded] Message pg_create_interface_v2_reply added option: deprecated
  - [MsgOptionAdded] Message pg_create_interface_v2 added option: deprecated
+ - [MsgOptionAdded] Message pg_create_interface_v2_reply added option: deprecated
  - [MessageAdded] Message added: pg_create_interface_v3
  - [MessageAdded] Message added: pg_create_interface_v3_reply
  sflow
  - [FileCRC] File CRC changed from 0x1dbda905 to 0x273ad146
  - [FileContentsChanged] Number of Messages has increased from 16 to 24
- - [MessageAdded] Message added: sflow_direction_get
+ - [MessageAdded] Message added: sflow_direction_set
  - [MessageAdded] Message added: sflow_drop_monitoring_set
  - [MessageAdded] Message added: sflow_drop_monitoring_get
- - [MessageAdded] Message added: sflow_direction_set
- - [MessageAdded] Message added: sflow_direction_set_reply
  - [MessageAdded] Message added: sflow_direction_get_reply
  - [MessageAdded] Message added: sflow_drop_monitoring_set_reply
+ - [MessageAdded] Message added: sflow_direction_set_reply
+ - [MessageAdded] Message added: sflow_direction_get
  - [MessageAdded] Message added: sflow_drop_monitoring_get_reply
 ```
 
