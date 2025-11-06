@@ -164,7 +164,7 @@
 
 ```
 Listing 11 differences:
- - [Version] Schema version is different: 25.10-release vs 26.02-rc0~169-gcb447588d
+ - [Version] Schema version is different: 25.10-release vs 26.02-rc0~174-ge626b9ff9
  - [FilesCount] Total file count increased from 140 to 149
  - [FileAdded] File added: gateway
  - [FileAdded] File added: interface_input
