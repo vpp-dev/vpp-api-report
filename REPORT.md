@@ -131,7 +131,7 @@
  123 │ stn                   │ 2.0.0   │ 9cfaef64 │ plugins │       2 │        4 │     - │     2 │                    
  124 │ svs                   │ 1.0.0   │ 816cf275 │ plugins │       2 │       10 │     - │     5 │                    
  125 │ syslog                │ 1.0.0   │ 5ad12a74 │ core    │       1 │        8 │     1 │     4 │                    
- 126 │ tapv2                 │ 4.0.0   │ c2f80dc7 │ core    │       3 │        8 │     1 │     4 │                    
+ 126 │ tapv2                 │ 4.0.0   │ c2f80dc7 │ plugins │       3 │        8 │     1 │     4 │                    
  127 │ tcp                   │ 2.0.0   │ 93d07485 │ core    │       1 │        2 │     - │     1 │                    
  128 │ tcp_check             │ 0.0.1   │ 59a28f13 │ plugins │       2 │        2 │     1 │     1 │                    
  129 │ teib                  │ 1.0.0   │ 14ded985 │ core    │       2 │        4 │     1 │     2 │                    
@@ -163,8 +163,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 11 differences:
- - [Version] Schema version is different: 25.10-release vs 26.02-rc0~328-g5cc32382b
+Listing 12 differences:
+ - [Version] Schema version is different: 25.10-release vs 26.02-rc0~336-g1179ccd8a
  - [FilesCount] Total file count increased from 140 to 149
  - [FileAdded] File added: gateway
  - [FileAdded] File added: interface_input
@@ -175,6 +175,8 @@ Listing 11 differences:
  - [FileAdded] File added: sfdp
  - [FileAdded] File added: sfdp_types
  - [FileAdded] File added: tcp_check
+ tapv2
+ - [FileMoved] File moved from core/tapv2.api.json to plugins/tapv2.api.json
 ```
 
 </details>
