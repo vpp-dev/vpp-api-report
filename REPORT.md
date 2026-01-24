@@ -117,7 +117,7 @@
  109 │ sasc                  │ 0.0.0   │ 0        │ plugins │       - │        - │     - │     - │                    
  110 │ selog                 │ 0.0.0   │ 58ce3561 │ plugins │       - │       10 │     - │     5 │                    
  111 │ session               │ 4.0.3   │ 85f82b54 │ core    │       2 │       40 │     5 │    20 │                    
- 112 │ sfdp                  │ 0.0.1   │ 2e91bf43 │ core    │       2 │       14 │     - │     7 │                    
+ 112 │ sfdp                  │ 0.0.1   │ c74c8c24 │ core    │       2 │       16 │     - │     8 │                    
  113 │ sfdp_types            │ 0.0.1   │ a64b3a78 │ core    │       1 │        - │     6 │     - │                    
  114 │ sflow                 │ 0.1.0   │ 273ad146 │ plugins │       1 │       24 │     - │    12 │                    
  115 │ snort                 │ 1.0.0   │ 8209b13d │ plugins │       2 │       25 │     - │    11 │                    
@@ -164,7 +164,7 @@
 
 ```
 Listing 12 differences:
- - [Version] Schema version is different: 25.10-release vs 26.06-rc0~11-g7a51f8f7b
+ - [Version] Schema version is different: 25.10-release vs 26.06-rc0~23-gb6572e420
  - [FilesCount] Total file count increased from 140 to 149
  - [FileAdded] File added: gateway
  - [FileAdded] File added: interface_input
