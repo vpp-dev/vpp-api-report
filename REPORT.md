@@ -163,7 +163,7 @@
 
 ```
 Listing 13 differences:
- - [Version] Schema version is different: 25.10-release vs 26.06-rc0~107-gbd40ef6e2
+ - [Version] Schema version is different: 25.10-release vs 26.06-rc0~115-g5f2e00baa
  - [FilesCount] Total file count increased from 140 to 148
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: gateway
