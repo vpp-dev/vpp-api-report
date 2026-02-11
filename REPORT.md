@@ -51,7 +51,7 @@
   43 │ ikev2                 │ 1.0.1   │ fdeb2617 │ plugins │       3 │       60 │     - │    30 │                    
   44 │ ikev2_types           │ 1.0.0   │ 64c72418 │ plugins │       2 │        - │    16 │     - │                    
   45 │ interface             │ 3.2.3   │ 14dfbf43 │ core    │       3 │       72 │     - │    35 │                    
-  46 │ interface_input       │ 0.0.1   │ af397a24 │ plugins │       2 │        2 │     - │     1 │                    
+  46 │ interface_input       │ 0.0.1   │ 685eb5e0 │ plugins │       2 │        2 │     - │     1 │                    
   47 │ interface_types       │ 1.0.0   │ 7f2ba79a │ core    │       - │        - │     8 │     - │                    
   48 │ ioam_cache            │ 1.0.0   │ d0a0cf20 │ plugins │       - │        2 │     - │     1 │                    
   49 │ ioam_export           │ 1.0.0   │ 26bebf64 │ plugins │       1 │        2 │     - │     1 │                    
@@ -163,7 +163,7 @@
 
 ```
 Listing 13 differences:
- - [Version] Schema version is different: 25.10-release vs 26.06-rc0~115-g5f2e00baa
+ - [Version] Schema version is different: 25.10-release vs 26.06-rc0~126-gf16a631ea
  - [FilesCount] Total file count increased from 140 to 148
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: gateway
