@@ -71,7 +71,7 @@
   63 │ lacp                  │ 2.0.0   │ e1609dab │ plugins │       2 │        2 │     - │     1 │                    
   64 │ lb                    │ 1.1.0   │ 49e3c1c1 │ plugins │       3 │       18 │     - │     9 │                    
   65 │ lb_types              │ 1.0.0   │ ba19340c │ plugins │       1 │        - │     6 │     - │                    
-  66 │ lcp                   │ 1.0.0   │ 2ff03def │ plugins │       1 │       23 │     1 │    11 │                    
+  66 │ lcp                   │ 1.0.0   │ 80d5015c │ plugins │       1 │       27 │     1 │    13 │                    
   67 │ lisp                  │ 2.0.0   │ cb04530f │ plugins │       4 │       60 │     2 │    30 │                    
   68 │ lisp_gpe              │ 2.0.0   │ 92611b0  │ plugins │       4 │       20 │     3 │    10 │                    
   69 │ lisp_types            │ 1.0.0   │ f05d92a6 │ plugins │       3 │        - │     8 │     - │                    
@@ -121,7 +121,7 @@
  113 │ sflow                 │ 0.1.0   │ 273ad146 │ plugins │       1 │       24 │     - │    12 │                    
  114 │ snort                 │ 1.0.0   │ 8209b13d │ plugins │       2 │       25 │     - │    11 │                    
  115 │ span                  │ 2.0.0   │ 34ee02b  │ core    │       1 │        4 │     1 │     2 │                    
- 116 │ sr                    │ 2.1.0   │ 1fa846d0 │ core    │       3 │       30 │     3 │    15 │                    
+ 116 │ sr                    │ 2.1.0   │ 23e3f650 │ core    │       3 │       32 │     3 │    16 │                    
  117 │ sr_mobile             │ 0.1.0   │ 2a93fd77 │ plugins │       5 │        4 │     - │     2 │                    
  118 │ sr_mobile_types       │ 0.1.0   │ 7afa7d45 │ plugins │       - │        - │     1 │     - │                    
  119 │ sr_mpls               │ 3.0.0   │ 156edb17 │ plugins │       3 │       10 │     - │     5 │                    
@@ -162,8 +162,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 13 differences:
- - [Version] Schema version is different: 25.10-release vs 26.06-rc0~138-g1dae2e7e0
+Listing 23 differences:
+ - [Version] Schema version is different: 25.10-release vs 26.06-rc0~143-g8d3fd217b
  - [FilesCount] Total file count increased from 140 to 148
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: gateway
@@ -175,6 +175,18 @@ Listing 13 differences:
  - [FileAdded] File added: sfdp
  - [FileAdded] File added: sfdp_types
  - [FileAdded] File added: tcp_check
+ lcp
+ - [FileCRC] File CRC changed from 0x2ff03def to 0x80d5015c
+ - [FileContentsChanged] Number of Messages has increased from 23 to 27
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ sr
+ - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
+ - [FileContentsChanged] Number of Messages has increased from 30 to 32
+ - [MessageAdded] Message added: sr_localsid_add_del_v2
+ - [MessageAdded] Message added: sr_localsid_add_del_v2_reply
  tapv2
  - [FileMoved] File moved from core/tapv2.api.json to plugins/tapv2.api.json
 ```
