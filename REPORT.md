@@ -178,8 +178,8 @@ Listing 23 differences:
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x80d5015c
  - [FileContentsChanged] Number of Messages has increased from 23 to 27
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
  sr
