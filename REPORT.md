@@ -180,8 +180,8 @@ Listing 23 differences:
  - [FileContentsChanged] Number of Messages has increased from 23 to 27
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
  - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
