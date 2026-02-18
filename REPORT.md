@@ -163,7 +163,7 @@
 
 ```
 Listing 23 differences:
- - [Version] Schema version is different: 25.10-release vs 26.06-rc0~152-g8b097bb28
+ - [Version] Schema version is different: 25.10-release vs 26.06-rc0~162-g7e870f6c2
  - [FilesCount] Total file count increased from 140 to 148
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: gateway
@@ -179,9 +179,9 @@ Listing 23 differences:
  - [FileCRC] File CRC changed from 0x2ff03def to 0x80d5015c
  - [FileContentsChanged] Number of Messages has increased from 23 to 27
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
