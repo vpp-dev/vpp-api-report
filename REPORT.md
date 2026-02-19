@@ -56,7 +56,7 @@
   48 │ ioam_cache            │ 1.0.0   │ d0a0cf20 │ plugins │       - │        2 │     - │     1 │                    
   49 │ ioam_export           │ 1.0.0   │ 26bebf64 │ plugins │       1 │        2 │     - │     1 │                    
   50 │ ioam_vxlan_gpe        │ 1.0.0   │ b49eb0b9 │ plugins │       1 │       12 │     - │     6 │                    
-  51 │ ip                    │ 3.2.0   │ c2b1c41  │ core    │       5 │       97 │    10 │    48 │                    
+  51 │ ip                    │ 3.2.0   │ c55aec44 │ core    │       5 │       95 │    10 │    47 │                    
   52 │ ip6_nd                │ 1.1.0   │ 5f19a809 │ core    │       2 │       17 │     2 │     8 │                    
   53 │ ip_neighbor           │ 1.0.1   │ 36db39bd │ core    │       3 │       20 │     3 │     9 │                    
   54 │ ip_session_redirect   │ 0.3.0   │ 54be863a │ plugins │       3 │        8 │     - │     4 │                    
@@ -103,8 +103,8 @@
   95 │ ping                  │ 0.1.0   │ 5b568e46 │ plugins │       2 │        3 │     - │     1 │                    
   96 │ pipe                  │ 1.0.1   │ c159134a │ core    │       1 │        6 │     - │     3 │                    
   97 │ pnat                  │ 0.1.1   │ 54bc8e17 │ plugins │       2 │       18 │     4 │     8 │                    
-  98 │ policer               │ 3.0.0   │ 341163a6 │ core    │       2 │       25 │     - │    13 │                    
-  99 │ policer_types         │ 1.0.0   │ 5838c08b │ core    │       - │        - │     6 │     - │                    
+  98 │ policer               │ 3.0.0   │ 5b7970e4 │ plugins │       2 │       27 │     - │    14 │                    
+  99 │ policer_types         │ 1.0.0   │ 5838c08b │ plugins │       - │        - │     6 │     - │                    
  100 │ pot                   │ 1.0.0   │ a9d8e55c │ plugins │       - │        8 │     - │     4 │                    
  101 │ pp2                   │ 1.0.0   │ d7ab5bd7 │ plugins │       1 │        4 │     - │     2 │                    
  102 │ pppoe                 │ 2.0.0   │ ec9e86bf │ plugins │       3 │        6 │     - │     3 │                    
@@ -162,8 +162,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 23 differences:
- - [Version] Schema version is different: 25.10-release vs 26.06-rc0~162-g7e870f6c2
+Listing 33 differences:
+ - [Version] Schema version is different: 25.10-release vs 26.06-rc0~177-gfa115562c
  - [FilesCount] Total file count increased from 140 to 148
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: gateway
@@ -175,18 +175,31 @@ Listing 23 differences:
  - [FileAdded] File added: sfdp
  - [FileAdded] File added: sfdp_types
  - [FileAdded] File added: tcp_check
+ ip
+ - [FileCRC] File CRC changed from 0xc2b1c41 to 0xc55aec44
+ - [FileContentsChanged] Number of Messages has decreased from 97 to 95
+ - [MessageRemoved] Message removed: ip_punt_police_reply
+ - [MessageRemoved] Message removed: ip_punt_police
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x80d5015c
  - [FileContentsChanged] Number of Messages has increased from 23 to 27
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
  - [MessageAdded] Message added: lcp_sync_unnumbered_get
- - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ policer
+ - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
+ - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
+ - [FileContentsChanged] Number of Messages has increased from 25 to 27
+ - [MessageAdded] Message added: ip_punt_police_reply
+ - [MessageAdded] Message added: ip_punt_police
+ policer_types
+ - [FileMoved] File moved from core/policer_types.api.json to plugins/policer_types.api.json
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
- - [MessageAdded] Message added: sr_localsid_add_del_v2
  - [MessageAdded] Message added: sr_localsid_add_del_v2_reply
+ - [MessageAdded] Message added: sr_localsid_add_del_v2
  tapv2
  - [FileMoved] File moved from core/tapv2.api.json to plugins/tapv2.api.json
 ```
@@ -245,7 +258,7 @@ Listing 23 differences:
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  23 │                                  │                                   │ message pnat_binding_add_reply has newer version available (pnat_binding_add_v2_reply) but is not marked as deprecated                        
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 24 │                                  │ core/policer.api.json             │ message policer_bind has newer version available (policer_bind_v2) but is not marked as deprecated                                            
+ 24 │                                  │ plugins/policer.api.json          │ message policer_bind has newer version available (policer_bind_v2) but is not marked as deprecated                                            
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  25 │                                  │                                   │ message policer_bind_reply has newer version available (policer_bind_v2_reply) but is not marked as deprecated                                
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
