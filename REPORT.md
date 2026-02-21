@@ -163,7 +163,7 @@
 
 ```
 Listing 33 differences:
- - [Version] Schema version is different: 25.10-release vs 26.06-rc0~186-gf1396ffb6
+ - [Version] Schema version is different: 25.10-release vs 26.06-rc0~191-g39ea54816
  - [FilesCount] Total file count increased from 140 to 148
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: gateway
@@ -178,28 +178,28 @@ Listing 33 differences:
  ip
  - [FileCRC] File CRC changed from 0xc2b1c41 to 0xc55aec44
  - [FileContentsChanged] Number of Messages has decreased from 97 to 95
- - [MessageRemoved] Message removed: ip_punt_police_reply
  - [MessageRemoved] Message removed: ip_punt_police
+ - [MessageRemoved] Message removed: ip_punt_police_reply
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x80d5015c
  - [FileContentsChanged] Number of Messages has increased from 23 to 27
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
  - [FileContentsChanged] Number of Messages has increased from 25 to 27
- - [MessageAdded] Message added: ip_punt_police
  - [MessageAdded] Message added: ip_punt_police_reply
+ - [MessageAdded] Message added: ip_punt_police
  policer_types
  - [FileMoved] File moved from core/policer_types.api.json to plugins/policer_types.api.json
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
- - [MessageAdded] Message added: sr_localsid_add_del_v2
  - [MessageAdded] Message added: sr_localsid_add_del_v2_reply
+ - [MessageAdded] Message added: sr_localsid_add_del_v2
  tapv2
  - [FileMoved] File moved from core/tapv2.api.json to plugins/tapv2.api.json
 ```
