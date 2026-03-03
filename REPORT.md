@@ -163,7 +163,7 @@
 
 ```
 Listing 35 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~207-g2a0e76584
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~213-g6ab248630
  - [FilesCount] Total file count decreased from 149 to 148
  - [FileRemoved] File removed: avf
  interface_input
@@ -193,17 +193,17 @@ Listing 35 differences:
  - [FileCRC] File CRC changed from 0x2e91bf43 to 0x789db91a
  - [FileContentsChanged] Number of Messages has increased from 14 to 18
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
- - [MessageAdded] Message added: sfdp_kill_session
  - [MessageAdded] Message added: sfdp_service_dump
  - [MessageAdded] Message added: sfdp_service_details
+ - [MessageAdded] Message added: sfdp_kill_session
  - [MessageAdded] Message added: sfdp_kill_session_reply
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
- - [MessageAdded] Message added: sr_localsid_add_del_v2
  - [MessageAdded] Message added: sr_localsid_add_del_v2_reply
+ - [MessageAdded] Message added: sr_localsid_add_del_v2
  tcp_check
  - [FileCRC] File CRC changed from 0x59a28f13 to 0x327f4d77
  - [MessageCRC] Message sfdp_tcp_session_details changed CRC from 0xb846a1c5 to 0x4bd58888
