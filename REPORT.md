@@ -163,7 +163,7 @@
 
 ```
 Listing 35 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~213-g6ab248630
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~216-gd95a8929a
  - [FilesCount] Total file count decreased from 149 to 148
  - [FileRemoved] File removed: avf
  interface_input
@@ -178,9 +178,9 @@ Listing 35 differences:
  - [FileCRC] File CRC changed from 0x2ff03def to 0x80d5015c
  - [FileContentsChanged] Number of Messages has increased from 23 to 27
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
@@ -194,8 +194,8 @@ Listing 35 differences:
  - [FileContentsChanged] Number of Messages has increased from 14 to 18
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
  - [MessageAdded] Message added: sfdp_service_dump
- - [MessageAdded] Message added: sfdp_service_details
  - [MessageAdded] Message added: sfdp_kill_session
+ - [MessageAdded] Message added: sfdp_service_details
  - [MessageAdded] Message added: sfdp_kill_session_reply
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
