@@ -164,15 +164,15 @@
 
 ```
 Listing 42 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~269-gfaaff397f
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~280-g95329f462
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
  - [FileCRC] File CRC changed from 0xce7be3ad to 0x980ae7e1
  - [FileContentsChanged] Number of Messages has increased from 20 to 22
  - [FileContentsChanged] Number of Types has increased from 23 to 24
- - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
  - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
+ - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
  - [MessageAdded] Message added: cnat_snat_addresses_dump
  - [MessageAdded] Message added: cnat_snat_addresses_details
  interface_input
@@ -186,16 +186,16 @@ Listing 42 differences:
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x80d5015c
  - [FileContentsChanged] Number of Messages has increased from 23 to 27
- - [MessageAdded] Message added: lcp_sync_unnumbered_set
  - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
  - [FileContentsChanged] Number of Messages has increased from 25 to 27
- - [MessageAdded] Message added: ip_punt_police_reply
  - [MessageAdded] Message added: ip_punt_police
+ - [MessageAdded] Message added: ip_punt_police_reply
  policer_types
  - [FileMoved] File moved from core/policer_types.api.json to plugins/policer_types.api.json
  sfdp
