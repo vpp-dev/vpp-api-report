@@ -164,7 +164,7 @@
 
 ```
 Listing 46 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~287-g501bf6203
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~294-gbdf39cdef
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
@@ -186,14 +186,14 @@ Listing 46 differences:
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
- - [MessageAdded] Message added: lcp_osi_proto_enable
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_osi_proto_get_reply
- - [MessageAdded] Message added: lcp_osi_proto_get
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_osi_proto_enable
+ - [MessageAdded] Message added: lcp_osi_proto_get
+ - [MessageAdded] Message added: lcp_osi_proto_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
- - [MessageAdded] Message added: lcp_osi_proto_enable_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_osi_proto_enable_reply
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
@@ -206,9 +206,9 @@ Listing 46 differences:
  - [FileCRC] File CRC changed from 0x2e91bf43 to 0x789db91a
  - [FileContentsChanged] Number of Messages has increased from 14 to 18
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
+ - [MessageAdded] Message added: sfdp_kill_session_reply
  - [MessageAdded] Message added: sfdp_service_dump
  - [MessageAdded] Message added: sfdp_kill_session
- - [MessageAdded] Message added: sfdp_kill_session_reply
  - [MessageAdded] Message added: sfdp_service_details
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
