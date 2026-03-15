@@ -164,7 +164,7 @@
 
 ```
 Listing 46 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~314-gbae843c6f
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~315-g36107d794
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
@@ -173,8 +173,8 @@ Listing 46 differences:
  - [FileContentsChanged] Number of Types has increased from 23 to 24
  - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
  - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
- - [MessageAdded] Message added: cnat_snat_addresses_details
  - [MessageAdded] Message added: cnat_snat_addresses_dump
+ - [MessageAdded] Message added: cnat_snat_addresses_details
  interface_input
  - [FileCRC] File CRC changed from 0xaf397a24 to 0x685eb5e0
  - [MessageCRC] Message sfdp_interface_input_set changed CRC from 0xfca1e31a to 0xc80a0902
@@ -187,13 +187,13 @@ Listing 46 differences:
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
  - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
- - [MessageAdded] Message added: lcp_osi_proto_enable_reply
- - [MessageAdded] Message added: lcp_osi_proto_enable
- - [MessageAdded] Message added: lcp_osi_proto_get
- - [MessageAdded] Message added: lcp_osi_proto_get_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
- - [MessageAdded] Message added: lcp_sync_unnumbered_set
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_osi_proto_enable
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set
+ - [MessageAdded] Message added: lcp_osi_proto_get_reply
+ - [MessageAdded] Message added: lcp_osi_proto_enable_reply
+ - [MessageAdded] Message added: lcp_osi_proto_get
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
@@ -215,8 +215,8 @@ Listing 46 differences:
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
- - [MessageAdded] Message added: sr_localsid_add_del_v2_reply
  - [MessageAdded] Message added: sr_localsid_add_del_v2
+ - [MessageAdded] Message added: sr_localsid_add_del_v2_reply
  tcp_check
  - [FileCRC] File CRC changed from 0x59a28f13 to 0x327f4d77
  - [MessageCRC] Message sfdp_tcp_session_details changed CRC from 0xb846a1c5 to 0x4bd58888
