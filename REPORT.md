@@ -164,36 +164,36 @@
 
 ```
 Listing 46 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~322-g3c0b690a1
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~333-g8d631e150
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
  - [FileCRC] File CRC changed from 0xce7be3ad to 0x980ae7e1
  - [FileContentsChanged] Number of Messages has increased from 20 to 22
  - [FileContentsChanged] Number of Types has increased from 23 to 24
- - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
  - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
- - [MessageAdded] Message added: cnat_snat_addresses_dump
+ - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
  - [MessageAdded] Message added: cnat_snat_addresses_details
+ - [MessageAdded] Message added: cnat_snat_addresses_dump
  interface_input
  - [FileCRC] File CRC changed from 0xaf397a24 to 0x685eb5e0
  - [MessageCRC] Message sfdp_interface_input_set changed CRC from 0xfca1e31a to 0xc80a0902
  ip
  - [FileCRC] File CRC changed from 0xc2b1c41 to 0xc55aec44
  - [FileContentsChanged] Number of Messages has decreased from 97 to 95
- - [MessageRemoved] Message removed: ip_punt_police_reply
  - [MessageRemoved] Message removed: ip_punt_police
+ - [MessageRemoved] Message removed: ip_punt_police_reply
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
- - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
- - [MessageAdded] Message added: lcp_osi_proto_get_reply
  - [MessageAdded] Message added: lcp_osi_proto_get
- - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_osi_proto_enable
  - [MessageAdded] Message added: lcp_osi_proto_enable_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_osi_proto_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_osi_proto_enable
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
@@ -206,17 +206,17 @@ Listing 46 differences:
  - [FileCRC] File CRC changed from 0x2e91bf43 to 0x789db91a
  - [FileContentsChanged] Number of Messages has increased from 14 to 18
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
- - [MessageAdded] Message added: sfdp_kill_session_reply
- - [MessageAdded] Message added: sfdp_service_details
  - [MessageAdded] Message added: sfdp_kill_session
+ - [MessageAdded] Message added: sfdp_kill_session_reply
  - [MessageAdded] Message added: sfdp_service_dump
+ - [MessageAdded] Message added: sfdp_service_details
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
- - [MessageAdded] Message added: sr_localsid_add_del_v2_reply
  - [MessageAdded] Message added: sr_localsid_add_del_v2
+ - [MessageAdded] Message added: sr_localsid_add_del_v2_reply
  tcp_check
  - [FileCRC] File CRC changed from 0x59a28f13 to 0x327f4d77
  - [MessageCRC] Message sfdp_tcp_session_details changed CRC from 0xb846a1c5 to 0x4bd58888
