@@ -171,8 +171,8 @@ Listing 46 differences:
  - [FileCRC] File CRC changed from 0xce7be3ad to 0x980ae7e1
  - [FileContentsChanged] Number of Messages has increased from 20 to 22
  - [FileContentsChanged] Number of Types has increased from 23 to 24
- - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
  - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
+ - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
  - [MessageAdded] Message added: cnat_snat_addresses_dump
  - [MessageAdded] Message added: cnat_snat_addresses_details
  interface_input
@@ -186,14 +186,14 @@ Listing 46 differences:
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
- - [MessageAdded] Message added: lcp_osi_proto_enable_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_osi_proto_enable
- - [MessageAdded] Message added: lcp_osi_proto_get
- - [MessageAdded] Message added: lcp_osi_proto_get_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_osi_proto_enable
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set
+ - [MessageAdded] Message added: lcp_osi_proto_enable_reply
+ - [MessageAdded] Message added: lcp_osi_proto_get
+ - [MessageAdded] Message added: lcp_osi_proto_get_reply
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
