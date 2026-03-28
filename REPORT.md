@@ -164,7 +164,7 @@
 
 ```
 Listing 54 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~378-g0c2052879
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~381-g4cf89e5e6
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
@@ -173,17 +173,17 @@ Listing 54 differences:
  - [FileContentsChanged] Number of Types has increased from 23 to 24
  - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
  - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
- - [MessageAdded] Message added: cnat_snat_addresses_dump
  - [MessageAdded] Message added: cnat_snat_addresses_details
+ - [MessageAdded] Message added: cnat_snat_addresses_dump
  flow
- - [MsgOptionChanged] Message flow_add changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]"
- - [MsgOptionChanged] Message flow_add_v2 changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]"
  - [MsgOptionChanged] Message flow_del changed option vat_help from "test flow del index <index>" to "flow del index <index>"
- - [MsgOptionChanged] Message flow_del_reply changed option vat_help from "test flow del index <index>" to "flow del index <index>"
- - [MsgOptionChanged] Message flow_enable changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_enable_reply changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_disable changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_add changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]"
+ - [MsgOptionChanged] Message flow_del_reply changed option vat_help from "test flow del index <index>" to "flow del index <index>"
+ - [MsgOptionChanged] Message flow_enable changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_disable_reply changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_add_v2 changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]"
  interface_input
  - [FileCRC] File CRC changed from 0xaf397a24 to 0x685eb5e0
  - [MessageCRC] Message sfdp_interface_input_set changed CRC from 0xfca1e31a to 0xc80a0902
@@ -195,30 +195,30 @@ Listing 54 differences:
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
- - [MessageAdded] Message added: lcp_osi_proto_get
- - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
- - [MessageAdded] Message added: lcp_osi_proto_enable
- - [MessageAdded] Message added: lcp_osi_proto_enable_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
- - [MessageAdded] Message added: lcp_osi_proto_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_osi_proto_enable
+ - [MessageAdded] Message added: lcp_osi_proto_get
+ - [MessageAdded] Message added: lcp_osi_proto_get_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_osi_proto_enable_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
  - [FileContentsChanged] Number of Messages has increased from 25 to 27
- - [MessageAdded] Message added: ip_punt_police
  - [MessageAdded] Message added: ip_punt_police_reply
+ - [MessageAdded] Message added: ip_punt_police
  policer_types
  - [FileMoved] File moved from core/policer_types.api.json to plugins/policer_types.api.json
  sfdp
  - [FileCRC] File CRC changed from 0x2e91bf43 to 0x789db91a
  - [FileContentsChanged] Number of Messages has increased from 14 to 18
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
+ - [MessageAdded] Message added: sfdp_service_dump
  - [MessageAdded] Message added: sfdp_kill_session
  - [MessageAdded] Message added: sfdp_kill_session_reply
  - [MessageAdded] Message added: sfdp_service_details
- - [MessageAdded] Message added: sfdp_service_dump
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
  sr
