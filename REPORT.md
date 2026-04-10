@@ -164,7 +164,7 @@
 
 ```
 Listing 82 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~454-g23aeae34a
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~457-gdbde0f8f2
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
@@ -176,18 +176,18 @@ Listing 82 differences:
  - [MessageAdded] Message added: cnat_snat_addresses_details
  - [MessageAdded] Message added: cnat_snat_addresses_dump
  flow
- - [MsgOptionChanged] Message flow_del changed option vat_help from "test flow del index <index>" to "flow del index <index>"
- - [MsgOptionChanged] Message flow_del_reply changed option vat_help from "test flow del index <index>" to "flow del index <index>"
- - [MsgOptionChanged] Message flow_disable changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
- - [MsgOptionChanged] Message flow_add changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]"
  - [MsgOptionChanged] Message flow_enable changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_enable_reply changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_disable_reply changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_add changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]"
+ - [MsgOptionChanged] Message flow_del changed option vat_help from "test flow del index <index>" to "flow del index <index>"
+ - [MsgOptionChanged] Message flow_del_reply changed option vat_help from "test flow del index <index>" to "flow del index <index>"
+ - [MsgOptionChanged] Message flow_disable changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_add_v2 changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]"
  ikev2
  - [FileCRC] File CRC changed from 0xfdeb2617 to 0x934066d2
- - [MessageCRC] Message ikev2_set_ike_transforms changed CRC from 0x076d7378 to 0xaa99fec0
  - [MessageCRC] Message ikev2_profile_details changed CRC from 0x670d01d9 to 0x3e3e895b
+ - [MessageCRC] Message ikev2_set_ike_transforms changed CRC from 0x076d7378 to 0xaa99fec0
  ikev2_types
  - [FileCRC] File CRC changed from 0x64c72418 to 0x67a53a36
  interface_input
@@ -196,48 +196,48 @@ Listing 82 differences:
  ip
  - [FileCRC] File CRC changed from 0xc2b1c41 to 0xc55aec44
  - [FileContentsChanged] Number of Messages has decreased from 97 to 95
- - [MessageRemoved] Message removed: ip_punt_police_reply
  - [MessageRemoved] Message removed: ip_punt_police
+ - [MessageRemoved] Message removed: ip_punt_police_reply
  l2
  - [FileVersion] File version changed from 3.2.0 to 3.3.0
  - [FileCRC] File CRC changed from 0x2720d298 to 0x1a53d6cc
  - [FileContentsChanged] Number of Messages has increased from 64 to 72
  - [FileContentsChanged] Number of Enums has increased from 15 to 16
- - [MessageAdded] Message added: l2_flags_set_reply
- - [MessageAdded] Message added: l2_flags_get
+ - [MessageAdded] Message added: l2_interface_feat_flags_get_reply
  - [MessageAdded] Message added: l2_interface_feat_flags_set
  - [MessageAdded] Message added: l2_flags_get_reply
- - [MessageAdded] Message added: l2_interface_feat_flags_get_reply
- - [MessageAdded] Message added: l2_flags_set
- - [MessageAdded] Message added: l2_interface_feat_flags_get
  - [MessageAdded] Message added: l2_interface_feat_flags_set_reply
+ - [MessageAdded] Message added: l2_flags_set_reply
+ - [MessageAdded] Message added: l2_flags_set
+ - [MessageAdded] Message added: l2_flags_get
+ - [MessageAdded] Message added: l2_interface_feat_flags_get
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
  - [MessageAdded] Message added: lcp_osi_proto_get
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_osi_proto_enable
  - [MessageAdded] Message added: lcp_osi_proto_enable_reply
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
  - [MessageAdded] Message added: lcp_osi_proto_get_reply
- - [MessageAdded] Message added: lcp_osi_proto_enable
  - [MessageAdded] Message added: lcp_sync_unnumbered_get
- - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
  - [FileContentsChanged] Number of Messages has increased from 25 to 27
- - [MessageAdded] Message added: ip_punt_police
  - [MessageAdded] Message added: ip_punt_police_reply
+ - [MessageAdded] Message added: ip_punt_police
  policer_types
  - [FileMoved] File moved from core/policer_types.api.json to plugins/policer_types.api.json
  sfdp
  - [FileCRC] File CRC changed from 0x2e91bf43 to 0x789db91a
  - [FileContentsChanged] Number of Messages has increased from 14 to 18
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
- - [MessageAdded] Message added: sfdp_kill_session_reply
+ - [MessageAdded] Message added: sfdp_service_dump
  - [MessageAdded] Message added: sfdp_service_details
  - [MessageAdded] Message added: sfdp_kill_session
- - [MessageAdded] Message added: sfdp_service_dump
+ - [MessageAdded] Message added: sfdp_kill_session_reply
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
  sr
@@ -253,13 +253,13 @@ Listing 82 differences:
  - [FileCRC] File CRC changed from 0x5d8f9252 to 0x709f48a6
  - [FileContentsChanged] Number of Messages has increased from 17 to 21
  - [FileContentsChanged] Number of Types has increased from 10 to 11
- - [MsgOptionAdded] Message wireguard_peer_add added option: deprecated
- - [MsgOptionAdded] Message wireguard_peer_add_reply added option: deprecated
- - [MsgOptionAdded] Message wireguard_peers_dump added option: deprecated
  - [MsgOptionAdded] Message wireguard_peers_details added option: deprecated
- - [MessageAdded] Message added: wireguard_peer_add_v2
+ - [MsgOptionAdded] Message wireguard_peer_add added option: deprecated
+ - [MsgOptionAdded] Message wireguard_peers_dump added option: deprecated
+ - [MsgOptionAdded] Message wireguard_peer_add_reply added option: deprecated
  - [MessageAdded] Message added: wireguard_peers_v2_dump
  - [MessageAdded] Message added: wireguard_peers_v2_details
+ - [MessageAdded] Message added: wireguard_peer_add_v2
  - [MessageAdded] Message added: wireguard_peer_add_v2_reply
 ```
 
