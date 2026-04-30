@@ -21,7 +21,7 @@
   13 │ bpf_trace_filter      │ 0.1.0   │ b682a79a │ plugins │       - │        4 │     - │     2 │         
   14 │ cdp                   │ 1.0.0   │ 8cfa825e │ plugins │       - │        2 │     - │     1 │         
   15 │ classify              │ 3.1.0   │ 92a4f2c8 │ core    │       1 │       44 │     3 │    22 │         
-  16 │ cnat                  │ 0.3.0   │ 980ae7e1 │ plugins │       6 │       22 │    10 │    11 │         
+  16 │ cnat                  │ 0.3.0   │ c121e90a │ plugins │       6 │       26 │    11 │    13 │         
   17 │ crypto                │ 1.0.1   │ 2a68080c │ core    │       - │        6 │     2 │     3 │         
   18 │ crypto_sw_scheduler   │ 1.1.0   │ f4b02951 │ plugins │       - │        2 │     - │     1 │         
   19 │ ct6                   │ 1.0.0   │ 5c824a95 │ plugins │       1 │        2 │     - │     1 │         
@@ -163,39 +163,44 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 101 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~540-g583206652
+Listing 106 differences:
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~547-g8ad75ce4e
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
- - [FileCRC] File CRC changed from 0xce7be3ad to 0x980ae7e1
- - [FileContentsChanged] Number of Messages has increased from 20 to 22
+ - [FileCRC] File CRC changed from 0xce7be3ad to 0xc121e90a
+ - [FileContentsChanged] Number of Messages has increased from 20 to 26
  - [FileContentsChanged] Number of Types has increased from 23 to 24
+ - [FileContentsChanged] Number of Enums has increased from 23 to 24
  - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
  - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
- - [MessageAdded] Message added: cnat_snat_addresses_details
+ - [MessageAdded] Message added: feature_cnat_enable_disable_reply
+ - [MessageAdded] Message added: cnat_set_snat_addresses_v2
+ - [MessageAdded] Message added: cnat_set_snat_addresses_v2_reply
  - [MessageAdded] Message added: cnat_snat_addresses_dump
+ - [MessageAdded] Message added: cnat_snat_addresses_details
+ - [MessageAdded] Message added: feature_cnat_enable_disable
  flow
- - [MsgOptionChanged] Message flow_enable_reply changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
- - [MsgOptionChanged] Message flow_disable changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_add_v2 changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]"
  - [MsgOptionChanged] Message flow_del changed option vat_help from "test flow del index <index>" to "flow del index <index>"
  - [MsgOptionChanged] Message flow_enable changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_enable_reply changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_disable changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_disable_reply changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_add changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]"
- - [MsgOptionChanged] Message flow_add_v2 changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]"
  - [MsgOptionChanged] Message flow_del_reply changed option vat_help from "test flow del index <index>" to "flow del index <index>"
  gre
  - [FileVersion] File version changed from 2.1.1 to 2.2.0
  - [FileCRC] File CRC changed from 0x3a070f21 to 0x1bfeec2
  - [FileContentsChanged] Number of Messages has increased from 10 to 13
  - [MsgOptionAdded] Message gre_tunnel_dump added option: deprecated
- - [MsgOptionAdded] Message gre_tunnel_dump_v2 added option: deprecated
- - [MsgOptionAdded] Message gre_tunnel_details added option: deprecated
- - [MsgOptionAdded] Message gre_tunnel_details_v2 added option: deprecated
  - [MsgOptionAdded] Message gre_tunnel_dump_reply added option: deprecated
  - [MsgOptionAdded] Message gre_tunnel_dump_v2_reply added option: deprecated
- - [MessageAdded] Message added: gre_tunnel_v2_dump_reply
+ - [MsgOptionAdded] Message gre_tunnel_details_v2 added option: deprecated
+ - [MsgOptionAdded] Message gre_tunnel_dump_v2 added option: deprecated
+ - [MsgOptionAdded] Message gre_tunnel_details added option: deprecated
  - [MessageAdded] Message added: gre_tunnel_v2_dump
+ - [MessageAdded] Message added: gre_tunnel_v2_dump_reply
  - [MessageAdded] Message added: gre_tunnel_v2_details
  ikev2
  - [FileCRC] File CRC changed from 0xfdeb2617 to 0x934066d2
@@ -207,10 +212,10 @@ Listing 101 differences:
  - [FileVersion] File version changed from 3.2.3 to 3.2.4
  - [FileCRC] File CRC changed from 0x14dfbf43 to 0xcf7004cc
  - [FileContentsChanged] Number of Messages has increased from 72 to 76
- - [MessageAdded] Message added: sw_interface_set_default_rx_mode
- - [MessageAdded] Message added: sw_interface_get_default_rx_mode_reply
- - [MessageAdded] Message added: sw_interface_set_default_rx_mode_reply
  - [MessageAdded] Message added: sw_interface_get_default_rx_mode
+ - [MessageAdded] Message added: sw_interface_get_default_rx_mode_reply
+ - [MessageAdded] Message added: sw_interface_set_default_rx_mode
+ - [MessageAdded] Message added: sw_interface_set_default_rx_mode_reply
  interface_input
  - [FileCRC] File CRC changed from 0xaf397a24 to 0x685eb5e0
  - [MessageCRC] Message sfdp_interface_input_set changed CRC from 0xfca1e31a to 0xc80a0902
@@ -224,25 +229,25 @@ Listing 101 differences:
  - [FileCRC] File CRC changed from 0x2720d298 to 0x1a53d6cc
  - [FileContentsChanged] Number of Messages has increased from 64 to 72
  - [FileContentsChanged] Number of Enums has increased from 15 to 16
+ - [MessageAdded] Message added: l2_flags_set
  - [MessageAdded] Message added: l2_interface_feat_flags_get
+ - [MessageAdded] Message added: l2_flags_get_reply
+ - [MessageAdded] Message added: l2_interface_feat_flags_get_reply
  - [MessageAdded] Message added: l2_flags_get
  - [MessageAdded] Message added: l2_interface_feat_flags_set
- - [MessageAdded] Message added: l2_interface_feat_flags_get_reply
- - [MessageAdded] Message added: l2_flags_get_reply
- - [MessageAdded] Message added: l2_flags_set
- - [MessageAdded] Message added: l2_flags_set_reply
  - [MessageAdded] Message added: l2_interface_feat_flags_set_reply
+ - [MessageAdded] Message added: l2_flags_set_reply
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
+ - [MessageAdded] Message added: lcp_osi_proto_get_reply
+ - [MessageAdded] Message added: lcp_osi_proto_enable_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_osi_proto_enable
- - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  - [MessageAdded] Message added: lcp_osi_proto_get
  - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
- - [MessageAdded] Message added: lcp_osi_proto_enable_reply
- - [MessageAdded] Message added: lcp_osi_proto_get_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
@@ -255,10 +260,10 @@ Listing 101 differences:
  - [FileCRC] File CRC changed from 0x2e91bf43 to 0x789db91a
  - [FileContentsChanged] Number of Messages has increased from 14 to 18
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
- - [MessageAdded] Message added: sfdp_service_details
- - [MessageAdded] Message added: sfdp_service_dump
  - [MessageAdded] Message added: sfdp_kill_session
  - [MessageAdded] Message added: sfdp_kill_session_reply
+ - [MessageAdded] Message added: sfdp_service_details
+ - [MessageAdded] Message added: sfdp_service_dump
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
  sr
@@ -276,12 +281,12 @@ Listing 101 differences:
  - [FileContentsChanged] Number of Types has increased from 10 to 11
  - [MsgOptionAdded] Message wireguard_peers_details added option: deprecated
  - [MsgOptionAdded] Message wireguard_peer_add added option: deprecated
- - [MsgOptionAdded] Message wireguard_peer_add_reply added option: deprecated
  - [MsgOptionAdded] Message wireguard_peers_dump added option: deprecated
- - [MessageAdded] Message added: wireguard_peer_add_v2_reply
+ - [MsgOptionAdded] Message wireguard_peer_add_reply added option: deprecated
  - [MessageAdded] Message added: wireguard_peers_v2_details
- - [MessageAdded] Message added: wireguard_peers_v2_dump
  - [MessageAdded] Message added: wireguard_peer_add_v2
+ - [MessageAdded] Message added: wireguard_peer_add_v2_reply
+ - [MessageAdded] Message added: wireguard_peers_v2_dump
 ```
 
 </details>
@@ -296,125 +301,129 @@ Listing 101 differences:
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  2  │                                  │                                   │ message bpf_trace_filter_set_reply has newer version available (bpf_trace_filter_set_v2_reply) but is not marked as deprecated                
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 3  │                                  │ plugins/gre.api.json              │ message gre_tunnel_add_del has newer version available (gre_tunnel_add_del_v2) but is not marked as deprecated                                
+ 3  │                                  │ plugins/cnat.api.json             │ message cnat_set_snat_addresses has newer version available (cnat_set_snat_addresses_v2) but is not marked as deprecated                      
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 4  │                                  │                                   │ message gre_tunnel_add_del_reply has newer version available (gre_tunnel_add_del_v2_reply) but is not marked as deprecated                    
+ 4  │                                  │                                   │ message cnat_set_snat_addresses_reply has newer version available (cnat_set_snat_addresses_v2_reply) but is not marked as deprecated          
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 5  │                                  │ plugins/ikev2.api.json            │ message ikev2_sa_dump has newer version available (ikev2_sa_v2_dump) but is not marked as deprecated                                          
+ 5  │                                  │ plugins/gre.api.json              │ message gre_tunnel_add_del has newer version available (gre_tunnel_add_del_v2) but is not marked as deprecated                                
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 6  │                                  │                                   │ message ikev2_sa_details has newer version available (ikev2_sa_v2_details) but is not marked as deprecated                                    
+ 6  │                                  │                                   │ message gre_tunnel_add_del_reply has newer version available (gre_tunnel_add_del_v2_reply) but is not marked as deprecated                    
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 7  │                                  │ core/ip.api.json                  │ message ip_table_add_del has newer version available (ip_table_add_del_v2) but is not marked as deprecated                                    
+ 7  │                                  │ plugins/ikev2.api.json            │ message ikev2_sa_dump has newer version available (ikev2_sa_v2_dump) but is not marked as deprecated                                          
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 8  │                                  │                                   │ message ip_table_add_del_reply has newer version available (ip_table_add_del_v2_reply) but is not marked as deprecated                        
+ 8  │                                  │                                   │ message ikev2_sa_details has newer version available (ikev2_sa_v2_details) but is not marked as deprecated                                    
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 9  │                                  │ core/ipsec.api.json               │ message ipsec_sad_entry_add has newer version available (ipsec_sad_entry_add_v2) but is not marked as deprecated                              
+ 9  │                                  │ core/ip.api.json                  │ message ip_table_add_del has newer version available (ip_table_add_del_v2) but is not marked as deprecated                                    
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 10 │                                  │                                   │ message ipsec_sad_entry_add_reply has newer version available (ipsec_sad_entry_add_v2_reply) but is not marked as deprecated                  
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 11 │                                  │                                   │ message ipsec_sa_v3_dump has newer version available (ipsec_sa_v4_dump) but is not marked as deprecated                                       
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 12 │                                  │                                   │ message ipsec_sa_v4_dump has newer version available (ipsec_sa_v5_dump) but is not marked as deprecated                                       
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 13 │                                  │                                   │ message ipsec_sa_v3_details has newer version available (ipsec_sa_v4_details) but is not marked as deprecated                                 
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 14 │                                  │                                   │ message ipsec_sa_v4_details has newer version available (ipsec_sa_v5_details) but is not marked as deprecated                                 
+ 10 │                                  │                                   │ message ip_table_add_del_reply has newer version available (ip_table_add_del_v2_reply) but is not marked as deprecated                        
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 15 │                                  │ plugins/lb.api.json               │ message lb_add_del_vip has newer version available (lb_add_del_vip_v2) but is not marked as deprecated                                        
+ 11 │                                  │ core/ipsec.api.json               │ message ipsec_sad_entry_add has newer version available (ipsec_sad_entry_add_v2) but is not marked as deprecated                              
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 16 │                                  │                                   │ message lb_add_del_vip_reply has newer version available (lb_add_del_vip_v2_reply) but is not marked as deprecated                            
+ 12 │                                  │                                   │ message ipsec_sad_entry_add_reply has newer version available (ipsec_sad_entry_add_v2_reply) but is not marked as deprecated                  
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 13 │                                  │                                   │ message ipsec_sa_v3_dump has newer version available (ipsec_sa_v4_dump) but is not marked as deprecated                                       
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 14 │                                  │                                   │ message ipsec_sa_v4_dump has newer version available (ipsec_sa_v5_dump) but is not marked as deprecated                                       
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 15 │                                  │                                   │ message ipsec_sa_v3_details has newer version available (ipsec_sa_v4_details) but is not marked as deprecated                                 
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 16 │                                  │                                   │ message ipsec_sa_v4_details has newer version available (ipsec_sa_v5_details) but is not marked as deprecated                                 
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 17 │                                  │ plugins/lcp.api.json              │ message lcp_itf_pair_get has newer version available (lcp_itf_pair_get_v2) but is not marked as deprecated                                    
+ 17 │                                  │ plugins/lb.api.json               │ message lb_add_del_vip has newer version available (lb_add_del_vip_v2) but is not marked as deprecated                                        
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 18 │                                  │                                   │ message lcp_itf_pair_get_reply has newer version available (lcp_itf_pair_get_v2_reply) but is not marked as deprecated                        
+ 18 │                                  │                                   │ message lb_add_del_vip_reply has newer version available (lb_add_del_vip_v2_reply) but is not marked as deprecated                            
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 19 │                                  │ plugins/pnat.api.json             │ message pnat_binding_add has newer version available (pnat_binding_add_v2) but is not marked as deprecated                                    
+ 19 │                                  │ plugins/lcp.api.json              │ message lcp_itf_pair_get has newer version available (lcp_itf_pair_get_v2) but is not marked as deprecated                                    
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 20 │                                  │                                   │ message pnat_binding_add_reply has newer version available (pnat_binding_add_v2_reply) but is not marked as deprecated                        
+ 20 │                                  │                                   │ message lcp_itf_pair_get_reply has newer version available (lcp_itf_pair_get_v2_reply) but is not marked as deprecated                        
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 21 │                                  │ plugins/policer.api.json          │ message policer_bind has newer version available (policer_bind_v2) but is not marked as deprecated                                            
+ 21 │                                  │ plugins/pnat.api.json             │ message pnat_binding_add has newer version available (pnat_binding_add_v2) but is not marked as deprecated                                    
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 22 │                                  │                                   │ message policer_bind_reply has newer version available (policer_bind_v2_reply) but is not marked as deprecated                                
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 23 │                                  │                                   │ message policer_input has newer version available (policer_input_v2) but is not marked as deprecated                                          
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 24 │                                  │                                   │ message policer_input_reply has newer version available (policer_input_v2_reply) but is not marked as deprecated                              
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 25 │                                  │                                   │ message policer_output has newer version available (policer_output_v2) but is not marked as deprecated                                        
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 26 │                                  │                                   │ message policer_output_reply has newer version available (policer_output_v2_reply) but is not marked as deprecated                            
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 27 │                                  │                                   │ message policer_dump has newer version available (policer_dump_v2) but is not marked as deprecated                                            
+ 22 │                                  │                                   │ message pnat_binding_add_reply has newer version available (pnat_binding_add_v2_reply) but is not marked as deprecated                        
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 28 │                                  │ plugins/rdma.api.json             │ message rdma_create_v3_reply has newer version available (rdma_create_v4_reply) but is not marked as deprecated                               
+ 23 │                                  │ plugins/policer.api.json          │ message policer_bind has newer version available (policer_bind_v2) but is not marked as deprecated                                            
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 24 │                                  │                                   │ message policer_bind_reply has newer version available (policer_bind_v2_reply) but is not marked as deprecated                                
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 25 │                                  │                                   │ message policer_input has newer version available (policer_input_v2) but is not marked as deprecated                                          
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 26 │                                  │                                   │ message policer_input_reply has newer version available (policer_input_v2_reply) but is not marked as deprecated                              
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 27 │                                  │                                   │ message policer_output has newer version available (policer_output_v2) but is not marked as deprecated                                        
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 28 │                                  │                                   │ message policer_output_reply has newer version available (policer_output_v2_reply) but is not marked as deprecated                            
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 29 │                                  │                                   │ message policer_dump has newer version available (policer_dump_v2) but is not marked as deprecated                                            
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 29 │                                  │ core/sr.api.json                  │ message sr_policies_details has newer version available (sr_policies_v2_details) but is not marked as deprecated                              
+ 30 │                                  │ plugins/rdma.api.json             │ message rdma_create_v3_reply has newer version available (rdma_create_v4_reply) but is not marked as deprecated                               
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 30 │                                  │ plugins/tracedump.api.json        │ message trace_dump has newer version available (trace_v2_dump) but is not marked as deprecated                                                
-────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 31 │                                  │                                   │ message trace_details has newer version available (trace_v2_details) but is not marked as deprecated                                          
+ 31 │                                  │ core/sr.api.json                  │ message sr_policies_details has newer version available (sr_policies_v2_details) but is not marked as deprecated                              
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 32 │                                  │ plugins/urpf.api.json             │ message urpf_update has newer version available (urpf_update_v2) but is not marked as deprecated                                              
+ 32 │                                  │ plugins/tracedump.api.json        │ message trace_dump has newer version available (trace_v2_dump) but is not marked as deprecated                                                
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 33 │                                  │                                   │ message urpf_update_reply has newer version available (urpf_update_v2_reply) but is not marked as deprecated                                  
+ 33 │                                  │                                   │ message trace_details has newer version available (trace_v2_details) but is not marked as deprecated                                          
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 34 │                                  │ plugins/vxlan_gpe.api.json        │ message vxlan_gpe_add_del_tunnel has newer version available (vxlan_gpe_add_del_tunnel_v2) but is not marked as deprecated                    
+ 34 │                                  │ plugins/urpf.api.json             │ message urpf_update has newer version available (urpf_update_v2) but is not marked as deprecated                                              
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 35 │                                  │                                   │ message vxlan_gpe_add_del_tunnel_reply has newer version available (vxlan_gpe_add_del_tunnel_v2_reply) but is not marked as deprecated        
+ 35 │                                  │                                   │ message urpf_update_reply has newer version available (urpf_update_v2_reply) but is not marked as deprecated                                  
+────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 36 │                                  │ plugins/vxlan_gpe.api.json        │ message vxlan_gpe_add_del_tunnel has newer version available (vxlan_gpe_add_del_tunnel_v2) but is not marked as deprecated                    
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 36 │                                  │                                   │ message vxlan_gpe_tunnel_dump has newer version available (vxlan_gpe_tunnel_v2_dump) but is not marked as deprecated                          
+ 37 │                                  │                                   │ message vxlan_gpe_add_del_tunnel_reply has newer version available (vxlan_gpe_add_del_tunnel_v2_reply) but is not marked as deprecated        
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 37 │                                  │                                   │ message vxlan_gpe_tunnel_details has newer version available (vxlan_gpe_tunnel_v2_details) but is not marked as deprecated                    
+ 38 │                                  │                                   │ message vxlan_gpe_tunnel_dump has newer version available (vxlan_gpe_tunnel_v2_dump) but is not marked as deprecated                          
+────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 39 │                                  │                                   │ message vxlan_gpe_tunnel_details has newer version available (vxlan_gpe_tunnel_v2_details) but is not marked as deprecated                    
 ────┼──────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 38 │ MESSAGE_SAME_STATUS              │ core/bond.api.json                │ message bond_create does not have consistent status (deprecated) with related message: bond_create_reply (n/a)                                
+ 40 │ MESSAGE_SAME_STATUS              │ core/bond.api.json                │ message bond_create does not have consistent status (deprecated) with related message: bond_create_reply (n/a)                                
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 39 │                                  │                                   │ message bond_enslave does not have consistent status (deprecated) with related message: bond_enslave_reply (n/a)                              
+ 41 │                                  │                                   │ message bond_enslave does not have consistent status (deprecated) with related message: bond_enslave_reply (n/a)                              
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 40 │                                  │                                   │ message sw_interface_bond_dump does not have consistent status (deprecated) with related message: sw_interface_bond_details (n/a)             
+ 42 │                                  │                                   │ message sw_interface_bond_dump does not have consistent status (deprecated) with related message: sw_interface_bond_details (n/a)             
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 41 │                                  │                                   │ message sw_interface_slave_dump does not have consistent status (deprecated) with related message: sw_interface_slave_details (n/a)           
+ 43 │                                  │                                   │ message sw_interface_slave_dump does not have consistent status (deprecated) with related message: sw_interface_slave_details (n/a)           
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 42 │                                  │ plugins/det44.api.json            │ message det44_get_timeouts does not have consistent status (n/a) with related message: det44_get_timeouts_reply (in_progress)                 
+ 44 │                                  │ plugins/det44.api.json            │ message det44_get_timeouts does not have consistent status (n/a) with related message: det44_get_timeouts_reply (in_progress)                 
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 43 │                                  │ plugins/geneve.api.json           │ message geneve_add_del_tunnel does not have consistent status (deprecated) with related message: geneve_add_del_tunnel_reply (n/a)            
+ 45 │                                  │ plugins/geneve.api.json           │ message geneve_add_del_tunnel does not have consistent status (deprecated) with related message: geneve_add_del_tunnel_reply (n/a)            
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 44 │                                  │ core/l2.api.json                  │ message want_l2_macs_events does not have consistent status (deprecated) with related message: l2_macs_event (n/a)                            
+ 46 │                                  │ core/l2.api.json                  │ message want_l2_macs_events does not have consistent status (deprecated) with related message: l2_macs_event (n/a)                            
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 45 │                                  │ plugins/lcp.api.json              │ message lcp_default_ns_get does not have consistent status (n/a) with related message: lcp_default_ns_get_reply (in_progress)                 
+ 47 │                                  │ plugins/lcp.api.json              │ message lcp_default_ns_get does not have consistent status (n/a) with related message: lcp_default_ns_get_reply (in_progress)                 
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 46 │                                  │                                   │ message lcp_itf_pair_get does not have consistent status (n/a) with related message: lcp_itf_pair_details (in_progress)                       
+ 48 │                                  │                                   │ message lcp_itf_pair_get does not have consistent status (n/a) with related message: lcp_itf_pair_details (in_progress)                       
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 47 │                                  │                                   │ message lcp_itf_pair_get_v2 does not have consistent status (n/a) with related message: lcp_itf_pair_details (in_progress)                    
+ 49 │                                  │                                   │ message lcp_itf_pair_get_v2 does not have consistent status (n/a) with related message: lcp_itf_pair_details (in_progress)                    
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 48 │                                  │ plugins/lldp.api.json             │ message lldp_dump does not have consistent status (n/a) with related message: lldp_details (in_progress)                                      
+ 50 │                                  │ plugins/lldp.api.json             │ message lldp_dump does not have consistent status (n/a) with related message: lldp_details (in_progress)                                      
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 49 │                                  │ plugins/map.api.json              │ message map_domain_dump does not have consistent status (deprecated) with related message: map_domain_details (n/a)                           
+ 51 │                                  │ plugins/map.api.json              │ message map_domain_dump does not have consistent status (deprecated) with related message: map_domain_details (n/a)                           
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 50 │                                  │ plugins/rdma.api.json             │ message rdma_create_v3 does not have consistent status (deprecated) with related message: rdma_create_v3_reply (n/a)                          
+ 52 │                                  │ plugins/rdma.api.json             │ message rdma_create_v3 does not have consistent status (deprecated) with related message: rdma_create_v3_reply (n/a)                          
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 51 │                                  │ core/session.api.json             │ message app_namespace_add_del_v4 does not have consistent status (deprecated) with related message: app_namespace_add_del_v4_reply (n/a)      
+ 53 │                                  │ core/session.api.json             │ message app_namespace_add_del_v4 does not have consistent status (deprecated) with related message: app_namespace_add_del_v4_reply (n/a)      
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 52 │                                  │ plugins/sflow.api.json            │ message sflow_sampling_rate_get does not have consistent status (n/a) with related message: sflow_sampling_rate_get_reply (in_progress)       
+ 54 │                                  │ plugins/sflow.api.json            │ message sflow_sampling_rate_get does not have consistent status (n/a) with related message: sflow_sampling_rate_get_reply (in_progress)       
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 53 │                                  │                                   │ message sflow_polling_interval_get does not have consistent status (n/a) with related message: sflow_polling_interval_get_reply (in_progress) 
+ 55 │                                  │                                   │ message sflow_polling_interval_get does not have consistent status (n/a) with related message: sflow_polling_interval_get_reply (in_progress) 
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 54 │                                  │                                   │ message sflow_header_bytes_get does not have consistent status (n/a) with related message: sflow_header_bytes_get_reply (in_progress)         
+ 56 │                                  │                                   │ message sflow_header_bytes_get does not have consistent status (n/a) with related message: sflow_header_bytes_get_reply (in_progress)         
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 55 │                                  │                                   │ message sflow_direction_get does not have consistent status (n/a) with related message: sflow_direction_get_reply (in_progress)               
+ 57 │                                  │                                   │ message sflow_direction_get does not have consistent status (n/a) with related message: sflow_direction_get_reply (in_progress)               
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 56 │                                  │                                   │ message sflow_drop_monitoring_get does not have consistent status (n/a) with related message: sflow_drop_monitoring_get_reply (in_progress)   
+ 58 │                                  │                                   │ message sflow_drop_monitoring_get does not have consistent status (n/a) with related message: sflow_drop_monitoring_get_reply (in_progress)   
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 57 │                                  │ core/sr.api.json                  │ message sr_policies_dump does not have consistent status (deprecated) with related message: sr_policies_details (n/a)                         
+ 59 │                                  │ core/sr.api.json                  │ message sr_policies_dump does not have consistent status (deprecated) with related message: sr_policies_details (n/a)                         
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 58 │                                  │ plugins/vmxnet3.api.json          │ message vmxnet3_dump does not have consistent status (deprecated) with related message: vmxnet3_details (n/a)                                 
+ 60 │                                  │ plugins/vmxnet3.api.json          │ message vmxnet3_dump does not have consistent status (deprecated) with related message: vmxnet3_details (n/a)                                 
 ────┼──────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 59 │ UNUSED_MESSAGE                   │ plugins/gre.api.json              │ message gre_tunnel_dump_reply is not used by services                                                                                         
+ 61 │ UNUSED_MESSAGE                   │ plugins/gre.api.json              │ message gre_tunnel_dump_reply is not used by services                                                                                         
 ────┤                                  │                                   ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 60 │                                  │                                   │ message gre_tunnel_v2_dump_reply is not used by services                                                                                      
+ 62 │                                  │                                   │ message gre_tunnel_v2_dump_reply is not used by services                                                                                      
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 61 │                                  │ plugins/mactime.api.json          │ message mactime_dump_reply is not used by services                                                                                            
+ 63 │                                  │ plugins/mactime.api.json          │ message mactime_dump_reply is not used by services                                                                                            
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 62 │                                  │ core/qos.api.json                 │ message qos_mark_details_reply is not used by services                                                                                        
+ 64 │                                  │ core/qos.api.json                 │ message qos_mark_details_reply is not used by services                                                                                        
 ```
 
 </details>
