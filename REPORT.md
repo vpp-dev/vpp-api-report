@@ -120,7 +120,7 @@
  112 │ sfdp                  │ 0.0.1   │ 789db91a │ core    │       2 │       18 │     - │     9 │         
  113 │ sfdp_types            │ 0.0.1   │ 2cd47f8b │ core    │       1 │        - │     6 │     - │         
  114 │ sflow                 │ 0.1.0   │ 273ad146 │ plugins │       1 │       24 │     - │    12 │         
- 115 │ snort                 │ 1.0.0   │ 8209b13d │ plugins │       2 │       25 │     - │    11 │         
+ 115 │ snort                 │ 1.1.0   │ 9826183c │ plugins │       2 │       41 │     2 │    17 │         
  116 │ span                  │ 2.0.0   │ 34ee02b  │ core    │       1 │        4 │     1 │     2 │         
  117 │ sr                    │ 2.1.0   │ 23e3f650 │ core    │       3 │       32 │     3 │    16 │         
  118 │ sr_mobile             │ 0.1.0   │ 2a93fd77 │ plugins │       5 │        4 │     - │     2 │         
@@ -163,8 +163,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 106 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~555-g04486f47a
+Listing 143 differences:
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~572-g59063056c
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
@@ -172,82 +172,82 @@ Listing 106 differences:
  - [FileContentsChanged] Number of Messages has increased from 20 to 26
  - [FileContentsChanged] Number of Types has increased from 23 to 24
  - [FileContentsChanged] Number of Enums has increased from 23 to 24
- - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
  - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
+ - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
+ - [MessageAdded] Message added: cnat_set_snat_addresses_v2_reply
  - [MessageAdded] Message added: cnat_set_snat_addresses_v2
  - [MessageAdded] Message added: cnat_snat_addresses_dump
  - [MessageAdded] Message added: feature_cnat_enable_disable_reply
- - [MessageAdded] Message added: cnat_set_snat_addresses_v2_reply
- - [MessageAdded] Message added: cnat_snat_addresses_details
  - [MessageAdded] Message added: feature_cnat_enable_disable
+ - [MessageAdded] Message added: cnat_snat_addresses_details
  flow
- - [MsgOptionChanged] Message flow_del changed option vat_help from "test flow del index <index>" to "flow del index <index>"
- - [MsgOptionChanged] Message flow_enable changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_del_reply changed option vat_help from "test flow del index <index>" to "flow del index <index>"
  - [MsgOptionChanged] Message flow_enable_reply changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_disable_reply changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
- - [MsgOptionChanged] Message flow_del_reply changed option vat_help from "test flow del index <index>" to "flow del index <index>"
- - [MsgOptionChanged] Message flow_disable changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_add changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]"
+ - [MsgOptionChanged] Message flow_del changed option vat_help from "test flow del index <index>" to "flow del index <index>"
+ - [MsgOptionChanged] Message flow_enable changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_disable changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_add_v2 changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]"
  gre
  - [FileVersion] File version changed from 2.1.1 to 2.2.0
  - [FileCRC] File CRC changed from 0x3a070f21 to 0x1bfeec2
  - [FileContentsChanged] Number of Messages has increased from 10 to 13
+ - [MsgOptionAdded] Message gre_tunnel_dump_v2_reply added option: deprecated
+ - [MsgOptionAdded] Message gre_tunnel_details_v2 added option: deprecated
+ - [MsgOptionAdded] Message gre_tunnel_details added option: deprecated
  - [MsgOptionAdded] Message gre_tunnel_dump added option: deprecated
  - [MsgOptionAdded] Message gre_tunnel_dump_reply added option: deprecated
  - [MsgOptionAdded] Message gre_tunnel_dump_v2 added option: deprecated
- - [MsgOptionAdded] Message gre_tunnel_dump_v2_reply added option: deprecated
- - [MsgOptionAdded] Message gre_tunnel_details added option: deprecated
- - [MsgOptionAdded] Message gre_tunnel_details_v2 added option: deprecated
+ - [MessageAdded] Message added: gre_tunnel_v2_details
  - [MessageAdded] Message added: gre_tunnel_v2_dump
  - [MessageAdded] Message added: gre_tunnel_v2_dump_reply
- - [MessageAdded] Message added: gre_tunnel_v2_details
  ikev2
  - [FileCRC] File CRC changed from 0xfdeb2617 to 0x934066d2
- - [MessageCRC] Message ikev2_set_ike_transforms changed CRC from 0x076d7378 to 0xaa99fec0
  - [MessageCRC] Message ikev2_profile_details changed CRC from 0x670d01d9 to 0x3e3e895b
+ - [MessageCRC] Message ikev2_set_ike_transforms changed CRC from 0x076d7378 to 0xaa99fec0
  ikev2_types
  - [FileCRC] File CRC changed from 0x64c72418 to 0x67a53a36
  interface
  - [FileVersion] File version changed from 3.2.3 to 3.2.4
  - [FileCRC] File CRC changed from 0x14dfbf43 to 0xcf7004cc
  - [FileContentsChanged] Number of Messages has increased from 72 to 76
- - [MessageAdded] Message added: sw_interface_get_default_rx_mode
  - [MessageAdded] Message added: sw_interface_set_default_rx_mode_reply
  - [MessageAdded] Message added: sw_interface_get_default_rx_mode_reply
  - [MessageAdded] Message added: sw_interface_set_default_rx_mode
+ - [MessageAdded] Message added: sw_interface_get_default_rx_mode
  interface_input
  - [FileCRC] File CRC changed from 0xaf397a24 to 0x685eb5e0
  - [MessageCRC] Message sfdp_interface_input_set changed CRC from 0xfca1e31a to 0xc80a0902
  ip
  - [FileCRC] File CRC changed from 0xc2b1c41 to 0xc55aec44
  - [FileContentsChanged] Number of Messages has decreased from 97 to 95
- - [MessageRemoved] Message removed: ip_punt_police
  - [MessageRemoved] Message removed: ip_punt_police_reply
+ - [MessageRemoved] Message removed: ip_punt_police
  l2
  - [FileVersion] File version changed from 3.2.0 to 3.3.0
  - [FileCRC] File CRC changed from 0x2720d298 to 0x1a53d6cc
  - [FileContentsChanged] Number of Messages has increased from 64 to 72
  - [FileContentsChanged] Number of Enums has increased from 15 to 16
+ - [MessageAdded] Message added: l2_interface_feat_flags_get_reply
+ - [MessageAdded] Message added: l2_interface_feat_flags_get
  - [MessageAdded] Message added: l2_flags_get_reply
+ - [MessageAdded] Message added: l2_flags_set_reply
+ - [MessageAdded] Message added: l2_interface_feat_flags_set_reply
  - [MessageAdded] Message added: l2_flags_set
  - [MessageAdded] Message added: l2_interface_feat_flags_set
- - [MessageAdded] Message added: l2_interface_feat_flags_get
- - [MessageAdded] Message added: l2_interface_feat_flags_get_reply
  - [MessageAdded] Message added: l2_flags_get
- - [MessageAdded] Message added: l2_interface_feat_flags_set_reply
- - [MessageAdded] Message added: l2_flags_set_reply
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
+ - [MessageAdded] Message added: lcp_osi_proto_enable_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
  - [MessageAdded] Message added: lcp_osi_proto_get
  - [MessageAdded] Message added: lcp_osi_proto_get_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_osi_proto_enable
- - [MessageAdded] Message added: lcp_sync_unnumbered_set
- - [MessageAdded] Message added: lcp_osi_proto_enable_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
@@ -260,12 +260,50 @@ Listing 106 differences:
  - [FileCRC] File CRC changed from 0x2e91bf43 to 0x789db91a
  - [FileContentsChanged] Number of Messages has increased from 14 to 18
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
- - [MessageAdded] Message added: sfdp_service_dump
- - [MessageAdded] Message added: sfdp_service_details
  - [MessageAdded] Message added: sfdp_kill_session
  - [MessageAdded] Message added: sfdp_kill_session_reply
+ - [MessageAdded] Message added: sfdp_service_details
+ - [MessageAdded] Message added: sfdp_service_dump
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
+ snort
+ - [FileVersion] File version changed from 1.0.0 to 1.1.0
+ - [FileCRC] File CRC changed from 0x8209b13d to 0x9826183c
+ - [FileContentsChanged] Number of Messages has increased from 25 to 41
+ - [FileContentsChanged] Number of Enums has increased from 12 to 14
+ - [MsgOptionAdded] Message snort_interface_detach added option: deprecated
+ - [MsgOptionAdded] Message snort_input_mode_set added option: deprecated
+ - [MsgOptionAdded] Message snort_instance_get added option: deprecated
+ - [MsgOptionAdded] Message snort_instance_get_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_get added option: deprecated
+ - [MsgOptionAdded] Message snort_input_mode_get added option: deprecated
+ - [MsgOptionAdded] Message snort_input_mode_get_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_input_mode_set_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_get_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_instance_create added option: deprecated
+ - [MsgOptionAdded] Message snort_client_get added option: deprecated
+ - [MsgOptionAdded] Message snort_client_details added option: deprecated
+ - [MsgOptionAdded] Message snort_instance_create_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_detach_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_instance_details added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_details added option: deprecated
+ - [MsgOptionAdded] Message snort_client_get_reply added option: deprecated
+ - [MessageAdded] Message added: snort_instance_create_v2_reply
+ - [MessageAdded] Message added: snort_instance_v2_get
+ - [MessageAdded] Message added: snort_interface_v2_get
+ - [MessageAdded] Message added: snort_instance_v2_details_reply
+ - [MessageAdded] Message added: snort_instance_v2_get_reply
+ - [MessageAdded] Message added: snort_interface_detach_v2
+ - [MessageAdded] Message added: snort_interface_v2_details
+ - [MessageAdded] Message added: snort_interface_v2_get_reply
+ - [MessageAdded] Message added: snort_client_v2_details
+ - [MessageAdded] Message added: snort_instance_create_v2
+ - [MessageAdded] Message added: snort_interface_detach_v2_reply
+ - [MessageAdded] Message added: snort_instance_v2_details
+ - [MessageAdded] Message added: snort_set_drop_bitmap
+ - [MessageAdded] Message added: snort_set_drop_bitmap_reply
+ - [MessageAdded] Message added: snort_client_v2_get
+ - [MessageAdded] Message added: snort_client_v2_get_reply
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
@@ -280,13 +318,13 @@ Listing 106 differences:
  - [FileContentsChanged] Number of Messages has increased from 17 to 21
  - [FileContentsChanged] Number of Types has increased from 10 to 11
  - [MsgOptionAdded] Message wireguard_peer_add_reply added option: deprecated
- - [MsgOptionAdded] Message wireguard_peer_add added option: deprecated
  - [MsgOptionAdded] Message wireguard_peers_dump added option: deprecated
  - [MsgOptionAdded] Message wireguard_peers_details added option: deprecated
+ - [MsgOptionAdded] Message wireguard_peer_add added option: deprecated
  - [MessageAdded] Message added: wireguard_peers_v2_dump
+ - [MessageAdded] Message added: wireguard_peer_add_v2
  - [MessageAdded] Message added: wireguard_peer_add_v2_reply
  - [MessageAdded] Message added: wireguard_peers_v2_details
- - [MessageAdded] Message added: wireguard_peer_add_v2
 ```
 
 </details>
@@ -424,6 +462,8 @@ Listing 106 differences:
  63 │                                  │ plugins/mactime.api.json          │ message mactime_dump_reply is not used by services                                                                                            
 ────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  64 │                                  │ core/qos.api.json                 │ message qos_mark_details_reply is not used by services                                                                                        
+────┤                                  ├───────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 65 │                                  │ plugins/snort.api.json            │ message snort_instance_v2_details_reply is not used by services                                                                               
 ```
 
 </details>
