@@ -4,157 +4,157 @@
 <summary><h2>VPP API files</h2></summary>
 
 ```
-  #  │          API          │ VERSION │   CRC    │  PATH   │ IMPORTS │ MESSAGES │ TYPES │ RP CS │ OPTIONS 
-─────┼───────────────────────┼─────────┼──────────┼─────────┼─────────┼──────────┼───────┼───────┼─────────
-   1 │ abf                   │ 1.0.0   │ f2367b47 │ plugins │       3 │       10 │     2 │     5 │         
-   2 │ acl                   │ 2.0.1   │ 5133bba0 │ plugins │       4 │       42 │     - │    21 │         
-   3 │ acl_types             │ 1.0.0   │ 878da4fa │ plugins │       2 │        - │     3 │     - │         
-   4 │ adl                   │ 1.0.1   │ b752b7a2 │ plugins │       1 │        4 │     - │     2 │         
-   5 │ af_packet             │ 2.0.0   │ 5b12de21 │ plugins │       2 │       12 │     2 │     6 │         
-   6 │ af_xdp                │ 1.0.0   │ 2d18a436 │ plugins │       1 │        4 │     2 │     2 │         
-   7 │ arp                   │ 1.0.0   │ b57796ae │ core    │       3 │        8 │     1 │     4 │         
-   8 │ arping                │ 1.0.0   │ 8b2c8f39 │ plugins │       3 │        4 │     - │     2 │         
-   9 │ auto_sdl              │ 1.0.0   │ 434063e5 │ plugins │       - │        2 │     - │     1 │         
-  10 │ bfd                   │ 2.0.0   │ 23f9c6f3 │ core    │       2 │       37 │     1 │    18 │         
-  11 │ bier                  │ 1.2.1   │ 8d1cd497 │ core    │       2 │       22 │     2 │    11 │         
-  12 │ bond                  │ 2.1.0   │ a03f5330 │ core    │       2 │       24 │     2 │    12 │         
-  13 │ bpf_trace_filter      │ 0.1.0   │ b682a79a │ plugins │       - │        4 │     - │     2 │         
-  14 │ cdp                   │ 1.0.0   │ 8cfa825e │ plugins │       - │        2 │     - │     1 │         
-  15 │ classify              │ 3.1.0   │ 92a4f2c8 │ core    │       1 │       44 │     3 │    22 │         
-  16 │ cnat                  │ 0.3.0   │ c121e90a │ plugins │       6 │       26 │    11 │    13 │         
-  17 │ crypto                │ 1.0.1   │ 2a68080c │ core    │       - │        6 │     2 │     3 │         
-  18 │ crypto_sw_scheduler   │ 1.1.0   │ f4b02951 │ plugins │       - │        2 │     - │     1 │         
-  19 │ ct6                   │ 1.0.0   │ 5c824a95 │ plugins │       1 │        2 │     - │     1 │         
-  20 │ det44                 │ 1.0.0   │ 6d6e88dd │ plugins │       3 │       38 │     - │    19 │         
-  21 │ dev                   │ 0.0.1   │ 86eacf88 │ core    │       - │        8 │     2 │     4 │         
-  22 │ dhcp                  │ 3.0.1   │ c519013a │ plugins │       3 │       31 │     9 │    14 │         
-  23 │ dhcp6_ia_na_client_cp │ 1.0.1   │ 6e8abdfb │ plugins │       1 │        2 │     - │     1 │         
-  24 │ dhcp6_pd_client_cp    │ 2.0.0   │ d4418668 │ plugins │       2 │        4 │     - │     2 │         
-  25 │ dns                   │ 1.0.0   │ 269575cd │ plugins │       - │        8 │     - │     4 │         
-  26 │ dslite                │ 1.0.0   │ 1afa049b │ plugins │       2 │       12 │     - │     6 │         
-  27 │ ethernet_types        │ 1.0.0   │ f24103d6 │ core    │       - │        - │     1 │     - │         
-  28 │ feature               │ 1.0.2   │ 30d6f180 │ core    │       1 │        4 │     - │     2 │         
-  29 │ fib                   │ 1.0.0   │ 4ef4abc1 │ core    │       2 │        4 │     1 │     2 │         
-  30 │ fib_types             │ 2.0.1   │ 21fd785b │ core    │       1 │        - │     6 │     - │         
-  31 │ flow                  │ 1.0.3   │ e17512   │ core    │       4 │       10 │     - │     5 │         
-  32 │ flow_types            │ 0.0.4   │ 5657caac │ core    │       2 │        - │    27 │     - │         
-  33 │ flowprobe             │ 2.1.0   │ 72c9c142 │ plugins │       1 │       12 │     4 │     6 │         
-  34 │ gateway               │ 0.0.1   │ 84648166 │ plugins │       3 │        4 │     1 │     2 │         
-  35 │ geneve                │ 2.1.0   │ e3dbb8a3 │ plugins │       3 │        8 │     - │     4 │         
-  36 │ graph                 │ 1.0.0   │ a0b3fd1c │ plugins │       - │        3 │     1 │     1 │         
-  37 │ gre                   │ 2.2.0   │ 1bfeec2  │ plugins │       3 │       13 │     3 │     5 │         
-  38 │ gso                   │ 1.0.0   │ 81a73026 │ core    │       1 │        2 │     - │     1 │         
-  39 │ gtpu                  │ 2.1.0   │ dbbb4325 │ plugins │       2 │       18 │     4 │     9 │         
-  40 │ http_static           │ 2.5.0   │ a4be530f │ plugins │       - │        4 │     - │     2 │         
-  41 │ idpf                  │ 1.0.0   │ 48384ea8 │ plugins │       1 │        4 │     - │     2 │         
-  42 │ igmp                  │ 1.0.0   │ 95a4ff29 │ plugins │       2 │       19 │     4 │     9 │         
-  43 │ ikev2                 │ 1.0.1   │ 934066d2 │ plugins │       3 │       60 │     - │    30 │         
-  44 │ ikev2_types           │ 1.0.0   │ 67a53a36 │ plugins │       2 │        - │    16 │     - │         
-  45 │ interface             │ 3.2.4   │ cf7004cc │ core    │       3 │       76 │     - │    37 │         
-  46 │ interface_input       │ 0.0.1   │ 685eb5e0 │ plugins │       2 │        2 │     - │     1 │         
-  47 │ interface_types       │ 1.0.0   │ 7f2ba79a │ core    │       - │        - │     8 │     - │         
-  48 │ ioam_cache            │ 1.0.0   │ d0a0cf20 │ plugins │       - │        2 │     - │     1 │         
-  49 │ ioam_export           │ 1.0.0   │ 26bebf64 │ plugins │       1 │        2 │     - │     1 │         
-  50 │ ioam_vxlan_gpe        │ 1.0.0   │ b49eb0b9 │ plugins │       1 │       12 │     - │     6 │         
-  51 │ ip                    │ 3.2.0   │ c55aec44 │ core    │       5 │       95 │    10 │    47 │         
-  52 │ ip6_dad               │ 1.0.0   │ f43fb69c │ core    │       2 │        7 │     1 │     3 │         
-  53 │ ip6_nd                │ 1.1.0   │ 5f19a809 │ core    │       2 │       17 │     2 │     8 │         
-  54 │ ip_neighbor           │ 1.0.1   │ 36db39bd │ core    │       3 │       20 │     3 │     9 │         
-  55 │ ip_session_redirect   │ 0.3.0   │ 54be863a │ plugins │       3 │        8 │     - │     4 │         
-  56 │ ip_types              │ 3.0.0   │ fee023ed │ core    │       - │        - │    19 │     - │         
-  57 │ ipfix_export          │ 2.0.3   │ 63e0810a │ core    │       1 │       19 │     - │     9 │         
-  58 │ ipip                  │ 2.0.2   │ 4609caba │ core    │       3 │       10 │     1 │     5 │         
-  59 │ ipsec                 │ 5.0.2   │ 8d9c3489 │ core    │       4 │       60 │     2 │    30 │         
-  60 │ ipsec_types           │ 3.0.1   │ 9b9b8bc  │ core    │       3 │        - │    12 │     - │         
-  61 │ l2                    │ 3.3.0   │ 1a53d6cc │ core    │       3 │       72 │     7 │    35 │         
-  62 │ l2tp                  │ 2.0.0   │ 256cef81 │ plugins │       3 │       10 │     1 │     5 │         
-  63 │ l3xc                  │ 1.0.1   │ 520bfc6e │ plugins │       3 │        8 │     1 │     4 │         
-  64 │ lacp                  │ 2.0.0   │ e1609dab │ plugins │       2 │        2 │     - │     1 │         
-  65 │ lb                    │ 1.1.0   │ 49e3c1c1 │ plugins │       3 │       18 │     - │     9 │         
-  66 │ lb_types              │ 1.0.0   │ ba19340c │ plugins │       1 │        - │     6 │     - │         
-  67 │ lcp                   │ 1.0.0   │ 68b5c2b5 │ plugins │       1 │       31 │     1 │    15 │         
-  68 │ lisp                  │ 2.0.0   │ cb04530f │ plugins │       4 │       60 │     2 │    30 │         
-  69 │ lisp_gpe              │ 2.0.0   │ 92611b0  │ plugins │       4 │       20 │     3 │    10 │         
-  70 │ lisp_types            │ 1.0.0   │ f05d92a6 │ plugins │       3 │        - │     8 │     - │         
-  71 │ lldp                  │ 2.0.0   │ c26a6a68 │ plugins │       2 │        7 │     2 │     3 │         
-  72 │ mactime               │ 2.0.0   │ c72e296e │ plugins │       2 │        7 │     2 │     3 │         
-  73 │ map                   │ 4.2.1   │ d1f7f56c │ plugins │       2 │       32 │     - │    16 │         
-  74 │ mdata                 │ 0.1.0   │ 5bd69477 │ plugins │       1 │        2 │     - │     1 │         
-  75 │ memclnt               │ 2.1.0   │ b197c551 │ core    │       - │       28 │     2 │    16 │         
-  76 │ memif                 │ 3.1.0   │ d48ac702 │ plugins │       2 │       14 │     2 │     7 │         
-  77 │ mfib_types            │ 1.0.0   │ d2b57aaf │ core    │       2 │        - │     3 │     - │         
-  78 │ mpls                  │ 1.1.1   │ df2aeee2 │ core    │       3 │       18 │     3 │     9 │         
-  79 │ mss_clamp             │ 1.0.0   │ ea8186c0 │ plugins │       1 │        5 │     1 │     2 │         
-  80 │ nat                   │ 0.0.1   │ 31e543b8 │ plugins │       2 │        6 │     - │     3 │         
-  81 │ nat44_ed              │ 5.5.0   │ 6f9bc302 │ plugins │       3 │       75 │     2 │    37 │         
-  82 │ nat44_ei              │ 1.1.1   │ 88c1fd79 │ plugins │       3 │       80 │     1 │    39 │         
-  83 │ nat64                 │ 1.0.0   │ fbd06e33 │ plugins │       3 │       26 │     - │    13 │         
-  84 │ nat66                 │ 1.0.0   │ a6343f71 │ plugins │       3 │       10 │     - │     5 │         
-  85 │ nat_types             │ 0.0.1   │ 2ca9110f │ plugins │       - │        - │     3 │     - │         
-  86 │ netmap                │ 1.0.0   │ 40e7a84f │ plugins │       - │        4 │     - │     2 │         
-  87 │ npol                  │ 0.1.0   │ 79451d1  │ plugins │       2 │       22 │    15 │    11 │         
-  88 │ npt66                 │ 0.0.1   │ 4e353b99 │ plugins │       2 │        2 │     - │     1 │         
-  89 │ nsh                   │ 1.0.0   │ c2f3127d │ plugins │       1 │        8 │     - │     4 │         
-  90 │ nsim                  │ 2.2.1   │ 3b179b8f │ plugins │       1 │        8 │     - │     4 │         
-  91 │ oddbuf                │ 0.1.0   │ 3a1a2c50 │ plugins │       1 │        2 │     - │     1 │         
-  92 │ one                   │ 2.0.0   │ 9f64600e │ plugins │       4 │      108 │     5 │    54 │         
-  93 │ p2p_ethernet          │ 1.0.0   │ 3cfe55da │ core    │       2 │        4 │     - │     2 │         
-  94 │ pci_types             │ 1.0.0   │ 5d418665 │ core    │       - │        - │     1 │     - │         
-  95 │ pg                    │ 2.1.0   │ eae14b90 │ core    │       1 │       14 │     2 │     7 │         
-  96 │ ping                  │ 0.1.0   │ 5b568e46 │ plugins │       2 │        3 │     - │     1 │         
-  97 │ pipe                  │ 1.0.1   │ c159134a │ core    │       1 │        6 │     - │     3 │         
-  98 │ pnat                  │ 0.1.1   │ 54bc8e17 │ plugins │       2 │       18 │     4 │     8 │         
-  99 │ policer               │ 3.0.0   │ 5b7970e4 │ plugins │       2 │       27 │     - │    14 │         
- 100 │ policer_types         │ 1.0.0   │ 5838c08b │ plugins │       - │        - │     6 │     - │         
- 101 │ pot                   │ 1.0.0   │ a9d8e55c │ plugins │       - │        8 │     - │     4 │         
- 102 │ pp2                   │ 1.0.0   │ d7ab5bd7 │ plugins │       1 │        4 │     - │     2 │         
- 103 │ pppoe                 │ 2.0.0   │ ec9e86bf │ plugins │       3 │        6 │     - │     3 │         
- 104 │ punt                  │ 2.2.1   │ 24d11934 │ core    │       1 │       10 │     7 │     5 │         
- 105 │ pvti                  │ 0.0.1   │ b319860  │ plugins │       2 │        6 │     1 │     3 │         
- 106 │ qos                   │ 1.1.1   │ 7b7b5955 │ core    │       2 │       19 │     6 │     9 │         
- 107 │ rd_cp                 │ 1.0.1   │ 871c3bee │ core    │       1 │        2 │     - │     1 │         
- 108 │ rdma                  │ 3.0.0   │ 351383c2 │ plugins │       1 │       10 │     3 │     5 │         
- 109 │ sasc                  │ 0.0.0   │ 0        │ plugins │       - │        - │     - │     - │         
- 110 │ selog                 │ 0.0.0   │ 58ce3561 │ plugins │       - │       10 │     - │     5 │         
- 111 │ session               │ 4.0.3   │ 85f82b54 │ core    │       2 │       40 │     5 │    20 │         
- 112 │ sfdp                  │ 0.0.1   │ 789db91a │ core    │       2 │       18 │     - │     9 │         
- 113 │ sfdp_types            │ 0.0.1   │ 2cd47f8b │ core    │       1 │        - │     6 │     - │         
- 114 │ sflow                 │ 0.1.0   │ 273ad146 │ plugins │       1 │       24 │     - │    12 │         
- 115 │ snort                 │ 1.1.0   │ 9826183c │ plugins │       2 │       41 │     2 │    17 │         
- 116 │ span                  │ 2.0.0   │ 34ee02b  │ core    │       1 │        4 │     1 │     2 │         
- 117 │ sr                    │ 2.1.0   │ 23e3f650 │ core    │       3 │       32 │     3 │    16 │         
- 118 │ sr_mobile             │ 0.1.0   │ 2a93fd77 │ plugins │       5 │        4 │     - │     2 │         
- 119 │ sr_mobile_types       │ 0.1.0   │ 7afa7d45 │ plugins │       - │        - │     1 │     - │         
- 120 │ sr_mpls               │ 3.0.0   │ 156edb17 │ plugins │       3 │       10 │     - │     5 │         
- 121 │ sr_pt                 │ 1.0.0   │ 1fddedad │ core    │       1 │        6 │     - │     3 │         
- 122 │ sr_types              │ 1.0.0   │ 7955bd50 │ core    │       - │        - │     3 │     - │         
- 123 │ stn                   │ 2.0.0   │ 9cfaef64 │ plugins │       2 │        4 │     - │     2 │         
- 124 │ svs                   │ 1.0.0   │ 816cf275 │ plugins │       2 │       10 │     - │     5 │         
- 125 │ syslog                │ 1.0.0   │ 5ad12a74 │ core    │       1 │        8 │     1 │     4 │         
- 126 │ tapv2                 │ 4.0.0   │ c2f80dc7 │ plugins │       3 │        8 │     1 │     4 │         
- 127 │ tcp                   │ 2.0.0   │ 93d07485 │ core    │       1 │        2 │     - │     1 │         
- 128 │ tcp_check             │ 0.0.1   │ 327f4d77 │ plugins │       2 │        2 │     1 │     1 │         
- 129 │ teib                  │ 1.0.0   │ 14ded985 │ core    │       2 │        4 │     1 │     2 │         
- 130 │ tls_openssl           │ 2.0.0   │ 7386fbcd │ plugins │       - │        2 │     - │     1 │         
- 131 │ trace                 │ 1.0.0   │ 397cbf90 │ plugins │       - │        6 │     - │     3 │         
- 132 │ tracedump             │ 0.2.0   │ 56abf80a │ plugins │       - │       17 │     1 │     8 │         
- 133 │ tracenode             │ 0.1.0   │ dbc1eb27 │ plugins │       1 │        2 │     - │     1 │         
- 134 │ tunnel_types          │ 1.0.1   │ 882f6758 │ core    │       2 │        - │     4 │     - │         
- 135 │ udp                   │ 1.1.0   │ 6804c5af │ core    │       1 │        8 │     3 │     4 │         
- 136 │ udp_ping              │ 3.0.0   │ 16d961db │ plugins │       1 │        4 │     - │     2 │         
- 137 │ urpf                  │ 1.0.0   │ 88759016 │ plugins │       3 │        6 │     1 │     3 │         
- 138 │ vhost_user            │ 4.1.1   │ d49ae8cd │ plugins │       3 │       12 │     - │     6 │         
- 139 │ virtio                │ 3.0.0   │ a507d784 │ core    │       3 │        8 │     1 │     4 │         
- 140 │ virtio_types          │ 1.0.0   │ 7a70a44e │ core    │       - │        - │     2 │     - │         
- 141 │ vlib                  │ 1.0.0   │ 9a9e84e4 │ core    │       - │       18 │     1 │     9 │         
- 142 │ vmxnet3               │ 1.2.0   │ 609454ea │ plugins │       2 │        8 │     2 │     4 │         
- 143 │ vpe                   │ 1.7.0   │ bbfa7484 │ core    │       1 │        6 │     - │     3 │         
- 144 │ vpe_types             │ 1.0.0   │ 5f754a1c │ core    │       - │        - │     4 │     - │         
- 145 │ vrrp                  │ 1.1.1   │ 674aea12 │ plugins │       3 │       21 │     7 │    10 │         
- 146 │ vxlan                 │ 2.1.0   │ 95381587 │ plugins │       2 │       14 │     - │     7 │         
- 147 │ vxlan_gpe             │ 2.1.0   │ 3bc06278 │ plugins │       2 │       10 │     - │     5 │         
- 148 │ vxlan_gpe_ioam_export │ 1.0.0   │ 26bebf64 │ plugins │       1 │        2 │     - │     1 │         
- 149 │ wireguard             │ 1.4.0   │ 709f48a6 │ plugins │       2 │       21 │     4 │    10 │         
+  #  │          API          │ VERSION │   CRC    │  PATH   │ IMPORTS │ MESSAGES │ TYPES │ RP CS │                     OPTIONS                     
+─────┼───────────────────────┼─────────┼──────────┼─────────┼─────────┼──────────┼───────┼───────┼─────────────────────────────────────────────────
+   1 │ abf                   │ 1.0.0   │ f2367b47 │ plugins │       3 │       10 │     2 │     5 │                                                 
+   2 │ acl                   │ 2.0.1   │ 5133bba0 │ plugins │       4 │       42 │     - │    21 │                                                 
+   3 │ acl_types             │ 1.0.0   │ 878da4fa │ plugins │       2 │        - │     3 │     - │                                                 
+   4 │ adl                   │ 1.0.1   │ b752b7a2 │ plugins │       1 │        4 │     - │     2 │                                                 
+   5 │ af_packet             │ 2.0.0   │ 5b12de21 │ plugins │       2 │       12 │     2 │     6 │                                                 
+   6 │ af_xdp                │ 1.0.0   │ 2d18a436 │ plugins │       1 │        4 │     2 │     2 │                                                 
+   7 │ arp                   │ 1.0.0   │ b57796ae │ core    │       3 │        8 │     1 │     4 │                                                 
+   8 │ arping                │ 1.0.0   │ 8b2c8f39 │ plugins │       3 │        4 │     - │     2 │                                                 
+   9 │ auto_sdl              │ 1.0.0   │ 434063e5 │ plugins │       - │        2 │     - │     1 │                                                 
+  10 │ bfd                   │ 2.0.0   │ 23f9c6f3 │ core    │       2 │       37 │     1 │    18 │                                                 
+  11 │ bier                  │ 1.2.1   │ 8d1cd497 │ core    │       2 │       22 │     2 │    11 │                                                 
+  12 │ bond                  │ 2.1.0   │ a03f5330 │ core    │       2 │       24 │     2 │    12 │                                                 
+  13 │ bpf_trace_filter      │ 0.1.0   │ b682a79a │ plugins │       - │        4 │     - │     2 │                                                 
+  14 │ cdp                   │ 1.0.0   │ 8cfa825e │ plugins │       - │        2 │     - │     1 │                                                 
+  15 │ classify              │ 3.1.0   │ 92a4f2c8 │ core    │       1 │       44 │     3 │    22 │                                                 
+  16 │ cnat                  │ 0.3.0   │ c121e90a │ plugins │       6 │       26 │    11 │    13 │                                                 
+  17 │ crypto                │ 1.0.1   │ 2a68080c │ core    │       - │        6 │     2 │     3 │                                                 
+  18 │ crypto_sw_scheduler   │ 1.1.0   │ f4b02951 │ plugins │       - │        2 │     - │     1 │                                                 
+  19 │ ct6                   │ 1.0.0   │ 5c824a95 │ plugins │       1 │        2 │     - │     1 │                                                 
+  20 │ det44                 │ 1.0.0   │ 6d6e88dd │ plugins │       3 │       38 │     - │    19 │                                                 
+  21 │ dev                   │ 0.0.1   │ 86eacf88 │ core    │       - │        8 │     2 │     4 │                                                 
+  22 │ dhcp                  │ 3.0.1   │ c519013a │ plugins │       3 │       31 │     9 │    14 │                                                 
+  23 │ dhcp6_ia_na_client_cp │ 1.0.1   │ 6e8abdfb │ plugins │       1 │        2 │     - │     1 │                                                 
+  24 │ dhcp6_pd_client_cp    │ 2.0.0   │ d4418668 │ plugins │       2 │        4 │     - │     2 │                                                 
+  25 │ dns                   │ 1.0.0   │ 269575cd │ plugins │       - │        8 │     - │     4 │                                                 
+  26 │ dslite                │ 1.0.0   │ 1afa049b │ plugins │       2 │       12 │     - │     6 │                                                 
+  27 │ ethernet_types        │ 1.0.0   │ f24103d6 │ core    │       - │        - │     1 │     - │                                                 
+  28 │ feature               │ 1.0.2   │ 30d6f180 │ core    │       1 │        4 │     - │     2 │                                                 
+  29 │ fib                   │ 1.0.0   │ 4ef4abc1 │ core    │       2 │        4 │     1 │     2 │                                                 
+  30 │ fib_types             │ 2.0.1   │ 21fd785b │ core    │       1 │        - │     6 │     - │                                                 
+  31 │ flow                  │ 1.0.3   │ e17512   │ core    │       4 │       10 │     - │     5 │                                                 
+  32 │ flow_types            │ 0.0.4   │ 5657caac │ core    │       2 │        - │    27 │     - │                                                 
+  33 │ flowprobe             │ 2.1.0   │ 72c9c142 │ plugins │       1 │       12 │     4 │     6 │                                                 
+  34 │ gateway               │ 0.0.1   │ 84648166 │ plugins │       3 │        4 │     1 │     2 │                                                 
+  35 │ geneve                │ 2.1.0   │ e3dbb8a3 │ plugins │       3 │        8 │     - │     4 │                                                 
+  36 │ graph                 │ 1.0.0   │ a0b3fd1c │ plugins │       - │        3 │     1 │     1 │                                                 
+  37 │ gre                   │ 2.2.0   │ 1bfeec2  │ plugins │       3 │       13 │     3 │     5 │                                                 
+  38 │ gso                   │ 1.0.0   │ 81a73026 │ core    │       1 │        2 │     - │     1 │                                                 
+  39 │ gtpu                  │ 2.1.0   │ dbbb4325 │ plugins │       2 │       18 │     4 │     9 │                                                 
+  40 │ http_static           │ 2.5.0   │ a4be530f │ plugins │       - │        4 │     - │     2 │                                                 
+  41 │ idpf                  │ 1.0.0   │ 48384ea8 │ plugins │       1 │        4 │     - │     2 │                                                 
+  42 │ igmp                  │ 1.0.0   │ 95a4ff29 │ plugins │       2 │       19 │     4 │     9 │                                                 
+  43 │ ikev2                 │ 1.0.1   │ 934066d2 │ plugins │       3 │       60 │     - │    30 │                                                 
+  44 │ ikev2_types           │ 1.0.0   │ 67a53a36 │ plugins │       2 │        - │    16 │     - │                                                 
+  45 │ interface             │ 3.2.4   │ cf7004cc │ core    │       3 │       76 │     - │    37 │                                                 
+  46 │ interface_input       │ 0.0.1   │ 685eb5e0 │ plugins │       2 │        2 │     - │     1 │                                                 
+  47 │ interface_types       │ 1.0.0   │ 7f2ba79a │ core    │       - │        - │     8 │     - │                                                 
+  48 │ ioam_cache            │ 1.0.0   │ d0a0cf20 │ plugins │       - │        2 │     - │     1 │                                                 
+  49 │ ioam_export           │ 1.0.0   │ 26bebf64 │ plugins │       1 │        2 │     - │     1 │                                                 
+  50 │ ioam_vxlan_gpe        │ 1.0.0   │ b49eb0b9 │ plugins │       1 │       12 │     - │     6 │                                                 
+  51 │ ip                    │ 3.2.0   │ c55aec44 │ core    │       5 │       95 │    10 │    47 │                                                 
+  52 │ ip6_dad               │ 1.0.0   │ f43fb69c │ core    │       2 │        7 │     1 │     3 │                                                 
+  53 │ ip6_nd                │ 1.1.0   │ 5f19a809 │ core    │       2 │       17 │     2 │     8 │                                                 
+  54 │ ip_neighbor           │ 1.0.1   │ 36db39bd │ core    │       3 │       20 │     3 │     9 │                                                 
+  55 │ ip_session_redirect   │ 0.3.0   │ 54be863a │ plugins │       3 │        8 │     - │     4 │                                                 
+  56 │ ip_types              │ 3.0.0   │ fee023ed │ core    │       - │        - │    19 │     - │                                                 
+  57 │ ipfix_export          │ 2.0.3   │ 63e0810a │ core    │       1 │       19 │     - │     9 │                                                 
+  58 │ ipip                  │ 2.0.2   │ 4609caba │ core    │       3 │       10 │     1 │     5 │                                                 
+  59 │ ipsec                 │ 5.0.2   │ 8d9c3489 │ core    │       4 │       60 │     2 │    30 │                                                 
+  60 │ ipsec_types           │ 3.0.1   │ 9b9b8bc  │ core    │       3 │        - │    12 │     - │                                                 
+  61 │ l2                    │ 3.3.0   │ 1a53d6cc │ core    │       3 │       72 │     7 │    35 │                                                 
+  62 │ l2tp                  │ 2.0.0   │ 256cef81 │ plugins │       3 │       10 │     1 │     5 │                                                 
+  63 │ l3xc                  │ 1.0.1   │ 520bfc6e │ plugins │       3 │        8 │     1 │     4 │                                                 
+  64 │ lacp                  │ 2.0.0   │ e1609dab │ plugins │       2 │        2 │     - │     1 │                                                 
+  65 │ lb                    │ 1.1.0   │ 49e3c1c1 │ plugins │       3 │       18 │     - │     9 │                                                 
+  66 │ lb_types              │ 1.0.0   │ ba19340c │ plugins │       1 │        - │     6 │     - │                                                 
+  67 │ lcp                   │ 1.0.0   │ 68b5c2b5 │ plugins │       1 │       31 │     1 │    15 │                                                 
+  68 │ lisp                  │ 2.0.0   │ cb04530f │ plugins │       4 │       60 │     2 │    30 │                                                 
+  69 │ lisp_gpe              │ 2.0.0   │ 92611b0  │ plugins │       4 │       20 │     3 │    10 │                                                 
+  70 │ lisp_types            │ 1.0.0   │ f05d92a6 │ plugins │       3 │        - │     8 │     - │                                                 
+  71 │ lldp                  │ 2.0.0   │ c26a6a68 │ plugins │       2 │        7 │     2 │     3 │                                                 
+  72 │ mactime               │ 2.0.0   │ c72e296e │ plugins │       2 │        7 │     2 │     3 │                                                 
+  73 │ map                   │ 4.2.1   │ d1f7f56c │ plugins │       2 │       32 │     - │    16 │                                                 
+  74 │ mdata                 │ 0.1.0   │ 5bd69477 │ plugins │       1 │        2 │     - │     1 │                                                 
+  75 │ memclnt               │ 2.1.0   │ b197c551 │ core    │       - │       28 │     2 │    16 │                                                 
+  76 │ memif                 │ 3.1.0   │ d48ac702 │ plugins │       2 │       14 │     2 │     7 │                                                 
+  77 │ mfib_types            │ 1.0.0   │ d2b57aaf │ core    │       2 │        - │     3 │     - │                                                 
+  78 │ mpls                  │ 1.1.1   │ df2aeee2 │ core    │       3 │       18 │     3 │     9 │                                                 
+  79 │ mss_clamp             │ 1.0.0   │ ea8186c0 │ plugins │       1 │        5 │     1 │     2 │                                                 
+  80 │ nat                   │ 0.0.1   │ 31e543b8 │ plugins │       2 │        6 │     - │     3 │                                                 
+  81 │ nat44_ed              │ 5.5.0   │ 6f9bc302 │ plugins │       3 │       75 │     2 │    37 │                                                 
+  82 │ nat44_ei              │ 1.1.1   │ 88c1fd79 │ plugins │       3 │       80 │     1 │    39 │                                                 
+  83 │ nat64                 │ 1.0.0   │ fbd06e33 │ plugins │       3 │       26 │     - │    13 │                                                 
+  84 │ nat66                 │ 1.0.0   │ a6343f71 │ plugins │       3 │       10 │     - │     5 │                                                 
+  85 │ nat_types             │ 0.0.1   │ 2ca9110f │ plugins │       - │        - │     3 │     - │                                                 
+  86 │ netmap                │ 1.0.0   │ 40e7a84f │ plugins │       - │        4 │     - │     2 │                                                 
+  87 │ npol                  │ 0.1.0   │ 4d281077 │ plugins │       2 │       22 │    15 │    11 │ manual_endian_include=npol/npol_manual_endian.h 
+  88 │ npt66                 │ 0.0.1   │ 4e353b99 │ plugins │       2 │        2 │     - │     1 │                                                 
+  89 │ nsh                   │ 1.0.0   │ c2f3127d │ plugins │       1 │        8 │     - │     4 │                                                 
+  90 │ nsim                  │ 2.2.1   │ 3b179b8f │ plugins │       1 │        8 │     - │     4 │                                                 
+  91 │ oddbuf                │ 0.1.0   │ 3a1a2c50 │ plugins │       1 │        2 │     - │     1 │                                                 
+  92 │ one                   │ 2.0.0   │ 9f64600e │ plugins │       4 │      108 │     5 │    54 │                                                 
+  93 │ p2p_ethernet          │ 1.0.0   │ 3cfe55da │ core    │       2 │        4 │     - │     2 │                                                 
+  94 │ pci_types             │ 1.0.0   │ 5d418665 │ core    │       - │        - │     1 │     - │                                                 
+  95 │ pg                    │ 2.1.0   │ eae14b90 │ core    │       1 │       14 │     2 │     7 │                                                 
+  96 │ ping                  │ 0.1.0   │ 5b568e46 │ plugins │       2 │        3 │     - │     1 │                                                 
+  97 │ pipe                  │ 1.0.1   │ c159134a │ core    │       1 │        6 │     - │     3 │                                                 
+  98 │ pnat                  │ 0.1.1   │ 54bc8e17 │ plugins │       2 │       18 │     4 │     8 │                                                 
+  99 │ policer               │ 3.0.0   │ 5b7970e4 │ plugins │       2 │       27 │     - │    14 │                                                 
+ 100 │ policer_types         │ 1.0.0   │ 5838c08b │ plugins │       - │        - │     6 │     - │                                                 
+ 101 │ pot                   │ 1.0.0   │ a9d8e55c │ plugins │       - │        8 │     - │     4 │                                                 
+ 102 │ pp2                   │ 1.0.0   │ d7ab5bd7 │ plugins │       1 │        4 │     - │     2 │                                                 
+ 103 │ pppoe                 │ 2.0.0   │ ec9e86bf │ plugins │       3 │        6 │     - │     3 │                                                 
+ 104 │ punt                  │ 2.2.1   │ 24d11934 │ core    │       1 │       10 │     7 │     5 │                                                 
+ 105 │ pvti                  │ 0.0.1   │ b319860  │ plugins │       2 │        6 │     1 │     3 │                                                 
+ 106 │ qos                   │ 1.1.1   │ 7b7b5955 │ core    │       2 │       19 │     6 │     9 │                                                 
+ 107 │ rd_cp                 │ 1.0.1   │ 871c3bee │ core    │       1 │        2 │     - │     1 │                                                 
+ 108 │ rdma                  │ 3.0.0   │ 351383c2 │ plugins │       1 │       10 │     3 │     5 │                                                 
+ 109 │ sasc                  │ 0.0.0   │ 0        │ plugins │       - │        - │     - │     - │                                                 
+ 110 │ selog                 │ 0.0.0   │ 58ce3561 │ plugins │       - │       10 │     - │     5 │                                                 
+ 111 │ session               │ 4.0.3   │ 85f82b54 │ core    │       2 │       40 │     5 │    20 │                                                 
+ 112 │ sfdp                  │ 0.0.1   │ 789db91a │ core    │       2 │       18 │     - │     9 │                                                 
+ 113 │ sfdp_types            │ 0.0.1   │ 2cd47f8b │ core    │       1 │        - │     6 │     - │                                                 
+ 114 │ sflow                 │ 0.1.0   │ 273ad146 │ plugins │       1 │       24 │     - │    12 │                                                 
+ 115 │ snort                 │ 1.1.0   │ 9826183c │ plugins │       2 │       41 │     2 │    17 │                                                 
+ 116 │ span                  │ 2.0.0   │ 34ee02b  │ core    │       1 │        4 │     1 │     2 │                                                 
+ 117 │ sr                    │ 2.1.0   │ 23e3f650 │ core    │       3 │       32 │     3 │    16 │                                                 
+ 118 │ sr_mobile             │ 0.1.0   │ 2a93fd77 │ plugins │       5 │        4 │     - │     2 │                                                 
+ 119 │ sr_mobile_types       │ 0.1.0   │ 7afa7d45 │ plugins │       - │        - │     1 │     - │                                                 
+ 120 │ sr_mpls               │ 3.0.0   │ 156edb17 │ plugins │       3 │       10 │     - │     5 │                                                 
+ 121 │ sr_pt                 │ 1.0.0   │ 1fddedad │ core    │       1 │        6 │     - │     3 │                                                 
+ 122 │ sr_types              │ 1.0.0   │ 7955bd50 │ core    │       - │        - │     3 │     - │                                                 
+ 123 │ stn                   │ 2.0.0   │ 9cfaef64 │ plugins │       2 │        4 │     - │     2 │                                                 
+ 124 │ svs                   │ 1.0.0   │ 816cf275 │ plugins │       2 │       10 │     - │     5 │                                                 
+ 125 │ syslog                │ 1.0.0   │ 5ad12a74 │ core    │       1 │        8 │     1 │     4 │                                                 
+ 126 │ tapv2                 │ 4.0.0   │ c2f80dc7 │ plugins │       3 │        8 │     1 │     4 │                                                 
+ 127 │ tcp                   │ 2.0.0   │ 93d07485 │ core    │       1 │        2 │     - │     1 │                                                 
+ 128 │ tcp_check             │ 0.0.1   │ 327f4d77 │ plugins │       2 │        2 │     1 │     1 │                                                 
+ 129 │ teib                  │ 1.0.0   │ 14ded985 │ core    │       2 │        4 │     1 │     2 │                                                 
+ 130 │ tls_openssl           │ 2.0.0   │ 7386fbcd │ plugins │       - │        2 │     - │     1 │                                                 
+ 131 │ trace                 │ 1.0.0   │ 397cbf90 │ plugins │       - │        6 │     - │     3 │                                                 
+ 132 │ tracedump             │ 0.2.0   │ 56abf80a │ plugins │       - │       17 │     1 │     8 │                                                 
+ 133 │ tracenode             │ 0.1.0   │ dbc1eb27 │ plugins │       1 │        2 │     - │     1 │                                                 
+ 134 │ tunnel_types          │ 1.0.1   │ 882f6758 │ core    │       2 │        - │     4 │     - │                                                 
+ 135 │ udp                   │ 1.1.0   │ 6804c5af │ core    │       1 │        8 │     3 │     4 │                                                 
+ 136 │ udp_ping              │ 3.0.0   │ 16d961db │ plugins │       1 │        4 │     - │     2 │                                                 
+ 137 │ urpf                  │ 1.0.0   │ 88759016 │ plugins │       3 │        6 │     1 │     3 │                                                 
+ 138 │ vhost_user            │ 4.1.1   │ d49ae8cd │ plugins │       3 │       12 │     - │     6 │                                                 
+ 139 │ virtio                │ 3.0.0   │ a507d784 │ core    │       3 │        8 │     1 │     4 │                                                 
+ 140 │ virtio_types          │ 1.0.0   │ 7a70a44e │ core    │       - │        - │     2 │     - │                                                 
+ 141 │ vlib                  │ 1.0.0   │ 9a9e84e4 │ core    │       - │       18 │     1 │     9 │                                                 
+ 142 │ vmxnet3               │ 1.2.0   │ 609454ea │ plugins │       2 │        8 │     2 │     4 │                                                 
+ 143 │ vpe                   │ 1.7.0   │ bbfa7484 │ core    │       1 │        6 │     - │     3 │                                                 
+ 144 │ vpe_types             │ 1.0.0   │ 5f754a1c │ core    │       - │        - │     4 │     - │                                                 
+ 145 │ vrrp                  │ 1.1.1   │ 674aea12 │ plugins │       3 │       21 │     7 │    10 │                                                 
+ 146 │ vxlan                 │ 2.1.0   │ 95381587 │ plugins │       2 │       14 │     - │     7 │                                                 
+ 147 │ vxlan_gpe             │ 2.1.0   │ 3bc06278 │ plugins │       2 │       10 │     - │     5 │                                                 
+ 148 │ vxlan_gpe_ioam_export │ 1.0.0   │ 26bebf64 │ plugins │       1 │        2 │     - │     1 │                                                 
+ 149 │ wireguard             │ 1.4.0   │ 709f48a6 │ plugins │       2 │       21 │     4 │    10 │                                                 
 ```
 
 </details>
@@ -163,8 +163,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 143 differences:
- - [Version] Schema version is different: 26.02-release vs 26.06-rc0~572-g59063056c
+Listing 144 differences:
+ - [Version] Schema version is different: 26.02-release vs 26.06-rc0~590-gbf634a8c6
  - [FileRemoved] File removed: avf
  - [FileAdded] File added: ip6_dad
  cnat
@@ -172,36 +172,36 @@ Listing 143 differences:
  - [FileContentsChanged] Number of Messages has increased from 20 to 26
  - [FileContentsChanged] Number of Types has increased from 23 to 24
  - [FileContentsChanged] Number of Enums has increased from 23 to 24
- - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
  - [MessageCRC] Message cnat_session_details changed CRC from 0x7e5017c7 to 0x7a78bf3f
+ - [MessageCRC] Message cnat_set_snat_policy changed CRC from 0xd3e6eaf4 to 0x37a3ce23
+ - [MessageAdded] Message added: feature_cnat_enable_disable_reply
  - [MessageAdded] Message added: cnat_set_snat_addresses_v2_reply
+ - [MessageAdded] Message added: cnat_snat_addresses_details
+ - [MessageAdded] Message added: feature_cnat_enable_disable
  - [MessageAdded] Message added: cnat_set_snat_addresses_v2
  - [MessageAdded] Message added: cnat_snat_addresses_dump
- - [MessageAdded] Message added: feature_cnat_enable_disable_reply
- - [MessageAdded] Message added: feature_cnat_enable_disable
- - [MessageAdded] Message added: cnat_snat_addresses_details
  flow
+ - [MsgOptionChanged] Message flow_add changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]"
+ - [MsgOptionChanged] Message flow_enable changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
+ - [MsgOptionChanged] Message flow_add_v2 changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]"
+ - [MsgOptionChanged] Message flow_del changed option vat_help from "test flow del index <index>" to "flow del index <index>"
  - [MsgOptionChanged] Message flow_del_reply changed option vat_help from "test flow del index <index>" to "flow del index <index>"
  - [MsgOptionChanged] Message flow_enable_reply changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
- - [MsgOptionChanged] Message flow_disable_reply changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
- - [MsgOptionChanged] Message flow_add changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>]"
- - [MsgOptionChanged] Message flow_del changed option vat_help from "test flow del index <index>" to "flow del index <index>"
- - [MsgOptionChanged] Message flow_enable changed option vat_help from "test flow enable index <index> <interface name>" to "flow enable index <index> <interface name>"
  - [MsgOptionChanged] Message flow_disable changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
- - [MsgOptionChanged] Message flow_add_v2 changed option vat_help from "test flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]" to "flow add [src-ip <ip-addr/mask>] [dst-ip <ip-addr/mask>] [src-port <port/mask>] [dst-port <port/mask>] [proto <ip-proto>] [spec <spec-string>] [mask <mask-string>]"
+ - [MsgOptionChanged] Message flow_disable_reply changed option vat_help from "test flow disable index <index> <interface name>" to "flow disable index <index> <interface name>"
  gre
  - [FileVersion] File version changed from 2.1.1 to 2.2.0
  - [FileCRC] File CRC changed from 0x3a070f21 to 0x1bfeec2
  - [FileContentsChanged] Number of Messages has increased from 10 to 13
- - [MsgOptionAdded] Message gre_tunnel_dump_v2_reply added option: deprecated
- - [MsgOptionAdded] Message gre_tunnel_details_v2 added option: deprecated
- - [MsgOptionAdded] Message gre_tunnel_details added option: deprecated
  - [MsgOptionAdded] Message gre_tunnel_dump added option: deprecated
  - [MsgOptionAdded] Message gre_tunnel_dump_reply added option: deprecated
+ - [MsgOptionAdded] Message gre_tunnel_dump_v2_reply added option: deprecated
+ - [MsgOptionAdded] Message gre_tunnel_details added option: deprecated
+ - [MsgOptionAdded] Message gre_tunnel_details_v2 added option: deprecated
  - [MsgOptionAdded] Message gre_tunnel_dump_v2 added option: deprecated
- - [MessageAdded] Message added: gre_tunnel_v2_details
  - [MessageAdded] Message added: gre_tunnel_v2_dump
  - [MessageAdded] Message added: gre_tunnel_v2_dump_reply
+ - [MessageAdded] Message added: gre_tunnel_v2_details
  ikev2
  - [FileCRC] File CRC changed from 0xfdeb2617 to 0x934066d2
  - [MessageCRC] Message ikev2_profile_details changed CRC from 0x670d01d9 to 0x3e3e895b
@@ -229,31 +229,33 @@ Listing 143 differences:
  - [FileCRC] File CRC changed from 0x2720d298 to 0x1a53d6cc
  - [FileContentsChanged] Number of Messages has increased from 64 to 72
  - [FileContentsChanged] Number of Enums has increased from 15 to 16
- - [MessageAdded] Message added: l2_interface_feat_flags_get_reply
- - [MessageAdded] Message added: l2_interface_feat_flags_get
- - [MessageAdded] Message added: l2_flags_get_reply
- - [MessageAdded] Message added: l2_flags_set_reply
+ - [MessageAdded] Message added: l2_flags_get
  - [MessageAdded] Message added: l2_interface_feat_flags_set_reply
  - [MessageAdded] Message added: l2_flags_set
  - [MessageAdded] Message added: l2_interface_feat_flags_set
- - [MessageAdded] Message added: l2_flags_get
+ - [MessageAdded] Message added: l2_flags_set_reply
+ - [MessageAdded] Message added: l2_flags_get_reply
+ - [MessageAdded] Message added: l2_interface_feat_flags_get_reply
+ - [MessageAdded] Message added: l2_interface_feat_flags_get
  lcp
  - [FileCRC] File CRC changed from 0x2ff03def to 0x68b5c2b5
  - [FileContentsChanged] Number of Messages has increased from 23 to 31
- - [MessageAdded] Message added: lcp_osi_proto_enable_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
- - [MessageAdded] Message added: lcp_sync_unnumbered_set
  - [MessageAdded] Message added: lcp_sync_unnumbered_get_reply
+ - [MessageAdded] Message added: lcp_osi_proto_enable
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set
+ - [MessageAdded] Message added: lcp_sync_unnumbered_get
  - [MessageAdded] Message added: lcp_osi_proto_get
  - [MessageAdded] Message added: lcp_osi_proto_get_reply
- - [MessageAdded] Message added: lcp_osi_proto_enable
- - [MessageAdded] Message added: lcp_sync_unnumbered_get
+ - [MessageAdded] Message added: lcp_sync_unnumbered_set_reply
+ - [MessageAdded] Message added: lcp_osi_proto_enable_reply
+ npol
+ - [FileCRC] File CRC changed from 0x79451d1 to 0x4d281077
  policer
  - [FileMoved] File moved from core/policer.api.json to plugins/policer.api.json
  - [FileCRC] File CRC changed from 0x341163a6 to 0x5b7970e4
  - [FileContentsChanged] Number of Messages has increased from 25 to 27
- - [MessageAdded] Message added: ip_punt_police
  - [MessageAdded] Message added: ip_punt_police_reply
+ - [MessageAdded] Message added: ip_punt_police
  policer_types
  - [FileMoved] File moved from core/policer_types.api.json to plugins/policer_types.api.json
  sfdp
@@ -262,8 +264,8 @@ Listing 143 differences:
  - [MessageCRC] Message sfdp_session_details changed CRC from 0xd2a1b857 to 0x3eaab6b9
  - [MessageAdded] Message added: sfdp_kill_session
  - [MessageAdded] Message added: sfdp_kill_session_reply
- - [MessageAdded] Message added: sfdp_service_details
  - [MessageAdded] Message added: sfdp_service_dump
+ - [MessageAdded] Message added: sfdp_service_details
  sfdp_types
  - [FileCRC] File CRC changed from 0xa64b3a78 to 0x2cd47f8b
  snort
@@ -271,39 +273,39 @@ Listing 143 differences:
  - [FileCRC] File CRC changed from 0x8209b13d to 0x9826183c
  - [FileContentsChanged] Number of Messages has increased from 25 to 41
  - [FileContentsChanged] Number of Enums has increased from 12 to 14
- - [MsgOptionAdded] Message snort_interface_detach added option: deprecated
+ - [MsgOptionAdded] Message snort_client_get_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_input_mode_get added option: deprecated
  - [MsgOptionAdded] Message snort_input_mode_set added option: deprecated
+ - [MsgOptionAdded] Message snort_instance_create_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_detach added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_detach_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_client_details added option: deprecated
  - [MsgOptionAdded] Message snort_instance_get added option: deprecated
  - [MsgOptionAdded] Message snort_instance_get_reply added option: deprecated
- - [MsgOptionAdded] Message snort_interface_get added option: deprecated
- - [MsgOptionAdded] Message snort_input_mode_get added option: deprecated
+ - [MsgOptionAdded] Message snort_instance_details added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_get_reply added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_details added option: deprecated
+ - [MsgOptionAdded] Message snort_instance_create added option: deprecated
  - [MsgOptionAdded] Message snort_input_mode_get_reply added option: deprecated
  - [MsgOptionAdded] Message snort_input_mode_set_reply added option: deprecated
- - [MsgOptionAdded] Message snort_interface_get_reply added option: deprecated
- - [MsgOptionAdded] Message snort_instance_create added option: deprecated
+ - [MsgOptionAdded] Message snort_interface_get added option: deprecated
  - [MsgOptionAdded] Message snort_client_get added option: deprecated
- - [MsgOptionAdded] Message snort_client_details added option: deprecated
- - [MsgOptionAdded] Message snort_instance_create_reply added option: deprecated
- - [MsgOptionAdded] Message snort_interface_detach_reply added option: deprecated
- - [MsgOptionAdded] Message snort_instance_details added option: deprecated
- - [MsgOptionAdded] Message snort_interface_details added option: deprecated
- - [MsgOptionAdded] Message snort_client_get_reply added option: deprecated
- - [MessageAdded] Message added: snort_instance_create_v2_reply
- - [MessageAdded] Message added: snort_instance_v2_get
- - [MessageAdded] Message added: snort_interface_v2_get
- - [MessageAdded] Message added: snort_instance_v2_details_reply
- - [MessageAdded] Message added: snort_instance_v2_get_reply
- - [MessageAdded] Message added: snort_interface_detach_v2
- - [MessageAdded] Message added: snort_interface_v2_details
- - [MessageAdded] Message added: snort_interface_v2_get_reply
- - [MessageAdded] Message added: snort_client_v2_details
- - [MessageAdded] Message added: snort_instance_create_v2
  - [MessageAdded] Message added: snort_interface_detach_v2_reply
- - [MessageAdded] Message added: snort_instance_v2_details
+ - [MessageAdded] Message added: snort_instance_v2_details_reply
  - [MessageAdded] Message added: snort_set_drop_bitmap
- - [MessageAdded] Message added: snort_set_drop_bitmap_reply
+ - [MessageAdded] Message added: snort_interface_v2_get
  - [MessageAdded] Message added: snort_client_v2_get
+ - [MessageAdded] Message added: snort_set_drop_bitmap_reply
+ - [MessageAdded] Message added: snort_interface_detach_v2
+ - [MessageAdded] Message added: snort_interface_v2_get_reply
+ - [MessageAdded] Message added: snort_instance_create_v2_reply
+ - [MessageAdded] Message added: snort_instance_v2_details
+ - [MessageAdded] Message added: snort_interface_v2_details
+ - [MessageAdded] Message added: snort_client_v2_details
  - [MessageAdded] Message added: snort_client_v2_get_reply
+ - [MessageAdded] Message added: snort_instance_create_v2
+ - [MessageAdded] Message added: snort_instance_v2_get
+ - [MessageAdded] Message added: snort_instance_v2_get_reply
  sr
  - [FileCRC] File CRC changed from 0x1fa846d0 to 0x23e3f650
  - [FileContentsChanged] Number of Messages has increased from 30 to 32
@@ -317,10 +319,10 @@ Listing 143 differences:
  - [FileCRC] File CRC changed from 0x5d8f9252 to 0x709f48a6
  - [FileContentsChanged] Number of Messages has increased from 17 to 21
  - [FileContentsChanged] Number of Types has increased from 10 to 11
+ - [MsgOptionAdded] Message wireguard_peer_add added option: deprecated
  - [MsgOptionAdded] Message wireguard_peer_add_reply added option: deprecated
  - [MsgOptionAdded] Message wireguard_peers_dump added option: deprecated
  - [MsgOptionAdded] Message wireguard_peers_details added option: deprecated
- - [MsgOptionAdded] Message wireguard_peer_add added option: deprecated
  - [MessageAdded] Message added: wireguard_peers_v2_dump
  - [MessageAdded] Message added: wireguard_peer_add_v2
  - [MessageAdded] Message added: wireguard_peer_add_v2_reply
