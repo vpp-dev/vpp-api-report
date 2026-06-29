@@ -166,7 +166,7 @@
 
 ```
 Listing 28 differences:
- - [Version] Schema version is different: 26.06-release vs 26.10-rc0~182-g2f23ee3e1
+ - [Version] Schema version is different: 26.06-release vs 26.10-rc0~184-g96bbc3a58
  - [FilesCount] Total file count increased from 150 to 151
  - [FileAdded] File added: tracepath
  flow
@@ -181,21 +181,21 @@ Listing 28 differences:
  - [FileVersion] File version changed from 3.2.4 to 3.2.5
  - [FileCRC] File CRC changed from 0xcf7004cc to 0x98d849f6
  - [FileContentsChanged] Number of Messages has increased from 76 to 80
- - [MessageAdded] Message added: sw_interface_set_link_speed_reply
  - [MessageAdded] Message added: sw_interface_get_speed_capa
+ - [MessageAdded] Message added: sw_interface_set_link_speed_reply
  - [MessageAdded] Message added: sw_interface_get_speed_capa_reply
  - [MessageAdded] Message added: sw_interface_set_link_speed
  lb
  - [FileVersion] File version changed from 1.1.0 to 1.2.0
  - [FileCRC] File CRC changed from 0x49e3c1c1 to 0xac602d7b
  - [FileContentsChanged] Number of Messages has increased from 18 to 26
- - [MessageAdded] Message added: lb_conf_get_reply
- - [MessageAdded] Message added: lb_add_del_as_v2
+ - [MessageAdded] Message added: lb_as_v2_details
  - [MessageAdded] Message added: lb_add_del_as_v2_reply
  - [MessageAdded] Message added: lb_as_set_weight
- - [MessageAdded] Message added: lb_as_v2_details
- - [MessageAdded] Message added: lb_conf_get
  - [MessageAdded] Message added: lb_as_v2_dump
+ - [MessageAdded] Message added: lb_conf_get_reply
+ - [MessageAdded] Message added: lb_conf_get
+ - [MessageAdded] Message added: lb_add_del_as_v2
  - [MessageAdded] Message added: lb_as_set_weight_reply
 ```
 
