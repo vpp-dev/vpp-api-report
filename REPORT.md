@@ -45,7 +45,7 @@
   37 │ gre                   │ 2.2.0   │ 1bfeec2  │ plugins │       3 │       13 │     3 │     5 │                                                 
   38 │ gso                   │ 1.0.0   │ 81a73026 │ core    │       1 │        2 │     - │     1 │                                                 
   39 │ gtpu                  │ 2.1.0   │ dbbb4325 │ plugins │       2 │       18 │     4 │     9 │                                                 
-  40 │ http_static           │ 2.5.0   │ a4be530f │ plugins │       - │        4 │     - │     2 │                                                 
+  40 │ http_static           │ 2.5.0   │ 95504565 │ plugins │       - │        6 │     - │     3 │                                                 
   41 │ idpf                  │ 1.0.0   │ 48384ea8 │ plugins │       1 │        4 │     - │     2 │                                                 
   42 │ igmp                  │ 1.0.0   │ 95a4ff29 │ plugins │       2 │       19 │     4 │     9 │                                                 
   43 │ ikev2                 │ 1.0.1   │ 934066d2 │ plugins │       3 │       60 │     - │    30 │                                                 
@@ -165,18 +165,23 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 28 differences:
- - [Version] Schema version is different: 26.06-release vs 26.10-rc0~184-g96bbc3a58
+Listing 32 differences:
+ - [Version] Schema version is different: 26.06-release vs 26.10-rc0~187-g472cdc9db
  - [FilesCount] Total file count increased from 150 to 151
  - [FileAdded] File added: tracepath
  flow
  - [FileVersion] File version changed from 1.0.3 to 1.0.4
  - [FileCRC] File CRC changed from 0xe17512 to 0x9a166f0e
  - [FileContentsChanged] Number of Messages has increased from 10 to 12
- - [MsgOptionAdded] Message flow_disable added option: deprecated
  - [MsgOptionAdded] Message flow_disable_reply added option: deprecated
+ - [MsgOptionAdded] Message flow_disable added option: deprecated
  - [MessageAdded] Message added: flow_disable_v2
  - [MessageAdded] Message added: flow_disable_v2_reply
+ http_static
+ - [FileCRC] File CRC changed from 0xa4be530f to 0x95504565
+ - [FileContentsChanged] Number of Messages has increased from 4 to 6
+ - [MessageAdded] Message added: http_static_disable
+ - [MessageAdded] Message added: http_static_disable_reply
  interface
  - [FileVersion] File version changed from 3.2.4 to 3.2.5
  - [FileCRC] File CRC changed from 0xcf7004cc to 0x98d849f6
@@ -189,14 +194,14 @@ Listing 28 differences:
  - [FileVersion] File version changed from 1.1.0 to 1.2.0
  - [FileCRC] File CRC changed from 0x49e3c1c1 to 0xac602d7b
  - [FileContentsChanged] Number of Messages has increased from 18 to 26
- - [MessageAdded] Message added: lb_as_v2_details
- - [MessageAdded] Message added: lb_add_del_as_v2_reply
- - [MessageAdded] Message added: lb_as_set_weight
  - [MessageAdded] Message added: lb_as_v2_dump
- - [MessageAdded] Message added: lb_conf_get_reply
  - [MessageAdded] Message added: lb_conf_get
- - [MessageAdded] Message added: lb_add_del_as_v2
  - [MessageAdded] Message added: lb_as_set_weight_reply
+ - [MessageAdded] Message added: lb_add_del_as_v2
+ - [MessageAdded] Message added: lb_add_del_as_v2_reply
+ - [MessageAdded] Message added: lb_as_v2_details
+ - [MessageAdded] Message added: lb_conf_get_reply
+ - [MessageAdded] Message added: lb_as_set_weight
 ```
 
 </details>
