@@ -117,8 +117,8 @@
  109 │ sasc                  │ 0.0.0   │ 0        │ plugins │       - │        - │     - │     - │                                                 
  110 │ selog                 │ 0.0.0   │ 58ce3561 │ plugins │       - │       10 │     - │     5 │                                                 
  111 │ session               │ 4.0.3   │ 85f82b54 │ core    │       2 │       40 │     5 │    20 │                                                 
- 112 │ sfdp                  │ 0.0.1   │ 789db91a │ core    │       2 │       18 │     - │     9 │                                                 
- 113 │ sfdp_types            │ 0.0.1   │ 2cd47f8b │ core    │       1 │        - │     6 │     - │                                                 
+ 112 │ sfdp                  │ 0.0.2   │ 3bf96bea │ core    │       2 │       18 │     - │     9 │                                                 
+ 113 │ sfdp_types            │ 0.0.1   │ e60ddd9  │ core    │       1 │        - │     7 │     - │                                                 
  114 │ sflow                 │ 0.1.0   │ 273ad146 │ plugins │       1 │       24 │     - │    12 │                                                 
  115 │ snort                 │ 1.1.0   │ 9826183c │ plugins │       2 │       41 │     2 │    17 │                                                 
  116 │ span                  │ 2.0.0   │ 34ee02b  │ core    │       1 │        4 │     1 │     2 │                                                 
@@ -133,7 +133,7 @@
  125 │ syslog                │ 1.0.0   │ 5ad12a74 │ core    │       1 │        8 │     1 │     4 │                                                 
  126 │ tapv2                 │ 4.0.0   │ c2f80dc7 │ plugins │       3 │        8 │     1 │     4 │                                                 
  127 │ tcp                   │ 2.0.0   │ 93d07485 │ core    │       1 │        2 │     - │     1 │                                                 
- 128 │ tcp_check             │ 0.0.1   │ 327f4d77 │ plugins │       2 │        2 │     1 │     1 │                                                 
+ 128 │ tcp_check             │ 0.0.1   │ 834cf154 │ plugins │       2 │        2 │     1 │     1 │                                                 
  129 │ teib                  │ 1.0.0   │ 14ded985 │ core    │       2 │        4 │     1 │     2 │                                                 
  130 │ tls_openssl           │ 2.0.0   │ 7386fbcd │ plugins │       - │        2 │     - │     1 │                                                 
  131 │ tm                    │ 0.1.0   │ ec96e6f1 │ core    │       - │       26 │     - │    13 │                                                 
@@ -165,8 +165,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 34 differences:
- - [Version] Schema version is different: 26.06-release vs 26.10-rc0~198-g73dd031c0
+Listing 42 differences:
+ - [Version] Schema version is different: 26.06-release vs 26.10-rc0~199-g2c4994432
  - [FilesCount] Total file count increased from 150 to 151
  - [FileAdded] File added: tracepath
  flow
@@ -175,35 +175,46 @@ Listing 34 differences:
  - [FileContentsChanged] Number of Messages has increased from 10 to 12
  - [MsgOptionAdded] Message flow_disable added option: deprecated
  - [MsgOptionAdded] Message flow_disable_reply added option: deprecated
- - [MessageAdded] Message added: flow_disable_v2_reply
  - [MessageAdded] Message added: flow_disable_v2
+ - [MessageAdded] Message added: flow_disable_v2_reply
  http_static
  - [FileCRC] File CRC changed from 0xa4be530f to 0x293f6ad8
  - [FileContentsChanged] Number of Messages has increased from 4 to 8
- - [MessageAdded] Message added: http_static_get
- - [MessageAdded] Message added: http_static_get_reply
  - [MessageAdded] Message added: http_static_disable
  - [MessageAdded] Message added: http_static_disable_reply
+ - [MessageAdded] Message added: http_static_get
+ - [MessageAdded] Message added: http_static_get_reply
  interface
  - [FileVersion] File version changed from 3.2.4 to 3.2.5
  - [FileCRC] File CRC changed from 0xcf7004cc to 0x98d849f6
  - [FileContentsChanged] Number of Messages has increased from 76 to 80
- - [MessageAdded] Message added: sw_interface_get_speed_capa_reply
  - [MessageAdded] Message added: sw_interface_set_link_speed
  - [MessageAdded] Message added: sw_interface_set_link_speed_reply
  - [MessageAdded] Message added: sw_interface_get_speed_capa
+ - [MessageAdded] Message added: sw_interface_get_speed_capa_reply
  lb
  - [FileVersion] File version changed from 1.1.0 to 1.2.0
  - [FileCRC] File CRC changed from 0x49e3c1c1 to 0xac602d7b
  - [FileContentsChanged] Number of Messages has increased from 18 to 26
- - [MessageAdded] Message added: lb_as_set_weight
  - [MessageAdded] Message added: lb_conf_get
- - [MessageAdded] Message added: lb_conf_get_reply
- - [MessageAdded] Message added: lb_as_v2_details
  - [MessageAdded] Message added: lb_as_v2_dump
+ - [MessageAdded] Message added: lb_conf_get_reply
  - [MessageAdded] Message added: lb_add_del_as_v2_reply
- - [MessageAdded] Message added: lb_as_set_weight_reply
+ - [MessageAdded] Message added: lb_as_v2_details
  - [MessageAdded] Message added: lb_add_del_as_v2
+ - [MessageAdded] Message added: lb_as_set_weight
+ - [MessageAdded] Message added: lb_as_set_weight_reply
+ sfdp
+ - [FileVersion] File version changed from 0.0.1 to 0.0.2
+ - [FileCRC] File CRC changed from 0x789db91a to 0x3bf96bea
+ - [FileContentsChanged] Number of Enums has increased from 9 to 10
+ - [MessageCRC] Message sfdp_set_timeout changed CRC from 0x36440b87 to 0x2a363c83
+ sfdp_types
+ - [FileCRC] File CRC changed from 0x2cd47f8b to 0xe60ddd9
+ - [FileContentsChanged] Number of Enums has increased from 9 to 10
+ tcp_check
+ - [FileCRC] File CRC changed from 0x327f4d77 to 0x834cf154
+ - [FileContentsChanged] Number of Enums has increased from 9 to 10
 ```
 
 </details>
