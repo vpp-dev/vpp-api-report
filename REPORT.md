@@ -63,7 +63,7 @@
   55 │ ip_session_redirect   │ 0.3.0   │ 54be863a │ plugins │       3 │        8 │     - │     4 │                                                 
   56 │ ip_types              │ 3.0.0   │ fee023ed │ core    │       - │        - │    19 │     - │                                                 
   57 │ ipfix_export          │ 2.0.3   │ 63e0810a │ core    │       1 │       19 │     - │     9 │                                                 
-  58 │ ipip                  │ 2.0.2   │ 4609caba │ core    │       3 │       10 │     1 │     5 │                                                 
+  58 │ ipip                  │ 2.0.2   │ 4609caba │ plugins │       3 │       10 │     1 │     5 │                                                 
   59 │ ipsec                 │ 5.0.2   │ 8d9c3489 │ core    │       4 │       60 │     2 │    30 │                                                 
   60 │ ipsec_types           │ 3.0.1   │ 9b9b8bc  │ core    │       3 │        - │    12 │     - │                                                 
   61 │ l2                    │ 3.3.0   │ 1a53d6cc │ core    │       3 │       72 │     7 │    35 │                                                 
@@ -165,8 +165,8 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 45 differences:
- - [Version] Schema version is different: 26.06-release vs 26.10-rc0~304-g56622be2c
+Listing 46 differences:
+ - [Version] Schema version is different: 26.06-release vs 26.10-rc0~309-g11c5a0d6e
  - [FilesCount] Total file count increased from 150 to 151
  - [FileAdded] File added: tracepath
  af_xdp
@@ -178,35 +178,37 @@ Listing 45 differences:
  - [FileContentsChanged] Number of Messages has increased from 10 to 12
  - [MsgOptionAdded] Message flow_disable added option: deprecated
  - [MsgOptionAdded] Message flow_disable_reply added option: deprecated
- - [MessageAdded] Message added: flow_disable_v2_reply
  - [MessageAdded] Message added: flow_disable_v2
+ - [MessageAdded] Message added: flow_disable_v2_reply
  http_static
  - [FileCRC] File CRC changed from 0xa4be530f to 0x293f6ad8
  - [FileContentsChanged] Number of Messages has increased from 4 to 8
- - [MessageAdded] Message added: http_static_get
- - [MessageAdded] Message added: http_static_get_reply
  - [MessageAdded] Message added: http_static_disable
  - [MessageAdded] Message added: http_static_disable_reply
+ - [MessageAdded] Message added: http_static_get
+ - [MessageAdded] Message added: http_static_get_reply
  interface
  - [FileVersion] File version changed from 3.2.4 to 3.2.5
  - [FileCRC] File CRC changed from 0xcf7004cc to 0x98d849f6
  - [FileContentsChanged] Number of Messages has increased from 76 to 80
+ - [MessageAdded] Message added: sw_interface_get_speed_capa_reply
+ - [MessageAdded] Message added: sw_interface_set_link_speed
  - [MessageAdded] Message added: sw_interface_get_speed_capa
  - [MessageAdded] Message added: sw_interface_set_link_speed_reply
- - [MessageAdded] Message added: sw_interface_set_link_speed
- - [MessageAdded] Message added: sw_interface_get_speed_capa_reply
+ ipip
+ - [FileMoved] File moved from core/ipip.api.json to plugins/ipip.api.json
  lb
  - [FileVersion] File version changed from 1.1.0 to 1.2.0
  - [FileCRC] File CRC changed from 0x49e3c1c1 to 0xac602d7b
  - [FileContentsChanged] Number of Messages has increased from 18 to 26
- - [MessageAdded] Message added: lb_as_set_weight
- - [MessageAdded] Message added: lb_as_set_weight_reply
  - [MessageAdded] Message added: lb_add_del_as_v2
- - [MessageAdded] Message added: lb_add_del_as_v2_reply
- - [MessageAdded] Message added: lb_as_v2_dump
- - [MessageAdded] Message added: lb_conf_get
  - [MessageAdded] Message added: lb_conf_get_reply
+ - [MessageAdded] Message added: lb_as_set_weight
  - [MessageAdded] Message added: lb_as_v2_details
+ - [MessageAdded] Message added: lb_conf_get
+ - [MessageAdded] Message added: lb_as_set_weight_reply
+ - [MessageAdded] Message added: lb_as_v2_dump
+ - [MessageAdded] Message added: lb_add_del_as_v2_reply
  lldp
  - [FileCRC] File CRC changed from 0xc26a6a68 to 0xd541380d
  - [MessageCRC] Message lldp_details changed CRC from 0xc2d226cd to 0xa14ac395
