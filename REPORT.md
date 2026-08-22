@@ -166,7 +166,7 @@
 
 ```
 Listing 46 differences:
- - [Version] Schema version is different: 26.06-release vs 26.10-rc0~364-g4f9eb4ea0
+ - [Version] Schema version is different: 26.06-release vs 26.10-rc0~374-gb575ec2c5
  - [FilesCount] Total file count increased from 150 to 151
  - [FileAdded] File added: tracepath
  af_xdp
@@ -176,10 +176,10 @@ Listing 46 differences:
  - [FileVersion] File version changed from 1.0.3 to 1.0.4
  - [FileCRC] File CRC changed from 0xe17512 to 0x9a166f0e
  - [FileContentsChanged] Number of Messages has increased from 10 to 12
- - [MsgOptionAdded] Message flow_disable added option: deprecated
  - [MsgOptionAdded] Message flow_disable_reply added option: deprecated
- - [MessageAdded] Message added: flow_disable_v2
+ - [MsgOptionAdded] Message flow_disable added option: deprecated
  - [MessageAdded] Message added: flow_disable_v2_reply
+ - [MessageAdded] Message added: flow_disable_v2
  http_static
  - [FileCRC] File CRC changed from 0xa4be530f to 0x293f6ad8
  - [FileContentsChanged] Number of Messages has increased from 4 to 8
@@ -191,9 +191,9 @@ Listing 46 differences:
  - [FileVersion] File version changed from 3.2.4 to 3.2.5
  - [FileCRC] File CRC changed from 0xcf7004cc to 0x98d849f6
  - [FileContentsChanged] Number of Messages has increased from 76 to 80
- - [MessageAdded] Message added: sw_interface_get_speed_capa
  - [MessageAdded] Message added: sw_interface_get_speed_capa_reply
  - [MessageAdded] Message added: sw_interface_set_link_speed_reply
+ - [MessageAdded] Message added: sw_interface_get_speed_capa
  - [MessageAdded] Message added: sw_interface_set_link_speed
  ipip
  - [FileMoved] File moved from core/ipip.api.json to plugins/ipip.api.json
@@ -203,12 +203,12 @@ Listing 46 differences:
  - [FileContentsChanged] Number of Messages has increased from 18 to 26
  - [MessageAdded] Message added: lb_add_del_as_v2_reply
  - [MessageAdded] Message added: lb_as_set_weight
- - [MessageAdded] Message added: lb_as_v2_dump
  - [MessageAdded] Message added: lb_conf_get
- - [MessageAdded] Message added: lb_add_del_as_v2
  - [MessageAdded] Message added: lb_as_set_weight_reply
  - [MessageAdded] Message added: lb_as_v2_details
  - [MessageAdded] Message added: lb_conf_get_reply
+ - [MessageAdded] Message added: lb_as_v2_dump
+ - [MessageAdded] Message added: lb_add_del_as_v2
  lldp
  - [FileCRC] File CRC changed from 0xc26a6a68 to 0xd541380d
  - [MessageCRC] Message lldp_details changed CRC from 0xc2d226cd to 0xa14ac395
