@@ -166,7 +166,7 @@
 
 ```
 Listing 64 differences:
- - [Version] Schema version is different: 26.06-release vs 26.10-rc0~499-gaddbce974
+ - [Version] Schema version is different: 26.06-release vs 26.10-rc0~501-gd8e03c90d
  - [FilesCount] Total file count increased from 150 to 151
  - [FileAdded] File added: tracepath
  af_xdp
@@ -176,55 +176,55 @@ Listing 64 differences:
  - [MsgOptionChanged] Message af_xdp_create_v3 changed option vat_help from "<host-if linux-ifname> [name ifname] [rx-queue-size size] [tx-queue-size size] [num-rx-queues <num|all>] [prog pathname] [netns ns] [zero-copy|no-zero-copy] [no-syscall-lock]" to "<host-if linux-ifname> [name ifname] [rx-queue-size size] [tx-queue-size size] [num-rx-queues <num|all>] [prog pathname] [netns ns] [zero-copy|no-zero-copy] [no-syscall-lock] [mac-reuse] [multi-buffer|no-multi-buffer]"
  - [MsgOptionAdded] Message af_xdp_create_v3 added option: replaced_by="af_xdp_create_v4"
  - [MsgOptionAdded] Message af_xdp_create_v3 added option: deprecated
- - [MessageAdded] Message added: af_xdp_create_v4
  - [MessageAdded] Message added: af_xdp_create_v4_reply
+ - [MessageAdded] Message added: af_xdp_create_v4
  flow
  - [FileVersion] File version changed from 1.0.3 to 1.0.5
  - [FileCRC] File CRC changed from 0xe17512 to 0x2e3ba88e
  - [FileContentsChanged] Number of Messages has increased from 10 to 24
  - [MsgOptionAdded] Message flow_disable added option: deprecated
  - [MsgOptionAdded] Message flow_disable_reply added option: deprecated
- - [MessageAdded] Message added: flow_disable_v2
- - [MessageAdded] Message added: flow_disable_v2_reply
  - [MessageAdded] Message added: flow_template_add_reply
- - [MessageAdded] Message added: flow_async_range_disable
+ - [MessageAdded] Message added: flow_async_range_enable
+ - [MessageAdded] Message added: flow_async_range_enable_reply
+ - [MessageAdded] Message added: flow_async_range_disable_reply
+ - [MessageAdded] Message added: flow_disable_v2_reply
  - [MessageAdded] Message added: flow_template_add
  - [MessageAdded] Message added: flow_template_del
  - [MessageAdded] Message added: flow_template_disable_reply
- - [MessageAdded] Message added: flow_async_range_enable
- - [MessageAdded] Message added: flow_template_del_reply
+ - [MessageAdded] Message added: flow_async_range_disable
  - [MessageAdded] Message added: flow_template_enable
  - [MessageAdded] Message added: flow_template_disable
- - [MessageAdded] Message added: flow_async_range_enable_reply
+ - [MessageAdded] Message added: flow_disable_v2
+ - [MessageAdded] Message added: flow_template_del_reply
  - [MessageAdded] Message added: flow_template_enable_reply
- - [MessageAdded] Message added: flow_async_range_disable_reply
  http_static
  - [FileCRC] File CRC changed from 0xa4be530f to 0x293f6ad8
  - [FileContentsChanged] Number of Messages has increased from 4 to 8
- - [MessageAdded] Message added: http_static_get
- - [MessageAdded] Message added: http_static_get_reply
  - [MessageAdded] Message added: http_static_disable
  - [MessageAdded] Message added: http_static_disable_reply
+ - [MessageAdded] Message added: http_static_get
+ - [MessageAdded] Message added: http_static_get_reply
  interface
  - [FileVersion] File version changed from 3.2.4 to 3.2.5
  - [FileCRC] File CRC changed from 0xcf7004cc to 0x98d849f6
  - [FileContentsChanged] Number of Messages has increased from 76 to 80
  - [MessageAdded] Message added: sw_interface_set_link_speed
- - [MessageAdded] Message added: sw_interface_set_link_speed_reply
- - [MessageAdded] Message added: sw_interface_get_speed_capa_reply
  - [MessageAdded] Message added: sw_interface_get_speed_capa
+ - [MessageAdded] Message added: sw_interface_get_speed_capa_reply
+ - [MessageAdded] Message added: sw_interface_set_link_speed_reply
  ipip
  - [FileMoved] File moved from core/ipip.api.json to plugins/ipip.api.json
  lb
  - [FileVersion] File version changed from 1.1.0 to 1.2.0
  - [FileCRC] File CRC changed from 0x49e3c1c1 to 0xac602d7b
  - [FileContentsChanged] Number of Messages has increased from 18 to 26
- - [MessageAdded] Message added: lb_as_set_weight_reply
  - [MessageAdded] Message added: lb_conf_get
  - [MessageAdded] Message added: lb_conf_get_reply
- - [MessageAdded] Message added: lb_add_del_as_v2_reply
- - [MessageAdded] Message added: lb_as_v2_details
  - [MessageAdded] Message added: lb_add_del_as_v2
+ - [MessageAdded] Message added: lb_as_set_weight_reply
+ - [MessageAdded] Message added: lb_as_v2_details
+ - [MessageAdded] Message added: lb_add_del_as_v2_reply
  - [MessageAdded] Message added: lb_as_set_weight
  - [MessageAdded] Message added: lb_as_v2_dump
  lldp
@@ -235,8 +235,8 @@ Listing 64 differences:
  - [FileCRC] File CRC changed from 0x789db91a to 0x1c2fb3d9
  - [FileContentsChanged] Number of Messages has increased from 18 to 20
  - [MessageCRC] Message sfdp_set_timeout changed CRC from 0x36440b87 to 0x39b82486
- - [MessageAdded] Message added: sfdp_timeout_dump
  - [MessageAdded] Message added: sfdp_timeout_details
+ - [MessageAdded] Message added: sfdp_timeout_dump
  sfdp_types
  - [FileVersion] File version changed from 0.0.1 to 1.0.0
 ```
