@@ -166,7 +166,7 @@
 
 ```
 Listing 73 differences:
- - [Version] Schema version is different: 26.06-release vs 27.02-rc0~156-g7f6f7ede2
+ - [Version] Schema version is different: 26.06-release vs 27.02-rc0~163-g2ee50966a
  - [FilesCount] Total file count increased from 150 to 151
  - [FileAdded] File added: tracepath
  af_xdp
@@ -184,27 +184,27 @@ Listing 73 differences:
  - [FileContentsChanged] Number of Messages has increased from 10 to 24
  - [MsgOptionAdded] Message flow_disable added option: deprecated
  - [MsgOptionAdded] Message flow_disable_reply added option: deprecated
- - [MessageAdded] Message added: flow_template_add
- - [MessageAdded] Message added: flow_template_disable
- - [MessageAdded] Message added: flow_async_range_disable
- - [MessageAdded] Message added: flow_async_range_disable_reply
- - [MessageAdded] Message added: flow_disable_v2
- - [MessageAdded] Message added: flow_disable_v2_reply
- - [MessageAdded] Message added: flow_template_add_reply
- - [MessageAdded] Message added: flow_template_enable
- - [MessageAdded] Message added: flow_template_enable_reply
  - [MessageAdded] Message added: flow_template_disable_reply
- - [MessageAdded] Message added: flow_template_del
- - [MessageAdded] Message added: flow_template_del_reply
  - [MessageAdded] Message added: flow_async_range_enable
  - [MessageAdded] Message added: flow_async_range_enable_reply
+ - [MessageAdded] Message added: flow_async_range_disable
+ - [MessageAdded] Message added: flow_async_range_disable_reply
+ - [MessageAdded] Message added: flow_template_disable
+ - [MessageAdded] Message added: flow_disable_v2_reply
+ - [MessageAdded] Message added: flow_template_add
+ - [MessageAdded] Message added: flow_template_del
+ - [MessageAdded] Message added: flow_template_enable_reply
+ - [MessageAdded] Message added: flow_disable_v2
+ - [MessageAdded] Message added: flow_template_add_reply
+ - [MessageAdded] Message added: flow_template_enable
+ - [MessageAdded] Message added: flow_template_del_reply
  http_static
  - [FileCRC] File CRC changed from 0xa4be530f to 0x293f6ad8
  - [FileContentsChanged] Number of Messages has increased from 4 to 8
- - [MessageAdded] Message added: http_static_disable
  - [MessageAdded] Message added: http_static_disable_reply
  - [MessageAdded] Message added: http_static_get
  - [MessageAdded] Message added: http_static_get_reply
+ - [MessageAdded] Message added: http_static_disable
  interface
  - [FileVersion] File version changed from 3.2.4 to 3.2.5
  - [FileCRC] File CRC changed from 0xcf7004cc to 0x98d849f6
@@ -219,14 +219,14 @@ Listing 73 differences:
  - [FileVersion] File version changed from 1.1.0 to 1.2.0
  - [FileCRC] File CRC changed from 0x49e3c1c1 to 0xac602d7b
  - [FileContentsChanged] Number of Messages has increased from 18 to 26
- - [MessageAdded] Message added: lb_as_set_weight
- - [MessageAdded] Message added: lb_as_set_weight_reply
+ - [MessageAdded] Message added: lb_as_v2_details
+ - [MessageAdded] Message added: lb_add_del_as_v2_reply
+ - [MessageAdded] Message added: lb_as_v2_dump
  - [MessageAdded] Message added: lb_conf_get
  - [MessageAdded] Message added: lb_conf_get_reply
- - [MessageAdded] Message added: lb_add_del_as_v2_reply
  - [MessageAdded] Message added: lb_add_del_as_v2
- - [MessageAdded] Message added: lb_as_v2_details
- - [MessageAdded] Message added: lb_as_v2_dump
+ - [MessageAdded] Message added: lb_as_set_weight
+ - [MessageAdded] Message added: lb_as_set_weight_reply
  lldp
  - [FileCRC] File CRC changed from 0xc26a6a68 to 0xd541380d
  - [MessageCRC] Message lldp_details changed CRC from 0xc2d226cd to 0xa14ac395
@@ -234,10 +234,10 @@ Listing 73 differences:
  - [FileVersion] File version changed from 3.0.0 to 4.0.0
  - [FileCRC] File CRC changed from 0x351383c2 to 0xc6851367
  - [FileContentsChanged] Number of Messages has increased from 10 to 12
- - [MsgOptionAdded] Message rdma_create_v4 added option: deprecated
  - [MsgOptionAdded] Message rdma_create_v4 added option: replaced_by="rdma_create_v5"
- - [MessageAdded] Message added: rdma_create_v5_reply
+ - [MsgOptionAdded] Message rdma_create_v4 added option: deprecated
  - [MessageAdded] Message added: rdma_create_v5
+ - [MessageAdded] Message added: rdma_create_v5_reply
  sfdp
  - [FileVersion] File version changed from 0.0.1 to 1.0.1
  - [FileCRC] File CRC changed from 0x789db91a to 0x979cf528
