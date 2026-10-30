@@ -166,7 +166,7 @@
 
 ```
 Listing 6 differences:
- - [Version] Schema version is different: 26.10-release vs 27.02-rc0~183-ge9f9584a8
+ - [Version] Schema version is different: 26.10-release vs 27.02-rc0~195-gcb5a873fc
  sfdp
  - [FileVersion] File version changed from 1.0.0 to 1.0.1
  - [FileCRC] File CRC changed from 0x1c2fb3d9 to 0x979cf528
