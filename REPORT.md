@@ -117,7 +117,7 @@
  109 │ sasc                  │ 0.0.0   │ 0        │ plugins │       - │        - │     - │     - │                                                 
  110 │ selog                 │ 0.0.0   │ 58ce3561 │ plugins │       - │       10 │     - │     5 │                                                 
  111 │ session               │ 4.0.3   │ 85f82b54 │ core    │       2 │       40 │     5 │    20 │                                                 
- 112 │ sfdp                  │ 1.0.1   │ 979cf528 │ core    │       2 │       22 │     - │    11 │                                                 
+ 112 │ sfdp                  │ 1.0.2   │ 68f7426c │ core    │       2 │       24 │     1 │    12 │                                                 
  113 │ sfdp_types            │ 1.0.0   │ 2cd47f8b │ core    │       1 │        - │     6 │     - │                                                 
  114 │ sflow                 │ 0.1.0   │ 273ad146 │ plugins │       1 │       24 │     - │    12 │                                                 
  115 │ snort                 │ 1.1.0   │ 9826183c │ plugins │       2 │       41 │     2 │    17 │                                                 
@@ -165,13 +165,16 @@
 <summary><h2>Changes since latest VPP release</h2></summary>
 
 ```
-Listing 6 differences:
- - [Version] Schema version is different: 26.10-release vs 27.02-rc0~195-gcb5a873fc
+Listing 9 differences:
+ - [Version] Schema version is different: 26.10-release vs 27.02-rc0~207-gde3843a52
  sfdp
- - [FileVersion] File version changed from 1.0.0 to 1.0.1
- - [FileCRC] File CRC changed from 0x1c2fb3d9 to 0x979cf528
- - [FileContentsChanged] Number of Messages has increased from 20 to 22
+ - [FileVersion] File version changed from 1.0.0 to 1.0.2
+ - [FileCRC] File CRC changed from 0x1c2fb3d9 to 0x68f7426c
+ - [FileContentsChanged] Number of Messages has increased from 20 to 24
+ - [FileContentsChanged] Number of Types has increased from 10 to 11
  - [MessageAdded] Message added: sfdp_kill_session_batch_reply
+ - [MessageAdded] Message added: sfdp_status
+ - [MessageAdded] Message added: sfdp_status_reply
  - [MessageAdded] Message added: sfdp_kill_session_batch
 ```
 
