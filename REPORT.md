@@ -173,9 +173,9 @@ Listing 9 differences:
  - [FileContentsChanged] Number of Messages has increased from 20 to 24
  - [FileContentsChanged] Number of Types has increased from 10 to 11
  - [MessageAdded] Message added: sfdp_kill_session_batch_reply
- - [MessageAdded] Message added: sfdp_status
  - [MessageAdded] Message added: sfdp_status_reply
  - [MessageAdded] Message added: sfdp_kill_session_batch
+ - [MessageAdded] Message added: sfdp_status
 ```
 
 </details>
