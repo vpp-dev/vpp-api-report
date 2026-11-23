@@ -166,14 +166,14 @@
 
 ```
 Listing 9 differences:
- - [Version] Schema version is different: 26.10-release vs 27.02-rc0~651-g9c88edfdd
+ - [Version] Schema version is different: 26.10-release vs 27.02-rc0~672-g6bc4b4ad2
  sfdp
  - [FileVersion] File version changed from 1.0.0 to 1.0.2
  - [FileCRC] File CRC changed from 0x1c2fb3d9 to 0x68f7426c
  - [FileContentsChanged] Number of Messages has increased from 20 to 24
  - [FileContentsChanged] Number of Types has increased from 10 to 11
- - [MessageAdded] Message added: sfdp_kill_session_batch
  - [MessageAdded] Message added: sfdp_kill_session_batch_reply
+ - [MessageAdded] Message added: sfdp_kill_session_batch
  - [MessageAdded] Message added: sfdp_status
  - [MessageAdded] Message added: sfdp_status_reply
 ```
